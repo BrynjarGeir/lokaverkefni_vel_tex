@@ -1,0 +1,58 @@
+% Chapter Template
+\chapter{Data processing and structure} % Main chapter title
+
+\label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Combining data sources}
+
+This project used three main data sources, which need to be queried, filtered and combined to prepare the data for use in the models. When working with hundred of thousands of rows, the efficiency of the code is very important. Iterating through those rows might be necessary at times but will increase the time exponentially as compared to using vectorizing methods were possible. The three data sources were all in a different format. Measurement data from Veðurstofa was in text files, elevation data was in GeoTiff and reanalysis data from Carra was in a GRIB format. To use the data to train, these three data sources needed to be combined into one file. This was done based on the measurement data from the Veðurstofa. A limit was set on the average wind speed and it was used to select measurement points. Along with the average wind speed having to be above a certain limit, to make sure that we were not essentially getting duplicates, we would select only the top wind speed in any given 48 hour period. That is, for a data point to be included it must have been the highest wind speed in the previous and following 24 hours, so as to not describe the same weather multiple times. The data from Veðurstofan was supplied for 10 minute increments, while Carra data is in 3 hour intervals. This means that to use the Carra data to predict the measured values from Veðurstofa, temporal bridging would need to be done. Along with the temporal bridging, we note that the Carra data is given in a rectangular grid where the distance between each point is around 2.5km while the the information from the Veðurstofa is given at specific locations. The elevation information was given by a 20 by 20 rectangular grid that covers Iceland. When combining these data sources a selection of bridging needs to occur. The bridging was linear, both temporally and spatially. This might influence the results but was not considered in this study.
+
+The procedure of combining these sources was as follows. We start with the measured data from the AWS, we filter this by using a limit on the average wind speed. The gust factor generally drops with increased wind speed (although not always dependent on the factors such as the landscape \cite{GNP_vidtal}). Even so being able to predict the gust factor is more important for higher average wind speed as there we have the highest wind gusts. After this stripped dataset over every AWS has been created it is used to query the Carra data by using their API. When querying the Carra API we will have to query in such a way that we query for given hours, days, months, years and a given area. That is, if we ask for a given hour, we get that hour for every day that we ask for. Similarly if we ask for a given day, we get that day for every month we ask for. In light of these restraints, it was decided to query month by month. Querying only the days needed (both the days included in the 10 minute measurements and the days needed for bridging if close to midnight) but every hour of the day (midnight, 3 AM, 6 AM, 9 AM, midday, 3 PM, 6 PM and 9 PM) and then take these values and bridge for the 10 minute values. After querying and downloading the data for the height levels and variables requested, bridging is done for the points of interest and values stored in a pandas dataframe. After this is done the downloaded data is discarded and we look to the next month. This drastically decreases the amount of data that needs to be stored as compared to downloading the entire area and keeping all the data points (goes from several terabytes to less than a gigabyte).
+
+The elevation data comes in a GeoTif file that covers Iceland. It is a rectangular grid of resolution 20 meters. For every point of interest (every weather station), the elevation of that given point along with other points surrounding the weather station is retrieved. For each point retrieved bridging needs to be done. This is done in a similar manner to the briding of the Carra data. Weights are assigned to each of the four points bounding the point of interest. These weights are then used to calculate the weighted average that represents the bridged value. This information is included in the training data as the landscape is known to influence both the average wind and the gustiness \cite{GNP_vidtal}. 
+
+
+\section{Data structure}
+
+Once data has been retrieved for all three sources and processed, including bridging values, it needs to be made ready to use by the model, for both training, validation and test. We start with a dataframe that contains the measured information from AWS. This includes the average wind, the wind gust, wind direction along with the station number and coordinates. When selecting the Carra data we choose certain height levels. That is at which heights we want the reanalysis data. These present as separate lines in the Carra dataframe. We need to combine them so that each line indicates a single observation. When this is done we can combine the AWS Veðurstofu data and Carra reanalysis data on the location and time columns. Lastly we look at the elevation data. A couple of different sections of land around the weather stations have been looked at. We tried a sector of a circle looking upwind, two sectors looking upwind and downwind and a circle around the point. In any case the points, that represent these sections, was selected like as shown in code listing \ref{code:sectorElevation}. That is we look at the wind direction d and define a range of angles around that direction at some distance from the given point. This means that we get some number of points (equal to the length of angleRange) at a distance from given weather station as defined by length\_rng. This then gives us some sectors at some distances away from the weather station.
+
+\begin{lstlisting}[language = Python, caption = {Sector elevation points generated}, label = code:sectorElevation]
+angles = [(angle + (90 - d)) * pi/180 for angle in angleRange]
+length_rng = [(exp(i * log(n + 1)/ k) - 1) * 1000 
+                for i in range(1, k + 1)]
+points = np.array([[(X + l * cos(angle), Y + l * sin(angle))
+                    for angle in angles] for l in length_rng])   
+\end{lstlisting}
+
+We end up with a dataframe that has measured data from AWS, which gives us our target, reanalysis data from Carra, which gives us weather variables to train on, and finally elevation points in the landscape to include in our training data. An example of what the data looks like can be seen in table \ref{table:trainDataExample}.
+
+\begin{table}[h]
+    \resizebox{\textwidth}{!}{
+    \centering
+    \begin{tabular}{c|c|c|c|c|c|c|c}
+         Ri\_01 & Ri\_12 & N\_01 & N\_12 & station\_elevation & relative\_corner & PC1 & ...\\\hline
+         -1.18e+00 &  2.67e+04 & -8.57e-06 & 6.78e-05 & 3.34e+01 & 2.73e+00 & 1.36e+01 & ... 
+    \end{tabular}
+    }
+    \caption{An example of data structure used with model}
+    \label{table:trainDataExample}
+\end{table}
+
+Looking at table \ref{table:trainDataExample} we note that the last \nPCA columns represent the principle component analysis of the elevation data. We also note that the first four columns represent two variables that describe the stability of the air. These are the Richardson number (Ri) and Brunt–Väisälä frequency (N). They are calculated using equations \ref{eqn:Ri} and \ref{eqn:N}. They are calculated using reanalysis data about the the weather at two different height levels. Thus $Ri_{01}$ refers to the Richardson number calculated between height levels 0 and 1. Exactly the same notation is used with the Brunt–Väisälä frequency. The height levels used were 15, 250 and 500 meters above the ground.
+
+\begin{equation}
+    \label{eqn:Ri}
+    Ri = \frac{g \cdot dT \cdot dz}{T_{ave} \cdot dU^2}
+\end{equation}
+
+\begin{equation}
+    \label{eqn:N}
+    N = \sqrt{\frac{g \cdot dT }{T_{ave} \cdot dz}}
+\end{equation}
+
+Here, g is the acceleration due to gravity, dT is the temperature difference between the two height levels, dz is the elevation difference, $T_{ave}$ is the average temperature (that is the average of the two temperatures in the height levels) and dU is the wind speed difference between the two height levels. Both of these numbers tell us something about the stability of the air. These are derived factors from the reanalysis data and as such there shouldn't be a significant information gain in calculating the as opposed to having the raw data. Including these factors instead of the every variable might speed up training as well as making the model more easily explainable with the use of Shapley values or other tools for explainability.
+

@@ -1,0 +1,410 @@
+\documentclass[a4paper,12pt,twoside,BCOR=10mm]{scrbook}
+
+% UoI MSc thesis template (English) V2.0.4 25.4.2022
+
+% The license of this template is not fully clear, but: This template
+% version is based on an earlier LaTeX template that was once available
+% on a SENS UGLA page where the author and license are unknown.  As
+% that version has obviously been put once online with the intend to be
+% used by students, providing and using it should not be problem.
+
+% Helmut Neukirchen https://uni.hi.is/helmut updated that earlier
+% template using a tikzpicture-based approach for the title page
+% created by Þór Arnar Curtis.
+
+% The included logos are very likely copyrighted by the University of
+% Iceland, but
+% https://zeroheight.com/1b323cfd9/p/20f1e6-theses/b/29a61a
+% states that the document is intended to make it easier for
+% students, staff, and print-shops to format the thesis and ensure a
+% standardised appearance. So providing them here and using them
+% should be legal.
+
+
+% Search below for "MODIFY THESE LINES ONLY": there you can enter your name, thesis title, etc.
+
+% BibLaTeX is assumed for references. While Overleaf does this
+% automatically for you, if you run it locally on the commandline,
+% then you need to run first pdflatex MSc.tex, then biber MSc (without
+% the .tex extension), and then again pdflatex MSc.tex
+
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[icelandic, english]{babel}
+\usepackage{t1enc}
+\usepackage{graphicx}
+\usepackage[intoc]{nomencl}
+\usepackage{enumerate,color}
+\usepackage{url}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\BeforeTOCHead[toc]{\cleardoublepage\pdfbookmark{\contentsname}{toc}} % Add Table of Contents to PDF "bookmark" table of contents
+\usepackage{appendix}
+\usepackage{eso-pic}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[sf,normalsize]{subfigure}
+\usepackage[format=plain,labelformat=simple,labelsep=colon]{caption}
+\usepackage{placeins}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{listings}
+
+% Packages used for title page layout
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\input{variables.tex}
+
+% Blue color according to HÍ corporate design
+\convertcolorspec{RGB}{16,9,159}{rgb}\tmphiblue
+\definecolor{hiblue}{rgb}\tmphiblue
+
+
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0cm}
+\raggedbottom
+
+\setkomafont{captionlabel}{\itshape}
+\setkomafont{caption}{\itshape}
+\setkomafont{section}{\FloatBarrier\Large}
+\setcapwidth{\textwidth}
+%\setcapwidth[l]{\textwidth} % The original template had the [l] which leads to a warning that it gets ignored, so to reduce warnings, removed it.
+\setcapindent{1em}
+
+
+\usepackage{lmodern} % Use Latin Modern (instead of the default Computer Modern that is rendered using a bitmap font).
+\usepackage{fixcmex} % To fix that Latin Modern large symbol math fonts has by default only one size: https://tex.stackexchange.com/a/621536
+% Times new roman font instead of the standard LaTeX fonts: has not been test -- try this on your own risk
+%\usepackage[T1]{fontenc}
+%\usepackage{mathptmx}
+
+
+%%%%%%%%%%%%%%%%% Configurations (Useful defaults, but OK to change %%%%%%%%%%%%%%%%%%%
+\graphicspath{{figs/}} % Figures in directory figs
+
+% Bibliography
+
+% \usepackage[sort&compress,authoryear]{natbib} % Uncoment if you want to used NatBib instead of BibLaTeX (and comment the bitlatex line below)
+
+\usepackage{biblatex}  % BibLaTeX used for references. 
+\usepackage{csquotes} % BibLaTex wants to have context sensitive quotes
+\addbibresource{references.bib} %  Name of *.bib file containing references
+
+
+%%%%%%%%%%% MODIFY THESE LINES ONLY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Some note on advisor(s) vs. thesis committee: At the School of
+% Engineering and Natural Sciences, according to Regulation
+% no. 994-2017
+% https://english.hi.is/university_school_of_engineering_and_natural_sciences/regulation_no_994_2017_on_masters_study_at
+% Article 5., a student has an administrative supervisor who is
+% typically also the academic supervisor, i.e. supervising the thesis.
+% If someone from outside is supervising, than the person becomes the
+% academic supervisor and you have in addition the administrative
+% supervisor from within HÍ.
+% In addition, according to Article 7., there is a Master's degree
+% committee that includes at least two persons, one of which shall be
+% the student’s administrative supervisor.
+% Despite these formally defined roles, it is somewhat a matter of
+% taste whether you list all persons as supervisors or all as just
+% thesis committee or list the one single academic supervisor as
+% supervisor and then all persons (repeating the supervisor's name)
+% as thesis committee.
+% In the settings, that follow here, you can set this and many other settings.
+
+\def\thesisyear{2024}       					% Year thesis submitted
+\def\thesismonth{June}					% Month thesis submitted, e.g. "December"
+\def\thesisauthor{Brynjar Geir Sigurðsson}				% Thesis authoreiningaraðferðinni
+\def\thesistitle{A NN approach to predicting gust factors in complex landscape} % Title of thesis
+%\def\thesissubtitle{XXSubtitle is rarely usedXX}		% Subtitle of thesis (optional)
+\def\thesisshorttitle{} 	% Optional: if title of thesis is longer than 50 characters, it would not fit on the spine (kjölur) and in this case you, need to provide a short title here for the print shop. Otherwhise: make it empty
+\def\thesiscredits{60 ECTS} 						% Credits awarded for the project
+\def\thesissubject{Mechanical Engineering}
+\def\thesiskind{M.Sc.}					% E.g. M.Sc. or Ph.D. thesis
+\def\thesiskindformal{CCMagister Scientiarum}			% E.g. Magister Scientiarum
+\def\thesisschool{School of Engineering and {Natural Sciences}}		% School
+\def\thesisfaculty{Industrial Engineering, Mechanical Engineering and Computer Science}% Faculty name without "Faculty of" (gets added) 
+\def\thesisaddress{Dunhagi 5}			        % Faculty or school office address street
+\def\thesispostalcode{107}			                % Faculty or school office zip code
+\def\thesistelephone{525 4000}					% Office telephone
+%\def\thesispublisher{XX}					% Publisher (not used)
+\def\thesissupervisors{Kristján Jónasson // Ólafur Pétur Pálsson}					% Names of supervisors (split by \\ if more than one).
+\def\thesisnrofsupervisors{2}					% Number of supervisors (to use "Supervisor" vs. "Supervisors")
+\def\thesiscommittee{Kristján Jónasson \\ Ólafur Pétur Pálsson}			% Thesis commitee must include the supervisor(s)
+\def\thesisexaminer{XXNN3XX}				        % Examiner (prófdómari)
+\def\thesisISBN{}           					% Thesis ISBN number (keep empty: not used anymore)
+\def\thesisprinting{}						% Name of printsthop (keep empty if thesis is never printed)
+%\def\thesisprinting{Háskólaprent, Fálkagata 2, 107 Reykjavík}	% Name of printsthop (keep empty if thesis is never printed)
+\def\thesislicense{This thesis may not be copied in any form without author permission.} % Set license here (could also be some Creative Commons license)
+%\def\thesiskeywords{Keyword1, Keyword2, Keyword3}		% Keywords (not used anywhere, hence commented out)
+
+%%%%%%%%%%% STOP MODIFYING HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%% Next modifications: search for "START MODIFYING HERE AGAIN" below %%%%%%%%%%
+
+% We need this command if someone used \\ in the thesis title
+\newcommand{\removelinebreaks}[1]{%
+  \begingroup\def\\{}#1\endgroup}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+\pagenumbering{Alph} % To prevent page numer "1" to be used multiple times, used "A", "B", etc. for the first pages
+\begin{titlepage} % This titlepage environment spans in fact multiple pages
+
+% This is the cover title page. If you go to a print shop, they will
+% ignore it and create their own cover page, i.e. this cover page here
+% is only used by the PDF version that gets electronically archived.
+
+  \thispagestyle{empty}
+  
+  % The banner at top and bottom (using a tikz overlay)
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west, inner sep=0pt] at (current page.north west)
+        {\includegraphics[width=\paperwidth]{banner}}; % The top banner (as a PNG) % TODO: A vector graphic would be better
+
+    \node(bottom)[shape=rectangle, fill=hiblue, minimum height=10mm, minimum width=\paperwidth, anchor=south west] at (current page.south west) {}; % The bottom banner (a filled rectangle)
+
+    \node[above=0.4cm of bottom] {
+        \begin{tabular}{c} 
+          \sffamily \small \textcolor{hiblue}{\textbf{\MakeUppercase{Faculty of \thesisfaculty{}}}}
+        \end{tabular}
+    };
+  \end{tikzpicture}
+
+  \enlargethispage{3cm}
+  \vspace*{3.5cm} % Here starts the white space below the top banner
+  
+  % The centering used below is with respect to the page margins which
+  % are not the same on left and right which prevents proper centering
+  % with respect to the tikz centering (and the title page in
+  % general).  Instead, we use a minipage that we shift horizontally
+  % by 2.6 cm.  But minipage sets \parskip to 0, so we need to save
+  % and restore it.  To be able to use vfill/stretch in a minipage,
+  % the height needs to be specified: 20.0 cm.
+  \newlength{\currentparskip}
+  \setlength{\currentparskip}{\parskip}
+  \hspace*{-2.6cm}
+  \begin{minipage}[t][20.0cm]{1.0\paperwidth}
+    \setlength{\parskip}{\currentparskip}
+    \begin{center}
+      \vspace*{ \stretch{1.5} }
+      \huge \sffamily \bfseries \thesistitle{}
+    
+      %\normalfont \LARGE \sffamily \thesissubtitle{}
+
+      \vspace{ \stretch{1.0} }
+      \normalfont \Large \sffamily \thesisauthor{}
+
+      \vspace*{ \stretch{2.75} }
+
+      \thesismonth{}~\thesisyear{} % E.g. "March 2022"
+
+      \vspace{ \stretch{0.5} }
+    
+      \normalfont \Large \sffamily {\thesiskind{}~thesis \\
+      in \thesissubject{}}
+
+      \vspace*{ \stretch{1.0} }
+    \end{center}
+  \end{minipage}
+
+  \newpage
+
+  \thispagestyle{empty} \mbox{} % This is the inside page of the cover (cover verso) which remains empty
+
+  \newpage
+
+
+  \thispagestyle{empty} % This is the inner title page
+  \begin{center}
+    \vspace*{ \stretch{0.5} }
+
+    \Large \sffamily \bfseries \thesistitle{}
+    
+    %\normalfont \large \sffamily \thesissubtitle{}
+
+    \vspace*{ \stretch{1.0} }
+
+    \sffamily{\thesisauthor{}}
+    
+    \vspace*{ \stretch{1.0} }
+    \normalsize \thesiscredits{}~ECTS thesis submitted in partial fulfillment of a \\
+    \textit{\thesiskindformal{}} degree in \thesissubject{}
+    \large
+    
+    \ifx\thesissupervisors\empty % Only print supervisor part if supervisor names are not empty
+    \else
+      \vspace*{ \stretch{1.0} }
+      \ifnum\thesisnrofsupervisors>1 Supervisors \\
+      \else Supervisor \\
+      \fi
+      \thesissupervisors{}
+    \fi  
+
+    \ifx\thesiscommittee\empty % Only print thesis committee part if committee names are not empty
+    \else
+      \vspace*{ \stretch{0.25} }
+      \thesiskind{}~Committee\\
+      \thesiscommittee{}
+    \fi
+      
+    \ifx\thesisexaminer\empty % Only print examiner part if thesisexaminer is not empty
+    \else
+      \vspace*{ \stretch{0.25} }
+      Examiner \\
+      \thesisexaminer
+    \fi
+      
+    \vspace*{ \stretch{1.0} }
+
+    Faculty of \thesisfaculty \\
+    \thesisschool \\
+    University of Iceland \\
+    Reykjavik, \thesismonth~\thesisyear
+
+    \vspace*{ \stretch{0.5} }
+  \end{center}
+
+  \newpage
+
+  \thispagestyle{empty} % This is the title verso (colophon), i.e. imprint/copyright page
+  \vspace*{\fill}
+  % \setcounter{page}{0} \renewcommand{\baselinestretch}{1.5}\normalsize
+  \sffamily{\removelinebreaks{\thesistitle}} \\
+  \ifx\thesisshorttitle\empty % Show only if shorttitle is provided
+  \else
+  (\sffamily{\thesisshorttitle{}}) \\
+  \fi
+  %\sffamily{\removelinebreaks{\thesissubtitle{}}} \\
+
+    
+  \thesiscredits ~ECTS thesis submitted in partial fulfillment of a \thesiskind{}~degree in \thesissubject
+\\ \\
+  Faculty of \thesisfaculty \\
+  \thesisschool \\
+  University of Iceland \\
+  \thesisaddress \\ 
+  \thesispostalcode, Reykjavik 
+  Iceland
+
+  Telephone: \thesistelephone \\ \\ 
+  \vspace*{\lineskip}
+
+  Bibliographic information: \\
+  \thesisauthor{} (\thesisyear{}) \emph{\removelinebreaks{\thesistitle{}}}, \thesiskind{}~thesis, Faculty of \thesisfaculty, University of Iceland.\\
+
+  Copyright \textcopyright~\thesisyear~ \thesisauthor \\
+  \thesislicense{}\\
+
+  \ifx\thesisISBN\empty % Show only if ISBN is provided
+  \else
+  ISBN~\thesisISBN
+  \fi
+  
+  \ifx\thesisprinting\empty % Show only if print shop is provided
+  \else
+  Printing: \thesisprinting \\
+  \fi
+
+
+  Reykjavik, Iceland, \thesismonth~\thesisyear \\
+  
+%%%%%%%%%%% START MODIFYING HERE AGAIN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \newpage % Dedication page: remove completely if you have no dedication
+
+  \thispagestyle{empty} \mbox{}
+
+  \vfill
+
+  \begin{center}
+    \textit{
+      To all the students who made the wise decision to use \LaTeX. % Replace this by your dedication
+    }
+  \end{center} \vspace*{5cm}
+
+  \vfill 
+
+%%%%%%%%%%%%%%%%%%%%%%%%% If you have no dedication: remove until here %%%%%%%%%%%%%%%%%%%%
+
+\end{titlepage}
+
+\cleardoublepage
+
+\pagenumbering{roman} % Abstract page 
+
+\setcounter{page}{5}
+
+\setkomafont{section}{\huge} % The title "Abstract" and "Útfdráttur" should look like the chapters, i.e. use \huge (\chapter cannot be used as this would create a new page)
+\section*{Abstract}
+English abstract (ca. 250 words).
+
+\vfill \vspace*{1cm}
+
+\section*{Útdráttur}
+Hér kemur útdráttur á íslensku sem er að hámarki 250 orð.
+\vfill
+
+\newpage % Empty page
+\setkomafont{section}{\FloatBarrier\Large}
+% The first "chapter" which will start on a new page
+% Table of contents starts automatically on a right-hand side page ("recto").
+% Table of contents, list of figures and tables are automatically generated by the commands below
+\hypersetup{pageanchor=true}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter*{Abbreviations}
+\addcontentsline{toc}{chapter}{Abbreviations}
+\markboth{Abbreviations}{Abbreviations}
+
+Í þessum kafla mega koma fram listar yfir skammstafanir og/eða breytuheiti. Gefið kaflanum nafn við hæfi, t.d.\ Skammstafanir eða Breytuheiti. Þessum kafla má sleppa ef hans er ekki þörf. \\
+
+The section could be titled: Glossary, Variable Names, etc.
+
+If you use acronyms, it is strongly recommended to use a LaTeX
+acronyms package. For example, to use the package \emph{acronym}, add
+in the preamble:
+\begin{verbatim}
+\usepackage{acronym}
+\end{verbatim}
+and then here in this chapter (to create the list of all acronyms), use:
+\begin{verbatim}
+\begin{acronym}[SENS]
+  \acro{SENS}{School of Engineering and Natural Sciences}
+  \acro{UoI}{University of Iceland}
+\end{acronym}
+\end{verbatim}
+In the square bracket above, you need to put the longest acronym, so
+that the list gets proper indentation based on the longest acronym.
+Also note that you need to manually sort here that list.
+
+Then, whereever you use the acronym in your text: \verb|\ac{UoI}|:
+that will automatically expand the acronym at the first use, but use
+only the short version after the first use.  (Use \verb|\acp| if need
+the plural form. \verb|\acl| if you explicitly want to have the long
+form only, \verb|\acf| if you explicitly want to have the full long
+and short form, i.e.\ like first use of \verb|\ac|.)
+
+Use \verb|\acresetall| to forget about earlier usage (=expansion) of
+acronyms, e.g.\ if despite already used in Abstract or Introduction,
+but you want to expand them later once again (starting from, e.g., in
+Foundations chapter): add \verb|\acresetall| at start of Introduction
+chapter (and maybe also again at start of Foundations chapter).
+
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+Í þessum kafla koma fram þakkir til þeirra sem hafa styrkt rannsóknina með fjárframlögum, aðstöðu eða vinnu. t.d.\ styrktarsjóðir, fyrirtæki, leiðbeinendur, og aðrir aðilar sem hafa á einhvern hátt aðstoðað við gerð verkefnisins, þ.m.t.\ vinir og fjölskylda ef við á. Þakkir byrja á oddatölusíðu (hægri síðu).
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\include{Chapters/Chapter1}
+\include{Chapters/Chapter2}
+\include{Chapters/Chapter3}
+\include{Chapters/Chapter4}
+
+\end{document}
