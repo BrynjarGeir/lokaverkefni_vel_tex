@@ -1,6 +1,6 @@
-PWD d:\Skóli\lokaverkefni_vel\latex\thesistemplate-main
+PWD d:\Skóli\Mastersverkefni\latex\thesistemplate-main
 INPUT C:\Users\brynj\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\Skóli\lokaverkefni_vel\latex\thesistemplate-main\MSc.tex
+INPUT d:\Skóli\Mastersverkefni\latex\thesistemplate-main\MSc.tex
 OUTPUT MSc.log
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrbook.cls
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrbook.cls
@@ -492,7 +492,6 @@ INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy7.tf
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
@@ -516,6 +515,7 @@ INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr12.tfm
+INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT .\Chapters\Chapter4.tex
 INPUT .\Chapters\Chapter4.tex
 OUTPUT Chapters\Chapter4.aux
