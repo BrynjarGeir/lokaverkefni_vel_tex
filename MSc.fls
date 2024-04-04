@@ -504,12 +504,26 @@ OUTPUT Chapters\Chapter2.aux
 INPUT .\Chapters\Chapter2.tex
 INPUT .\Chapters\Chapter2.tex
 INPUT Chapters\Chapter2.tex
+INPUT .\Figures\weather_stations.png
+INPUT .\Figures\weather_stations.png
+INPUT .\Figures\weather_stations.png
+INPUT .\Figures\weather_stations.png
+INPUT .\Figures\weather_stations.png
+INPUT .\Figures\weather_stations.png
+INPUT .\Figures\weather_stations.png
 INPUT .\Chapters\Chapter3.tex
 INPUT .\Chapters\Chapter3.tex
 OUTPUT Chapters\Chapter3.aux
 INPUT .\Chapters\Chapter3.tex
 INPUT .\Chapters\Chapter3.tex
 INPUT Chapters\Chapter3.tex
+INPUT .\Figures\data-preprocessing-flow-chart.png
+INPUT .\Figures\data-preprocessing-flow-chart.png
+INPUT .\Figures\data-preprocessing-flow-chart.png
+INPUT .\Figures\data-preprocessing-flow-chart.png
+INPUT .\Figures\data-preprocessing-flow-chart.png
+INPUT .\Figures\data-preprocessing-flow-chart.png
+INPUT .\Figures\data-preprocessing-flow-chart.png
 INPUT C:\Users\Brynjar Geir\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\Brynjar Geir\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\Brynjar Geir\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty

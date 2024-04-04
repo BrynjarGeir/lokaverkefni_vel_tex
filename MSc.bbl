@@ -19,6 +19,17 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{hyperparameters_definition}{webiste}{}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{urlraw}
+      \verb https://deepai.org/machine-learning-glossary-and-terms/hyperparameter
+      \endverb
+      \verb{url}
+      \verb https://deepai.org/machine-learning-glossary-and-terms/hyperparameter
+      \endverb
+      \warn{\item webiste entry 'hyperparameters_definition' (references.bib): Invalid format '2024/04/03' of date field 'urldate' - ignoring}
+    \endentry
     \entry{mean_gust_HA_HO}{article}{}{}
       \name{author}{2}{}{%
         {{hash=b2dc6558e90da7729c346128b8a0652d}{%
@@ -819,7 +830,6 @@
       \warn{\item website entry 'richardson_number_skybrary' (references.bib): Invalid format '2024/04/03' of date field 'urldate' - ignoring}
     \endentry
   \enddatalist
-  \missing{hyperparameter_definition}
 \endrefsection
 \endinput
 
