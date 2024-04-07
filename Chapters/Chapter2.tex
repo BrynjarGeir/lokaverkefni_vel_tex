@@ -2,7 +2,7 @@
 
 \chapter{Data gathering and preprocessing} % Main chapter title
 
-\label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
@@ -12,17 +12,59 @@ Data was sourced from several streams. Veðurstofan provided recordings from wea
 
 \section{Automatic Weather Station Data}
 
-Veðurstofan provided recordings from weather stations all around Iceland. These automatic weather stations (AWS) are at a height of 10 meters above ground level. The information that is provided by these AWS is presented in two different type of documents, hourly and 10 minute documents. The hourly documents are summations of the 10 minute documents, with the exception that any errors (so called nails) still in the 10 minute documents should have been removed from the hourly documents. Each type of document contain the following information: the date and time, the station number (that can be converted to the coordinates using another document), the average wind speed, the wind gust, the standard deviation of the wind gust, the direction of the wind and the standard deviation for the wind direction. These features for each of the stations go back at least two decades, but do not have the same start date. This paper does not look at the data as a time series, it tries to make predictions using only the information at a given point in time.
+Veðurstofan provided 10 minute recordings from \nStationsMin weather stations all around Iceland. Of these \nStationsMin stations, \nVedurMin were from Veðurstofa Íslands and placed at 10 meters above ground, while the rest (\nVGMin) were from \href{https://www.vegagerdin.is/}{Vegagerðin} and placed at 7.5 meters above ground. The location of these weather stations can be seen in Figure \ref{fig:aws_map}. The information that is provided by these Automatic Weather Stations (AWS) is presented in two different type of documents, hourly and 10 minute documents. The hourly documents are summations of the 10 minute documents, with the exception that any errors (so called nails) still in the 10 minute documents should have been removed from the hourly documents. Nails, are sharp increases from the rest of the data and are thought to be measurements errors by experts and are discarded by hand. Each type of document contain the following information: the date and time, the station number (that can be converted to the coordinates using another document), the average wind speed, the wind gust, the standard deviation of the wind gust, the direction of the wind and the standard deviation for the wind direction. These features for each of the stations go back at least two decades, but do not have the same start date. This thesis does not look at the data as a time series, it tries to make predictions using only the information at a given point in time.
+
+\begin{figure}
+    \caption{Locations of Automatic Weather Stations in Iceland}
+    \label{fig:aws_map}
+    \includegraphics[scale = 0.75]{Figures/weather_stations.png}
+\end{figure}
+
+These 10 minute measurements were filtered to only include measurements where the average wind speed was at or above \averageWindSpeedLimit m/s. They were also filtered in such a way that only the highest value in any given 48 hour span is considered. This can be seen in Code Listing (\ref{code:filter48hr}). Filtering by, for each station, the highest wind speed and removing all observations that occurred within a 48 hour period centered on the observation (including the highest wind) and doing this iteratively until reaching an empty dataframe for a given station.
+
+\begin{lstlisting}[language = Python, caption = {Filter points over 48 hour interval}, label = code:filter48hr]
+    for station in tqdm(stations, total = len(stations)):
+        subset_df = vedur_df[station == vedur_df.stod]
+        subset_df = subset_df.reset_index(drop = True)
+
+        while not subset_df.empty:
+            idx = subset_df.f.idxmax()
+            time_of_max = subset_df.iloc[idx].timi
+
+            filtered_data.append(subset_df.iloc[idx])
+
+            subset_df = subset_df[abs(subset_df.timi - time_of_max)
+                >= pd.Timedelta(threshold)]
+
+            subset_df = subset_df.reset_index(drop = True)  
+\end{lstlisting}
+
+When these two filterings have been done, the end result is \nStationsCombined stations that meet these criteria. Of these, \nVedurMin belong to Veðurstofa Íslands and \nVGMin belong to Vegagerðin. The number of observations after, these filterings, by year can be seen in Figure (\ref{fig:occurrences_by_year}). The first observations occurring in \startDateVedur and the latest in 2023.
+
+\begin{figure}
+    \caption{Measurements that fit filtering by year}
+    \label{fig:occurrences_by_year}
+    \begin{center}
+        \includegraphics[scale = 0.75]{Figures/occurrences_by_year.png}
+    \end{center}
+\end{figure}
+
+Looking at the number of measurements that meet these criteria for a given station, Figure (\ref{fig:occurrences_by_station_20}) shows only one station has over 1000 measurements that fit the criterias.
+
+\begin{figure}
+    \caption{Number of stations that have measurements in a range}
+    \label{fig:occurrences_by_station_20}
+    \begin{center}
+        \includegraphics[scale = 0.75]{Figures/station_occurrences_20.png}        
+    \end{center}
+\end{figure}
 
 \section{Carra Data}
-The CARRA dataset goes back to September 1990 and is currently updated monthly, with a latency of 2-3 months. The oldest Vedurstofu data example that fulfills given criteria is from \startDateVedur. This is covered by Carra. A few of the newer points from AWS were not available from Carra when data was gathered. The Carra dataset is available for two regions, west and east. Each of these covers a vastly larger area than the area of interest. It is possible to request a subsection of the area, a rectangular subsection of the area. This leads to having to store a large amount of data, because we cannot simply ask for the specific points of interest. To get the data one has two options. Their web interface or using their API client. Using the API client is the only realistic option here, as we are making thousands of requests for different times.\\
+The CARRA dataset goes back to September 1990 and is currently updated monthly, with a latency of 2-3 months. The oldest Vedurstofu data example that fulfills given criteria is from \startDateVedur. This is covered by Carra. A few of the newer points from AWS were not available from Carra when data was gathered. The Carra dataset is available for two regions, west and east. Each of these covers a vastly larger area than the area of interest. It is possible to request a subsection of the area, a rectangular subsection of the area. This leads to having to store a large amount of data, because it is not possible to ask for specific points of interest. To get the data one has two options. Their web interface or using their API client. Using the API client is the only realistic option here, as there were thousands of requests made for different times.
 
-Each request is made by going through all instances of the Veðurstofu data were able to fulfill the requirements (of mean wind speed reaching \averageWindSpeedLimit 
-m/s over a 10 minute interval). For each such observation in the Veðurstofa gögn, we need to make two API (calls excluding redundancy). One for the 3 hour interval before and one for the 3 hour interval after. That is if the observation was at 1 pm, we would need Carra data for noon and 3 pm. Date and times were generated automatically from the AWS and requested by calling the client. Using these datapoints, we should be able to bridge and get an estimation for the point of the given weather station. The Carra data contains several types of layers. These are single levels, model levels, height levels, pressure levels. The data for this observation was downloaded from height levels. That is, data was requested at heights of 15, 150, 250 and 500 meters above ground.\\
+Each request is made by going through all instances of the Veðurstofu data were able to fulfill the requirements (of mean wind speed reaching \averageWindSpeedLimit m/s over a 10 minute interval). For each such observation in the Veðurstofa data, two API calls excluding redundancy are needed. One for the 3 hour interval before and one for the 3 hour interval after, if the data point doesn't fall exactly one of the three hour interval times. That is if the observation was at 13:00, Carra data for noon and 15:00 would have to be queried. Date and times were generated automatically from the AWS and requested by calling the client. Using these datapoints, interpolation was used to get an estimation for the point of the given weather station. The Carra data contains several types of layers. These are single levels, model levels, height levels, pressure levels. The data for this observation was downloaded from height levels. That is, data was requested at heights of 15, 150, 250 and 500 meters above ground. For each point 4 parameters were requested, wind speed, wind direction, pressure and temperature. Each of these features needed to be interpolated to create data for model to be trained on.
 
-For each point 4 features were requested, wind speed, wind direction, pressure and temperature. Each of these features needed to be bridged to create data for model to be trained on.
-
-After using this method to request terabytes of data, it was discovered that it is apparently possible to query a specific area. This decreased the size of each file created after a request from around 50 MB to around 2 MB. Downloading and processing this data would take a lot less time. The largest bottleneck in terms of retrieving the data is the request time. That is the time the request is queued and the time it is running before it begins downloading. This could range from almost immediate to 15 minutes or more. This problem was exacerbated by the fact that the climate data store (CDS) was undergoing updates during the winter and spring, which increased the wait time and sometimes resulted in queries not being responded to. This meant that the time it would take to retrieve the remaining information went from around a day, when the requests were at their quickest, to many months, something that would not be possible given the time frame of the project.
+After using this method to request terabytes of data, it was discovered that it is apparently possible to query a specific area. This decreased the size of each file created after a request from around 50 MB to around 2 MB. Downloading and processing this data would take a lot less time. The bottleneck for retrieving the data is the request time. That is the time the request is queued and running (server preparing the data) before it begins downloading. This could range from almost immediate to 30 minutes. This problem was exacerbated by the fact that the climate data store (CDS) was undergoing updates during \href{https://forum.ecmwf.int/t/a-new-cds-soon-to-be-launched-expect-some-disruptions/1607}{the winter and spring of 2023/2024}, which increased the wait time and sometimes resulted in queries not being responded to. This meant that the time it would take to retrieve the remaining information went from around a day, when the requests were at their quickest, to many months, something that would not be possible given the time frame of the project. Fortunately these problems were only particularly time consuming during mid winter.
 
 \section{Elevation data}
-Veðurstofa provided a tif file containing the elevation of Iceland on a 20 meter by 20 meter grid. This file encompasses Iceland and is around 685 Mb. At first I thought I might have to split the file into subsections and read for each one but that doesn't seem to be the necessary. A good amount of time was spent finding a data structure that was best for lookup when trying to find points within a certain area. The country was divided into 10 parts (as only around 13\% of the file was able to be read into memory at each time as a part of dictionary object) with boundary boxes. A quadtree was constructed for each of the sections, so as to simplify the lookup. A quadtree allows for efficient lookup by searching for points that intersect a given boundary. A quadtree, like the name indicates, is a tree structure. To initialize it you give it a boundary box. This boundary box is then the parent of exactly four nodes and so on, dividing the area in four at each level and allowing quick lookup. This was not necessary as the rasterio package allowed for quick lookup with it's index and the affine transform. 
+Veðurstofa provided a tif file containing the elevation of Iceland on a 20 meter by 20 meter grid. This file encompasses Iceland and is around 685 Mb. A good amount of time was spent finding a data structure that was best for lookup when trying to find points within a certain area. The country was divided into 10 parts (as only around 13\% of the file was able to be read into memory at each time as a part of dictionary object) with boundary boxes. A quadtree was constructed for each of the sections, so as to simplify the lookup. A quadtree allows for efficient lookup by searching for points that intersect a given boundary. A quadtree, like the name indicates, is a tree structure. To initialize it a boundary box is given. This boundary box is then the parent of exactly four nodes and so on, dividing the area in four at each level and allowing quick lookup. This was not necessary as the Python package Rasterio allowed for quick lookup with it's index and the affine transform. Using this package it is possible to quickly look up elevation given coordinates using matrix calculations.

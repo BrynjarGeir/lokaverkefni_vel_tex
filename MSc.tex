@@ -49,6 +49,8 @@
 \usepackage{tabularx}
 \usepackage{enumitem}
 \usepackage{listings}
+\usepackage{xspace}
+\usepackage{float}
 
 % Packages used for title page layout
 \usepackage{xcolor}
@@ -120,7 +122,7 @@
 \def\thesistitle{A NN approach to predicting gust factors in complex landscape} % Title of thesis
 %\def\thesissubtitle{XXSubtitle is rarely usedXX}		% Subtitle of thesis (optional)
 \def\thesisshorttitle{} 	% Optional: if title of thesis is longer than 50 characters, it would not fit on the spine (kjölur) and in this case you, need to provide a short title here for the print shop. Otherwhise: make it empty
-\def\thesiscredits{60 ECTS} 						% Credits awarded for the project
+\def\thesiscredits{60} 						% Credits awarded for the project
 \def\thesissubject{Mechanical Engineering}
 \def\thesiskind{M.Sc.}					% E.g. M.Sc. or Ph.D. thesis
 \def\thesiskindformal{CCMagister Scientiarum}			% E.g. Magister Scientiarum
@@ -130,8 +132,8 @@
 \def\thesispostalcode{107}			                % Faculty or school office zip code
 \def\thesistelephone{525 4000}					% Office telephone
 %\def\thesispublisher{XX}					% Publisher (not used)
-\def\thesissupervisors{Kristján Jónasson // Ólafur Pétur Pálsson}					% Names of supervisors (split by \\ if more than one).
-\def\thesisnrofsupervisors{2}					% Number of supervisors (to use "Supervisor" vs. "Supervisors")
+\def\thesissupervisors{Kristján Jónasson}					% Names of supervisors (split by \\ if more than one).
+\def\thesisnrofsupervisors{1}					% Number of supervisors (to use "Supervisor" vs. "Supervisors")
 \def\thesiscommittee{Kristján Jónasson \\ Ólafur Pétur Pálsson}			% Thesis commitee must include the supervisor(s)
 \def\thesisexaminer{XXNN3XX}				        % Examiner (prófdómari)
 \def\thesisISBN{}           					% Thesis ISBN number (keep empty: not used anymore)
@@ -147,6 +149,9 @@
 % We need this command if someone used \\ in the thesis title
 \newcommand{\removelinebreaks}[1]{%
   \begingroup\def\\{}#1\endgroup}
+
+% To be able to use units in equations. From https://qerub.se/typesetting-units-in-latex
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
 
 \begin{document}
 \hypersetup{pageanchor=false}
