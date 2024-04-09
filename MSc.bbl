@@ -19,6 +19,20 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{carra_information}{website}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{urlday}{8}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://climate.copernicus.eu/copernicus-arctic-regional-reanalysis-data-now-updated-monthly
+      \endverb
+      \verb{url}
+      \verb https://climate.copernicus.eu/copernicus-arctic-regional-reanalysis-data-now-updated-monthly
+      \endverb
+    \endentry
     \entry{hyperparameters_definition}{webiste}{}
       \field{sortinit}{}
       \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}

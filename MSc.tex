@@ -57,6 +57,16 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 
+% https://tex.stackexchange.com/questions/374661/keyword-highlighting-not-working-in-python-with-listings
+\lstdefinestyle{Python}{
+    language        = Python,
+    basicstyle      = \ttfamily,
+    keywordstyle    = \color{blue},
+    keywordstyle    = [2] \color{teal}, % just to check that it works
+    stringstyle     = \color{green},
+    commentstyle    = \color{red}\ttfamily
+}
+
 \input{variables.tex}
 
 % Blue color according to HÍ corporate design
@@ -157,6 +167,16 @@
 \hypersetup{pageanchor=false}
 \pagenumbering{Alph} % To prevent page numer "1" to be used multiple times, used "A", "B", etc. for the first pages
 \begin{titlepage} % This titlepage environment spans in fact multiple pages
+
+% This must be placed after "\begin{document}":
+\lstset{
+    frame       = single,
+    numbers     = left,
+    showspaces  = false,
+    showstringspaces    = false,
+    captionpos  = t,
+    caption     = \lstname
+}
 
 % This is the cover title page. If you go to a print shop, they will
 % ignore it and create their own cover page, i.e. this cover page here
