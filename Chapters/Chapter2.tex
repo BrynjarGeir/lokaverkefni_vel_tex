@@ -45,7 +45,7 @@ When these two filterings have been done, the end result is \nStationsMin statio
     \begin{center}
         \includegraphics[scale = 0.75]{Figures/occurrences_by_year.png}
     \end{center}
-    \caption{Measurements that fit filtering by year (from \startDateVedur to 2023)}
+    \caption{Measurements that fit filtering by year (from \startDateVedur to 2023).}
     \label{fig:occurrences_by_year}
 \end{figure}
 
@@ -55,7 +55,7 @@ Looking at the number of measurements that meet these criteria for a given stati
     \begin{center}
         \includegraphics[scale = 0.75]{Figures/station_occurrences_20.png}        
     \end{center}
-    \caption{Number of stations that have measurements in a range}
+    \caption{Number of stations that have measurements in a range.}
     \label{fig:occurrences_by_station_20}
 \end{figure}
 
@@ -67,4 +67,4 @@ Each request is made by going through all instances of the IMO data after filter
 After using this method to request terabytes of data, it was discovered that it was possible to query a specific area. This decreased the size of each file from around 50 MB to around 2 MB. The bottleneck for retrieving the data is the request time. The time the request is queued and running (server preparing the data) before it began downloading. This could range from almost immediate to 30 minutes. This problem was exacerbated by the fact that the climate data store (CDS) was undergoing updates during \href{https://forum.ecmwf.int/t/a-new-cds-soon-to-be-launched-expect-some-disruptions/1607}{the winter and spring of 2023/2024}, which increased the wait time and sometimes resulted in queries not being responded to. This meant that the time it would take to retrieve the remaining information went from around a day, when the requests were at their quickest, to many months, something that would not be possible given the time frame of the project. Fortunately these problems were only particularly time consuming during mid winter.
 
 \section{Elevation data}
-IMO provided a tif file containing the elevation of Iceland on a 20 meter by 20 meter grid. This file encompasses Iceland and is around 685 MB. A good amount of time was spent finding a data structure that was best for lookup when trying to find points within a certain area. The country was divided into 10 parts (as only around 13\% of the file was able to be read into memory at each time as a part of dictionary object) with boundary boxes. A quadtree was constructed for each of the sections, so as to simplify the lookup. A quadtree allows for efficient lookup by searching for points that intersect a given boundary. A quadtree, like the name indicates, is a tree structure. To initialize it a boundary box is given. This boundary box is then the parent of exactly four nodes and so on, dividing the area in four at each level and allowing quick lookup. This was not necessary as the Python package Rasterio allowed for quick lookup with it's index and the affine transform. Using this package it is possible to quickly look up elevation given coordinates using matrix calculations.
+IMO provided a tif file containing the elevation of Iceland on a 20 meter by 20 meter grid. This file encompasses Iceland and is around 685 MB. A good amount of time was spent finding a data structure that was best for lookup when trying to find points within a certain area. The country was divided into 10 parts (as only around 13\% of the file was able to be read into memory at each time as a part of dictionary object) with boundary boxes. The Python package Rasterio allowed for quick lookup with it's index and the affine transform. Using this package it is possible to quickly look up elevation given coordinates using matrix calculations.

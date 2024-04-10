@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,36 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{carra_information}{website}{}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{nn_black_box}{website}{}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{urlday}{9}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://spectrum.ieee.org/black-box-ai
+      \endverb
+      \verb{url}
+      \verb https://spectrum.ieee.org/black-box-ai
+      \endverb
+    \endentry
+    \entry{eli5_information}{website}{}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{urlday}{9}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://eli5.readthedocs.io/en/latest/overview.html
+      \endverb
+      \verb{url}
+      \verb https://eli5.readthedocs.io/en/latest/overview.html
+      \endverb
+    \endentry
+    \entry{carra_information}{website}{}{}
       \field{sortinit}{}
       \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
       \field{urlday}{8}
@@ -33,7 +61,7 @@
       \verb https://climate.copernicus.eu/copernicus-arctic-regional-reanalysis-data-now-updated-monthly
       \endverb
     \endentry
-    \entry{hyperparameters_definition}{webiste}{}
+    \entry{hyperparameters_definition}{webiste}{}{}
       \field{sortinit}{}
       \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
       \field{urlday}{3}
@@ -47,7 +75,7 @@
       \verb https://deepai.org/machine-learning-glossary-and-terms/hyperparameter
       \endverb
     \endentry
-    \entry{mean_gust_HA_HO}{article}{}
+    \entry{mean_gust_HA_HO}{article}{}{}
       \name{author}{2}{}{%
         {{hash=b2dc6558e90da7729c346128b8a0652d}{%
            family={Ágústsson},
@@ -62,10 +90,12 @@
       }
       \strng{namehash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
       \strng{fullhash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
+      \strng{fullhashraw}{3c656697e7ee4ab67c9fe8c6ca4080ac}
       \strng{bibnamehash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
       \strng{authorbibnamehash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
       \strng{authornamehash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
       \strng{authorfullhash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
+      \strng{authorfullhashraw}{3c656697e7ee4ab67c9fe8c6ca4080ac}
       \field{sortinit}{Á}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -81,7 +111,7 @@
       \verb 10.1127/0941-2948/2004/0013-0149
       \endverb
     \endentry
-    \entry{uncertainties_in_numerical_weather_predictions}{book}{}
+    \entry{uncertainties_in_numerical_weather_predictions}{book}{}{}
       \name{author}{2}{}{%
         {{hash=8d5244cdb57e208dae705436edefef4d}{%
            family={Author\bibnamedelima Ólafsson},
@@ -99,10 +129,12 @@
       }
       \strng{namehash}{f0c46ef2bd0f483ba1e147449db28a69}
       \strng{fullhash}{f0c46ef2bd0f483ba1e147449db28a69}
+      \strng{fullhashraw}{f0c46ef2bd0f483ba1e147449db28a69}
       \strng{bibnamehash}{f0c46ef2bd0f483ba1e147449db28a69}
       \strng{authorbibnamehash}{f0c46ef2bd0f483ba1e147449db28a69}
       \strng{authornamehash}{f0c46ef2bd0f483ba1e147449db28a69}
       \strng{authorfullhash}{f0c46ef2bd0f483ba1e147449db28a69}
+      \strng{authorfullhashraw}{f0c46ef2bd0f483ba1e147449db28a69}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -119,7 +151,7 @@
       \verb https://uhi.on.worldcat.org/oclc/1225354709
       \endverb
     \endentry
-    \entry{medium_range_3d_weather_forecasting_NN}{article}{}
+    \entry{medium_range_3d_weather_forecasting_NN}{article}{}{}
       \name{author}{6}{}{%
         {{hash=6ce83c6930257f1bda3f2d26cf0da663}{%
            family={Bi},
@@ -154,10 +186,12 @@
       }
       \strng{namehash}{a738364c3e52c207ca122b03ff948481}
       \strng{fullhash}{1b27191b9fc28f6626c696777ba858d5}
+      \strng{fullhashraw}{1b27191b9fc28f6626c696777ba858d5}
       \strng{bibnamehash}{a738364c3e52c207ca122b03ff948481}
       \strng{authorbibnamehash}{a738364c3e52c207ca122b03ff948481}
       \strng{authornamehash}{a738364c3e52c207ca122b03ff948481}
       \strng{authorfullhash}{1b27191b9fc28f6626c696777ba858d5}
+      \strng{authorfullhashraw}{1b27191b9fc28f6626c696777ba858d5}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
@@ -179,7 +213,7 @@
       \verb https://doi.org/10.1038/s41586-023-06185-3
       \endverb
     \endentry
-    \entry{dueben2018}{article}{}
+    \entry{dueben2018}{article}{}{}
       \name{author}{2}{}{%
         {{hash=7b9f6487ce8a2748681e7aa17928878a}{%
            family={Dueben},
@@ -194,10 +228,12 @@
       }
       \strng{namehash}{fb63d6e8e5a8de8a585257048d85c18c}
       \strng{fullhash}{fb63d6e8e5a8de8a585257048d85c18c}
+      \strng{fullhashraw}{fb63d6e8e5a8de8a585257048d85c18c}
       \strng{bibnamehash}{fb63d6e8e5a8de8a585257048d85c18c}
       \strng{authorbibnamehash}{fb63d6e8e5a8de8a585257048d85c18c}
       \strng{authornamehash}{fb63d6e8e5a8de8a585257048d85c18c}
       \strng{authorfullhash}{fb63d6e8e5a8de8a585257048d85c18c}
+      \strng{authorfullhashraw}{fb63d6e8e5a8de8a585257048d85c18c}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
@@ -219,7 +255,7 @@
       \verb https://gmd.copernicus.org/articles/11/3999/2018/
       \endverb
     \endentry
-    \entry{brunt_vaisala_freq_eumtrain}{website}{}
+    \entry{brunt_vaisala_freq_eumtrain}{website}{}{}
       \name{author}{1}{}{%
         {{hash=df6f92cc327a5d94b9750966bd63d8e6}{%
            family={Eumtrain},
@@ -227,10 +263,12 @@
       }
       \strng{namehash}{df6f92cc327a5d94b9750966bd63d8e6}
       \strng{fullhash}{df6f92cc327a5d94b9750966bd63d8e6}
+      \strng{fullhashraw}{df6f92cc327a5d94b9750966bd63d8e6}
       \strng{bibnamehash}{df6f92cc327a5d94b9750966bd63d8e6}
       \strng{authorbibnamehash}{df6f92cc327a5d94b9750966bd63d8e6}
       \strng{authornamehash}{df6f92cc327a5d94b9750966bd63d8e6}
       \strng{authorfullhash}{df6f92cc327a5d94b9750966bd63d8e6}
+      \strng{authorfullhashraw}{df6f92cc327a5d94b9750966bd63d8e6}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{labelnamesource}{author}
@@ -247,7 +285,7 @@
       \verb https://resources.eumetrain.org/data/4/452/navmenu.php?tab=4&page=4.0.0
       \endverb
     \endentry
-    \entry{historyNWP}{article}{}
+    \entry{historyNWP}{article}{}{}
       \name{author}{5}{}{%
         {{hash=0edbbaf9d890391d8b895002f81d3863}{%
            family={Kristine},
@@ -277,10 +315,12 @@
       }
       \strng{namehash}{c7cb8107ee898243dbd872d9330faf86}
       \strng{fullhash}{a79bf1679e0922f067401254e57c8ff2}
+      \strng{fullhashraw}{a79bf1679e0922f067401254e57c8ff2}
       \strng{bibnamehash}{c7cb8107ee898243dbd872d9330faf86}
       \strng{authorbibnamehash}{c7cb8107ee898243dbd872d9330faf86}
       \strng{authornamehash}{c7cb8107ee898243dbd872d9330faf86}
       \strng{authorfullhash}{a79bf1679e0922f067401254e57c8ff2}
+      \strng{authorfullhashraw}{a79bf1679e0922f067401254e57c8ff2}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
@@ -303,7 +343,7 @@
       \verb https://doi.org/10.1175/BAMS-88-5-639
       \endverb
     \endentry
-    \entry{GraphCast}{misc}{}
+    \entry{GraphCast}{misc}{}{}
       \name{author}{18}{}{%
         {{hash=1fc5717e2ceebd1f57d66fd797f6f74e}{%
            family={Lam},
@@ -398,10 +438,12 @@
       }
       \strng{namehash}{5f2e4c632a27fd34473e46d2272ab599}
       \strng{fullhash}{a7cd42ab420870e65fce891795ee4253}
+      \strng{fullhashraw}{a7cd42ab420870e65fce891795ee4253}
       \strng{bibnamehash}{5f2e4c632a27fd34473e46d2272ab599}
       \strng{authorbibnamehash}{5f2e4c632a27fd34473e46d2272ab599}
       \strng{authornamehash}{5f2e4c632a27fd34473e46d2272ab599}
       \strng{authorfullhash}{a7cd42ab420870e65fce891795ee4253}
+      \strng{authorfullhashraw}{a7cd42ab420870e65fce891795ee4253}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -414,7 +456,7 @@
       \verb 2212.12794
       \endverb
     \endentry
-    \entry{SecondRevolution}{misc}{}
+    \entry{SecondRevolution}{misc}{}{}
       \name{author}{7}{}{%
         {{hash=78fee2f5760b1a0488b5439a0b7dd64a}{%
            family={Ling},
@@ -454,10 +496,12 @@
       }
       \strng{namehash}{72dc547f637c6187a8358efaa797f307}
       \strng{fullhash}{9dd66122cec0b0a880203fe189bd28ce}
+      \strng{fullhashraw}{9dd66122cec0b0a880203fe189bd28ce}
       \strng{bibnamehash}{72dc547f637c6187a8358efaa797f307}
       \strng{authorbibnamehash}{72dc547f637c6187a8358efaa797f307}
       \strng{authornamehash}{72dc547f637c6187a8358efaa797f307}
       \strng{authorfullhash}{9dd66122cec0b0a880203fe189bd28ce}
+      \strng{authorfullhashraw}{9dd66122cec0b0a880203fe189bd28ce}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -470,7 +514,7 @@
       \verb 2401.16669
       \endverb
     \endentry
-    \entry{shapley_information}{book}{}
+    \entry{shapley_information}{book}{}{}
       \name{author}{1}{}{%
         {{hash=9d661396f5824ac09af63e61d3981e8d}{%
            family={Molnar},
@@ -483,10 +527,12 @@
       }
       \strng{namehash}{9d661396f5824ac09af63e61d3981e8d}
       \strng{fullhash}{9d661396f5824ac09af63e61d3981e8d}
+      \strng{fullhashraw}{9d661396f5824ac09af63e61d3981e8d}
       \strng{bibnamehash}{9d661396f5824ac09af63e61d3981e8d}
       \strng{authorbibnamehash}{9d661396f5824ac09af63e61d3981e8d}
       \strng{authornamehash}{9d661396f5824ac09af63e61d3981e8d}
       \strng{authorfullhash}{9d661396f5824ac09af63e61d3981e8d}
+      \strng{authorfullhashraw}{9d661396f5824ac09af63e61d3981e8d}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -503,7 +549,7 @@
       \verb https://christophm.github.io/interpretable-ml-book/
       \endverb
     \endentry
-    \entry{nasa_extreme_weather}{website}{}
+    \entry{nasa_extreme_weather}{website}{}{}
       \name{author}{1}{}{%
         {{hash=1f99771bc3e23e6097509a331544ab65}{%
            family={NASA},
@@ -511,10 +557,12 @@
       }
       \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
       \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhashraw}{1f99771bc3e23e6097509a331544ab65}
       \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
       \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
       \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
       \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhashraw}{1f99771bc3e23e6097509a331544ab65}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{labelnamesource}{author}
@@ -531,7 +579,7 @@
       \verb https://science.nasa.gov/climate-change/extreme-weather/
       \endverb
     \endentry
-    \entry{why_wind_gusts}{website}{}
+    \entry{why_wind_gusts}{website}{}{}
       \name{author}{1}{}{%
         {{hash=ba1b376eae5727bb306fcff72a5d1f1f}{%
            family={Oblack},
@@ -541,10 +589,12 @@
       }
       \strng{namehash}{ba1b376eae5727bb306fcff72a5d1f1f}
       \strng{fullhash}{ba1b376eae5727bb306fcff72a5d1f1f}
+      \strng{fullhashraw}{ba1b376eae5727bb306fcff72a5d1f1f}
       \strng{bibnamehash}{ba1b376eae5727bb306fcff72a5d1f1f}
       \strng{authorbibnamehash}{ba1b376eae5727bb306fcff72a5d1f1f}
       \strng{authornamehash}{ba1b376eae5727bb306fcff72a5d1f1f}
       \strng{authorfullhash}{ba1b376eae5727bb306fcff72a5d1f1f}
+      \strng{authorfullhashraw}{ba1b376eae5727bb306fcff72a5d1f1f}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{labelnamesource}{author}
@@ -561,7 +611,7 @@
       \verb https://www.thoughtco.com/why-wind-gusts-3444339
       \endverb
     \endentry
-    \entry{FourCastNet}{misc}{}
+    \entry{FourCastNet}{misc}{}{}
       \name{author}{13}{}{%
         {{hash=e0b52fc61a09e5d4ec0bd3c377bc091d}{%
            family={Pathak},
@@ -631,10 +681,12 @@
       }
       \strng{namehash}{90d400c82744120a09fce15eccfc6c69}
       \strng{fullhash}{fd24a8d9f02f5683431ca0df70a66bcb}
+      \strng{fullhashraw}{fd24a8d9f02f5683431ca0df70a66bcb}
       \strng{bibnamehash}{90d400c82744120a09fce15eccfc6c69}
       \strng{authorbibnamehash}{90d400c82744120a09fce15eccfc6c69}
       \strng{authornamehash}{90d400c82744120a09fce15eccfc6c69}
       \strng{authorfullhash}{fd24a8d9f02f5683431ca0df70a66bcb}
+      \strng{authorfullhashraw}{fd24a8d9f02f5683431ca0df70a66bcb}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -647,7 +699,7 @@
       \verb 2202.11214
       \endverb
     \endentry
-    \entry{GNP_vidtal}{misc}{}
+    \entry{GNP_vidtal}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=42d90c94dddfff57d91f38abd7ec5d73}{%
            family={Petersen},
@@ -657,10 +709,12 @@
       }
       \strng{namehash}{42d90c94dddfff57d91f38abd7ec5d73}
       \strng{fullhash}{42d90c94dddfff57d91f38abd7ec5d73}
+      \strng{fullhashraw}{42d90c94dddfff57d91f38abd7ec5d73}
       \strng{bibnamehash}{42d90c94dddfff57d91f38abd7ec5d73}
       \strng{authorbibnamehash}{42d90c94dddfff57d91f38abd7ec5d73}
       \strng{authornamehash}{42d90c94dddfff57d91f38abd7ec5d73}
       \strng{authorfullhash}{42d90c94dddfff57d91f38abd7ec5d73}
+      \strng{authorfullhashraw}{42d90c94dddfff57d91f38abd7ec5d73}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -671,7 +725,7 @@
       \field{title}{Meeting at Veðurstofa}
       \field{year}{2023}
     \endentry
-    \entry{pca_information}{website}{}
+    \entry{pca_information}{website}{}{}
       \name{author}{1}{}{%
         {{hash=5f96c82cf28694bf3288d769c94ae694}{%
            family={Sartorius},
@@ -679,10 +733,12 @@
       }
       \strng{namehash}{5f96c82cf28694bf3288d769c94ae694}
       \strng{fullhash}{5f96c82cf28694bf3288d769c94ae694}
+      \strng{fullhashraw}{5f96c82cf28694bf3288d769c94ae694}
       \strng{bibnamehash}{5f96c82cf28694bf3288d769c94ae694}
       \strng{authorbibnamehash}{5f96c82cf28694bf3288d769c94ae694}
       \strng{authornamehash}{5f96c82cf28694bf3288d769c94ae694}
       \strng{authorfullhash}{5f96c82cf28694bf3288d769c94ae694}
+      \strng{authorfullhashraw}{5f96c82cf28694bf3288d769c94ae694}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -698,7 +754,7 @@
       \verb https://www.sartorius.com/en/knowledge/science-snippets/what-is-principal-component-analysis-pca-and-how-it-is-used-507186
       \endverb
     \endentry
-    \entry{scher2018}{article}{}
+    \entry{scher2018}{article}{}{}
       \name{author}{1}{}{%
         {{hash=0a85a23a68545315c5a55473d732e3ce}{%
            family={Scher},
@@ -708,10 +764,12 @@
       }
       \strng{namehash}{0a85a23a68545315c5a55473d732e3ce}
       \strng{fullhash}{0a85a23a68545315c5a55473d732e3ce}
+      \strng{fullhashraw}{0a85a23a68545315c5a55473d732e3ce}
       \strng{bibnamehash}{0a85a23a68545315c5a55473d732e3ce}
       \strng{authorbibnamehash}{0a85a23a68545315c5a55473d732e3ce}
       \strng{authornamehash}{0a85a23a68545315c5a55473d732e3ce}
       \strng{authorfullhash}{0a85a23a68545315c5a55473d732e3ce}
+      \strng{authorfullhashraw}{0a85a23a68545315c5a55473d732e3ce}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -725,7 +783,7 @@
       \verb 10.1029/2018GL080704
       \endverb
     \endentry
-    \entry{canNNBeatNWP}{article}{}
+    \entry{canNNBeatNWP}{article}{}{}
       \name{author}{8}{}{%
         {{hash=65cbe6a1d6a3557783c78c84a06e3a29}{%
            family={Schultz},
@@ -770,10 +828,12 @@
       }
       \strng{namehash}{8bcb7994cdfd169dcf998e7f3100c57b}
       \strng{fullhash}{9cb7eb849c4f094e177f442dd6526ec9}
+      \strng{fullhashraw}{9cb7eb849c4f094e177f442dd6526ec9}
       \strng{bibnamehash}{8bcb7994cdfd169dcf998e7f3100c57b}
       \strng{authorbibnamehash}{8bcb7994cdfd169dcf998e7f3100c57b}
       \strng{authornamehash}{8bcb7994cdfd169dcf998e7f3100c57b}
       \strng{authorfullhash}{9cb7eb849c4f094e177f442dd6526ec9}
+      \strng{authorfullhashraw}{9cb7eb849c4f094e177f442dd6526ec9}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -793,7 +853,7 @@
       \verb https://doi.org/10.1098/rsta.2020.0097
       \endverb
     \endentry
-    \entry{richardson_number_skybrary}{website}{}
+    \entry{richardson_number_skybrary}{website}{}{}
       \name{author}{1}{}{%
         {{hash=b7eb24f94214171f3565a15c0d2ba9f6}{%
            family={Skybrary},
@@ -801,10 +861,12 @@
       }
       \strng{namehash}{b7eb24f94214171f3565a15c0d2ba9f6}
       \strng{fullhash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{fullhashraw}{b7eb24f94214171f3565a15c0d2ba9f6}
       \strng{bibnamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
       \strng{authorbibnamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
       \strng{authornamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
       \strng{authorfullhash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{authorfullhashraw}{b7eb24f94214171f3565a15c0d2ba9f6}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}

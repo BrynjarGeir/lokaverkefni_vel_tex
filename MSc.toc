@@ -4,6 +4,8 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background}{4}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Methodology and related work}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Model architechture}{6}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Model explainability}{7}{subsection.1.2.2}%
 \contentsline {chapter}{\numberline {2}Data gathering and preprocessing}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Automatic Weather Station Data}{9}{section.2.1}%
 \contentsline {section}{\numberline {2.2}CARRA Data}{12}{section.2.2}%
