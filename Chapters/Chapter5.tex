@@ -8,5 +8,8 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Model structure}
-This baseline model gave an average error of around 10\%.
+\section{Results}
+A baseline model was constructed. This model looked at the gust factor for some training data and took the average of this and predicted this average everytime. The baseline model gave an average error of around \baselineerror\%. This sets a goal. A model that does not significantly improve on this baseline suggests either failure to capture essential patterns in the data or that the data itself may lack the necessary information for substantial improvements upon the baseline. Using the previously described neural network architecture a mean absolute percentage error of \modelerror\% was achived. This is some improvement upon the baseline error, with a decrease in error of around \errorImprovement\%.
+
+\section{Discussion}
+Looking only at the error, the performance of the model can be gauged. However it does not help us explain why the model made these predictions. Here feature interpretation can be of great help. Using Shapley values and the python SHAP package, the contribution of each attribute can be given a value, as previously mentioned. Figure \ref{fig:SHAP_final_model} shows the average contribution of each feature.
