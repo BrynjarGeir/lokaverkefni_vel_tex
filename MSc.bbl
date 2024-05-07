@@ -75,6 +75,20 @@
       \verb https://deepai.org/machine-learning-glossary-and-terms/hyperparameter
       \endverb
     \endentry
+    \entry{wind_power}{website}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.linkedin.com/advice/0/how-can-you-calculate-power-output-wind-turbine-viidf
+      \endverb
+      \verb{url}
+      \verb https://www.linkedin.com/advice/0/how-can-you-calculate-power-output-wind-turbine-viidf
+      \endverb
+    \endentry
     \entry{mean_gust_HA_HO}{article}{}
       \name{author}{2}{}{%
         {{hash=b2dc6558e90da7729c346128b8a0652d}{%

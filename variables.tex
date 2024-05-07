@@ -15,7 +15,8 @@
 \def\nVGMin{115\xspace}
 \def\nStationsMin{327\xspace}
 \def\berror{6.54}
-\def\merror{5.14}
+\def\merror{4.78}
 \def\baselineerror{\berror\xspace}
 \def\modelerror{\merror\xspace}
 \def\errorImprovement{\pgfmathparse{\berror - \merror}\pgfmathresult\xspace}
+\def\perErrorImprovement{\pgfmathparse{(1-\merror / \berror)*100}\pgfmathresult\xspace}
