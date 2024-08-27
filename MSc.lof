@@ -7,6 +7,7 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Distribution of mean absolute errors by station}}{16}{figure.caption.12}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of MAPE by station}}{18}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Feature importance of a neural network.}}{22}{figure.caption.17}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Feature importance for a single observation of a neural network.}}{25}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Feature importance of a neural network.}}{26}{figure.caption.19}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -25,13 +25,3 @@ The structure of the neural network is such that it contains some number $n$ of 
         Activation & ReLU, ELu, Softmax & \textbf{ReLU}\\\hline
     \end{tabular}
 \end{table}
-
-\section{Feature selection and importance}
-Using the three datasources, a model is trained. The data from IMO only represents the ground truth and is not used as part of the training data. The gust ($f_g$) and wind speed ($f$) are used to calculate the target gust factor. All weather parameters used in predictions come from the CARRA reanalysis data, with variables wind speed, wind direction, temperature, pressure. All of these variables are queried in three height levels (15, 250, 500 meters above ground) at the location of a given weather station. The second data source for the training data, is the elevation data. Using the GeoTIFF file that IMO provided, a sector upwind were looked at.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale = 0.6]{Figures/shap_bar_nn_256_example100.png}
-    \caption[Feature importance of a neural network.]{Feature importance of a neural network with model architecture as described in table \ref{table:gridSearchHyperparamters} and data as described in table \ref{table:trainDataExample}.}
-    \label{fig:ShapleyWaterfallFirstTry}
-\end{figure}

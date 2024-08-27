@@ -15,7 +15,6 @@
 \contentsline {section}{\numberline {3.2}Data Structure}{19}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Model architecture}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Model structure}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Feature selection and importance}{21}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Results}{23}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Results}{23}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Discussion}{24}{section.5.2}%
