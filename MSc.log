@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  6 MAY 2024 05:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  27 AUG 2024 00:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -697,7 +697,29 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@expandcount=\count332
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+))) (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/arydshln\arydshln.sty
+Package: arydshln 2019/02/21 v1.76 
+\dashlinedash=\dimen295
+\dashlinegap=\dimen296
+\adl@box=\box73
+\adl@height=\dimen297
+\adl@heightsave=\dimen298
+\adl@depth=\dimen299
+\adl@depthsave=\dimen300
+\adl@finaldepth=\dimen301
+\adl@columns=\count333
+\adl@ncol=\count334
+\adl@currentcolumn=\count335
+\adl@currentcolumnsave=\count336
+\adl@totalheight=\count337
+\adl@totalheightsave=\count338
+\adl@dash=\count339
+\adl@gap=\count340
+\adl@cla=\count341
+\adl@clb=\count342
+\adl@everyvbox=\toks46
+\adl@LTpagetotal=\dimen302
+) (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (variables.tex) (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
@@ -739,53 +761,53 @@ Package: fixcmex 2015/11/10 v1.0 Scalable math extensions font (Enrico Gregorio)
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count333
+\lrq@indent=\count343
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count334
-\c@listtotal=\count335
-\c@listcount=\count336
-\c@liststart=\count337
-\c@liststop=\count338
-\c@citecount=\count339
-\c@citetotal=\count340
-\c@multicitecount=\count341
-\c@multicitetotal=\count342
-\c@instcount=\count343
-\c@maxnames=\count344
-\c@minnames=\count345
-\c@maxitems=\count346
-\c@minitems=\count347
-\c@citecounter=\count348
-\c@maxcitecounter=\count349
-\c@savedcitecounter=\count350
-\c@uniquelist=\count351
-\c@uniquename=\count352
-\c@refsection=\count353
-\c@refsegment=\count354
-\c@maxextratitle=\count355
-\c@maxextratitleyear=\count356
-\c@maxextraname=\count357
-\c@maxextradate=\count358
-\c@maxextraalpha=\count359
-\c@abbrvpenalty=\count360
-\c@highnamepenalty=\count361
-\c@lownamepenalty=\count362
-\c@maxparens=\count363
-\c@parenlevel=\count364
-\blx@tempcnta=\count365
-\blx@tempcntb=\count366
-\blx@tempcntc=\count367
-\c@blx@maxsection=\count368
-\blx@maxsegment@0=\count369
-\blx@notetype=\count370
-\blx@parenlevel@text=\count371
-\blx@parenlevel@foot=\count372
-\blx@sectionciteorder@0=\count373
-\blx@sectionciteorderinternal@0=\count374
-\blx@entrysetcounter=\count375
-\blx@biblioinstance=\count376
+\c@tabx@nest=\count344
+\c@listtotal=\count345
+\c@listcount=\count346
+\c@liststart=\count347
+\c@liststop=\count348
+\c@citecount=\count349
+\c@citetotal=\count350
+\c@multicitecount=\count351
+\c@multicitetotal=\count352
+\c@instcount=\count353
+\c@maxnames=\count354
+\c@minnames=\count355
+\c@maxitems=\count356
+\c@minitems=\count357
+\c@citecounter=\count358
+\c@maxcitecounter=\count359
+\c@savedcitecounter=\count360
+\c@uniquelist=\count361
+\c@uniquename=\count362
+\c@refsection=\count363
+\c@refsegment=\count364
+\c@maxextratitle=\count365
+\c@maxextratitleyear=\count366
+\c@maxextraname=\count367
+\c@maxextradate=\count368
+\c@maxextraalpha=\count369
+\c@abbrvpenalty=\count370
+\c@highnamepenalty=\count371
+\c@lownamepenalty=\count372
+\c@maxparens=\count373
+\c@parenlevel=\count374
+\blx@tempcnta=\count375
+\blx@tempcntb=\count376
+\blx@tempcntc=\count377
+\c@blx@maxsection=\count378
+\blx@maxsegment@0=\count379
+\blx@notetype=\count380
+\blx@parenlevel@text=\count381
+\blx@parenlevel@foot=\count382
+\blx@sectionciteorder@0=\count383
+\blx@sectionciteorderinternal@0=\count384
+\blx@entrysetcounter=\count385
+\blx@biblioinstance=\count386
 \labelnumberwidth=\skip79
 \labelalphawidth=\skip80
 \biblabelsep=\skip81
@@ -797,9 +819,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language80
-\c@mincomprange=\count377
-\c@maxcomprange=\count378
-\c@mincompwidth=\count379
+\c@mincomprange=\count387
+\c@maxcomprange=\count388
+\c@mincompwidth=\count389
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
@@ -807,74 +829,74 @@ File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count380
-\c@savedafterword=\count381
-\c@annotator=\count382
-\c@savedannotator=\count383
-\c@author=\count384
-\c@savedauthor=\count385
-\c@bookauthor=\count386
-\c@savedbookauthor=\count387
-\c@commentator=\count388
-\c@savedcommentator=\count389
-\c@editor=\count390
-\c@savededitor=\count391
-\c@editora=\count392
-\c@savededitora=\count393
-\c@editorb=\count394
-\c@savededitorb=\count395
-\c@editorc=\count396
-\c@savededitorc=\count397
-\c@foreword=\count398
-\c@savedforeword=\count399
-\c@holder=\count400
-\c@savedholder=\count401
-\c@introduction=\count402
-\c@savedintroduction=\count403
-\c@namea=\count404
-\c@savednamea=\count405
-\c@nameb=\count406
-\c@savednameb=\count407
-\c@namec=\count408
-\c@savednamec=\count409
-\c@translator=\count410
-\c@savedtranslator=\count411
-\c@shortauthor=\count412
-\c@savedshortauthor=\count413
-\c@shorteditor=\count414
-\c@savedshorteditor=\count415
-\c@labelname=\count416
-\c@savedlabelname=\count417
-\c@institution=\count418
-\c@savedinstitution=\count419
-\c@lista=\count420
-\c@savedlista=\count421
-\c@listb=\count422
-\c@savedlistb=\count423
-\c@listc=\count424
-\c@savedlistc=\count425
-\c@listd=\count426
-\c@savedlistd=\count427
-\c@liste=\count428
-\c@savedliste=\count429
-\c@listf=\count430
-\c@savedlistf=\count431
-\c@location=\count432
-\c@savedlocation=\count433
-\c@organization=\count434
-\c@savedorganization=\count435
-\c@origlocation=\count436
-\c@savedoriglocation=\count437
-\c@origpublisher=\count438
-\c@savedorigpublisher=\count439
-\c@publisher=\count440
-\c@savedpublisher=\count441
-\c@language=\count442
-\c@savedlanguage=\count443
-\c@origlanguage=\count444
-\c@savedoriglanguage=\count445
-\c@pageref=\count446
-\c@savedpageref=\count447
+\c@afterword=\count390
+\c@savedafterword=\count391
+\c@annotator=\count392
+\c@savedannotator=\count393
+\c@author=\count394
+\c@savedauthor=\count395
+\c@bookauthor=\count396
+\c@savedbookauthor=\count397
+\c@commentator=\count398
+\c@savedcommentator=\count399
+\c@editor=\count400
+\c@savededitor=\count401
+\c@editora=\count402
+\c@savededitora=\count403
+\c@editorb=\count404
+\c@savededitorb=\count405
+\c@editorc=\count406
+\c@savededitorc=\count407
+\c@foreword=\count408
+\c@savedforeword=\count409
+\c@holder=\count410
+\c@savedholder=\count411
+\c@introduction=\count412
+\c@savedintroduction=\count413
+\c@namea=\count414
+\c@savednamea=\count415
+\c@nameb=\count416
+\c@savednameb=\count417
+\c@namec=\count418
+\c@savednamec=\count419
+\c@translator=\count420
+\c@savedtranslator=\count421
+\c@shortauthor=\count422
+\c@savedshortauthor=\count423
+\c@shorteditor=\count424
+\c@savedshorteditor=\count425
+\c@labelname=\count426
+\c@savedlabelname=\count427
+\c@institution=\count428
+\c@savedinstitution=\count429
+\c@lista=\count430
+\c@savedlista=\count431
+\c@listb=\count432
+\c@savedlistb=\count433
+\c@listc=\count434
+\c@savedlistc=\count435
+\c@listd=\count436
+\c@savedlistd=\count437
+\c@liste=\count438
+\c@savedliste=\count439
+\c@listf=\count440
+\c@savedlistf=\count441
+\c@location=\count442
+\c@savedlocation=\count443
+\c@organization=\count444
+\c@savedorganization=\count445
+\c@origlocation=\count446
+\c@savedoriglocation=\count447
+\c@origpublisher=\count448
+\c@savedorigpublisher=\count449
+\c@publisher=\count450
+\c@savedpublisher=\count451
+\c@language=\count452
+\c@savedlanguage=\count453
+\c@origlanguage=\count454
+\c@savedoriglanguage=\count455
+\c@pageref=\count456
+\c@savedpageref=\count457
 \shorthandwidth=\skip87
 \shortjournalwidth=\skip88
 \shortserieswidth=\skip89
@@ -898,19 +920,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count448
-\c@textcitetotal=\count449
-\c@textcitemaxnames=\count450
-\c@biburlbigbreakpenalty=\count451
-\c@biburlbreakpenalty=\count452
-\c@biburlnumpenalty=\count453
-\c@biburlucpenalty=\count454
-\c@biburllcpenalty=\count455
+\c@textcitecount=\count458
+\c@textcitetotal=\count459
+\c@textcitemaxnames=\count460
+\c@biburlbigbreakpenalty=\count461
+\c@biburlbreakpenalty=\count462
+\c@biburlnumpenalty=\count463
+\c@biburlucpenalty=\count464
+\c@biburllcpenalty=\count465
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count456
+\c@smartand=\count466
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -920,8 +942,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count457
-\c@bbx:relatedtotal=\count458
+\c@bbx:relatedcount=\count467
+\c@bbx:relatedtotal=\count468
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -950,8 +972,8 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2024-03-14 L3 programming layer (loader) 
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count459
-\l__pdf_internal_box=\box73
+\l__color_backend_stack_int=\count469
+\l__pdf_internal_box=\box74
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2024-03-14 L3 programming layer (loader) 
@@ -963,13 +985,13 @@ Package: xparse 2024-03-14 L3 Experimental document command parser
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 )) (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count460
-\csq@gtype=\count461
-\csq@glevel=\count462
-\csq@qlevel=\count463
-\csq@maxlvl=\count464
-\csq@tshold=\count465
-\csq@ltx@everypar=\toks46
+\csq@reset=\count470
+\csq@gtype=\count471
+\csq@glevel=\count472
+\csq@qlevel=\count473
+\csq@maxlvl=\count474
+\csq@tshold=\count475
+\csq@ltx@everypar=\toks47
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
 )
@@ -982,60 +1004,60 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 167.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 168.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (MSc.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux))
 \openout1 = `MSc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-Package scrbase Info: activating english \partname on input line 167.
-Package scrbase Info: activating english \chaptername on input line 167.
-Package scrbase Info: activating english \appendixname on input line 167.
-Package scrbase Info: activating english \figurename on input line 167.
-Package scrbase Info: activating english \tablename on input line 167.
-Package scrbase Info: activating english \contentsname on input line 167.
-Package scrbase Info: activating english \listfigurename on input line 167.
-Package scrbase Info: activating english \listtablename on input line 167.
-Package scrbase Info: activating english \bibname on input line 167.
-Package scrbase Info: activating english \indexname on input line 167.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+Package scrbase Info: activating english \partname on input line 168.
+Package scrbase Info: activating english \chaptername on input line 168.
+Package scrbase Info: activating english \appendixname on input line 168.
+Package scrbase Info: activating english \figurename on input line 168.
+Package scrbase Info: activating english \tablename on input line 168.
+Package scrbase Info: activating english \contentsname on input line 168.
+Package scrbase Info: activating english \listfigurename on input line 168.
+Package scrbase Info: activating english \listtablename on input line 168.
+Package scrbase Info: activating english \bibname on input line 168.
+Package scrbase Info: activating english \indexname on input line 168.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count466
-\scratchdimen=\dimen295
-\scratchbox=\box74
-\nofMPsegments=\count467
-\nofMParguments=\count468
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count469
-\MPscratchDim=\dimen296
-\MPnumerator=\count470
-\makeMPintoPDFobject=\count471
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count476
+\scratchdimen=\dimen303
+\scratchbox=\box75
+\nofMPsegments=\count477
+\nofMParguments=\count478
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count479
+\MPscratchDim=\dimen304
+\MPnumerator=\count480
+\makeMPintoPDFobject=\count481
+\everyMPtoPDFconversion=\toks49
 ) (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 167.
+Package hyperref Info: Link coloring OFF on input line 168.
  (MSc.out) (MSc.out)
 \@outlinefile=\write5
 \openout5 = `MSc.out'.
@@ -1047,55 +1069,55 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 167.
+(scrbook)           before \begin{document} on input line 168.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count472
+\BKM@id=\count482
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count473
-Package tocbasic Info: setting babel extension for `lol' on input line 167.
+\c@lstlisting=\count483
+Package tocbasic Info: setting babel extension for `lol' on input line 168.
 \scr@dte@lstlisting@maxnumwidth=\skip101
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 167.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 168.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 167.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 168.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 167.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 168.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 167.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 168.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 167.
+(Font)              <12> on input line 168.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 167.
+(Font)              <8> on input line 168.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 167.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 167.
+(Font)              <6> on input line 168.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 168.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 167.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 168.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 167.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 168.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 167.
+(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 168.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 167.
+(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 168.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
@@ -1114,21 +1136,21 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'MSc.bbl' found.
  (MSc.bbl)
-Package biblatex Info: Reference section=0 on input line 167.
-Package biblatex Info: Reference segment=0 on input line 167.
-Package hyperref Info: Option `pageanchor' set `false' on input line 168.
+Package biblatex Info: Reference section=0 on input line 168.
+Package biblatex Info: Reference segment=0 on input line 168.
+Package hyperref Info: Option `pageanchor' set `false' on input line 169.
 <banner.png, id=6, 606.3453pt x 207.29445pt>
 File: banner.png Graphic file (type png)
 <use banner.png>
-Package pdftex.def Info: banner.png  used on input line 191.
+Package pdftex.def Info: banner.png  used on input line 192.
 (pdftex.def)             Requested size: 597.50793pt x 204.2827pt.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 197.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 198.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 \currentparskip=\skip102
 
-Overfull \hbox (99.35028pt too wide) in paragraph at lines 214--238
+Overfull \hbox (99.35028pt too wide) in paragraph at lines 215--239
 []|  [] 
  []
 
@@ -1138,50 +1160,50 @@ Overfull \hbox (99.35028pt too wide) in paragraph at lines 214--238
 
 {C:/Users/brynj/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./banner.png>] [2]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 260.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 261.
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 301--307
+Underfull \hbox (badness 10000) in paragraph at lines 302--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--317
+Underfull \hbox (badness 10000) in paragraph at lines 310--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--320
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
 
  []
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 322.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 323.
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 324.
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 325.
 (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
 File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 324--326
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
 
 [4{C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 351.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 352.
  [5] [6
 
 
 ] [5]
-Package hyperref Info: Option `pageanchor' set `true' on input line 381.
+Package hyperref Info: Option `pageanchor' set `true' on input line 382.
  [6
 
 
@@ -1217,11 +1239,11 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 381.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 391--392
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 398.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 399.
 (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [15] [16
@@ -1262,69 +1284,15 @@ Class scrbook Warning: \float@addtolists detected!
 
 ]
 chapter 2.
-<Figures/weather_stations_2024-04-09.png, id=264, 462.528pt x 346.896pt>
-File: Figures/weather_stations_2024-04-09.png Graphic file (type png)
-<use Figures/weather_stations_2024-04-09.png>
-Package pdftex.def Info: Figures/weather_stations_2024-04-09.png  used on input line 19.
-(pdftex.def)             Requested size: 346.89514pt x 260.17136pt.
-[9] [10 <./Figures/weather_stations_2024-04-09.png>] (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/03/11 1.10a listings language file
-)
-Overfull \hbox (1.75903pt too wide) in paragraph at lines 27--28
-[][][][][][][][][][][][][][][][][][][][][][][] [][][][][][] 
- []
-
-
-Overfull \hbox (2.99413pt too wide) in paragraph at lines 38--40
-[][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (2.99413pt too wide) in paragraph at lines 40--41
-[][][][][][][][][][][][][][][][][][] 
- []
-
-<Figures/occurrences_by_year.png, id=277, 462.528pt x 346.896pt>
-File: Figures/occurrences_by_year.png Graphic file (type png)
-<use Figures/occurrences_by_year.png>
-Package pdftex.def Info: Figures/occurrences_by_year.png  used on input line 47.
-(pdftex.def)             Requested size: 346.89514pt x 260.17136pt.
-<Figures/station_occurrences_20.png, id=279, 462.528pt x 346.896pt>
-File: Figures/station_occurrences_20.png Graphic file (type png)
-<use Figures/station_occurrences_20.png>
-Package pdftex.def Info: Figures/station_occurrences_20.png  used on input line 57.
-(pdftex.def)             Requested size: 346.89514pt x 260.17136pt.
-[11] [12 <./Figures/occurrences_by_year.png>] [13 <./Figures/station_occurrences_20.png>]
-<Figures/measurements_by_year.png, id=314, 578.16pt x 433.62pt>
-File: Figures/measurements_by_year.png Graphic file (type png)
-<use Figures/measurements_by_year.png>
-Package pdftex.def Info: Figures/measurements_by_year.png  used on input line 74.
-(pdftex.def)             Requested size: 433.61893pt x 325.2142pt.
-
-Overfull \hbox (6.82753pt too wide) in paragraph at lines 74--75
- [][] 
- []
-
-<Figures/measurements_by_month.png, id=317, 462.528pt x 346.896pt>
-File: Figures/measurements_by_month.png Graphic file (type png)
-<use Figures/measurements_by_month.png>
-Package pdftex.def Info: Figures/measurements_by_month.png  used on input line 83.
-(pdftex.def)             Requested size: 346.89514pt x 260.17136pt.
-[14] [15 <./Figures/measurements_by_year.png>] [16 <./Figures/measurements_by_month.png>]
-<Figures/measurements_by_windspeed.png, id=333, 462.528pt x 346.896pt>
-File: Figures/measurements_by_windspeed.png Graphic file (type png)
-<use Figures/measurements_by_windspeed.png>
-Package pdftex.def Info: Figures/measurements_by_windspeed.png  used on input line 92.
-(pdftex.def)             Requested size: 346.89514pt x 260.17136pt.
-<Figures/measurements_by_windgust.png, id=335, 462.528pt x 346.896pt>
-File: Figures/measurements_by_windgust.png Graphic file (type png)
-<use Figures/measurements_by_windgust.png>
-Package pdftex.def Info: Figures/measurements_by_windgust.png  used on input line 101.
-(pdftex.def)             Requested size: 346.89514pt x 260.17136pt.
- [17 <./Figures/measurements_by_windspeed.png>] [18 <./Figures/measurements_by_windgust.png>]) [19]
+<Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png, id=246, 332.442pt x 241.3818pt>
+File: Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png Graphic file (type png)
+<use Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png>
+Package pdftex.def Info: Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png  used on input line 13.
+(pdftex.def)             Requested size: 332.44118pt x 241.38121pt.
+[9] [10 <./Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png>]) [11]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (Chapters/Chapter3.tex [20
+ (Chapters/Chapter3.tex [12
 
 
 
@@ -1332,100 +1300,92 @@ Package pdftex.def Info: Figures/measurements_by_windgust.png  used on input lin
 
 ]
 chapter 3.
-<Figures/data-preprocessing-flow-chart.png, id=355, 572.1375pt x 797.98125pt>
+<Figures/data-preprocessing-flow-chart.png, id=268, 572.1375pt x 797.98125pt>
 File: Figures/data-preprocessing-flow-chart.png Graphic file (type png)
 <use Figures/data-preprocessing-flow-chart.png>
-Package pdftex.def Info: Figures/data-preprocessing-flow-chart.png  used on input line 17.
+Package pdftex.def Info: Figures/data-preprocessing-flow-chart.png  used on input line 10.
 (pdftex.def)             Requested size: 286.06804pt x 398.98964pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21]
-Overfull \hbox (1.92924pt too wide) in paragraph at lines 22--23
+[13]
+Overfull \hbox (1.92924pt too wide) in paragraph at lines 15--16
 []\T1/lmr/m/n/12 Once CARRA data has been merged with AWS data, us-ing sta-tion and time columns,
  []
 
-[22 <./Figures/data-preprocessing-flow-chart.png>]
-<Figures/error_count.png, id=368, 462.528pt x 346.896pt>
-File: Figures/error_count.png Graphic file (type png)
-<use Figures/error_count.png>
-Package pdftex.def Info: Figures/error_count.png  used on input line 25.
-(pdftex.def)             Requested size: 346.89514pt x 260.17136pt.
- [23 <./Figures/error_count.png>]
-Overfull \hbox (32.6345pt too wide) in paragraph at lines 40--41
+[14 <./Figures/data-preprocessing-flow-chart.png>]
+<Figures/MAEoverIceland.png, id=284, 704.6325pt x 468.3096pt>
+File: Figures/MAEoverIceland.png Graphic file (type png)
+<use Figures/MAEoverIceland.png>
+Package pdftex.def Info: Figures/MAEoverIceland.png  used on input line 43.
+(pdftex.def)             Requested size: 422.78278pt x 280.98793pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15] [16 <./Figures/MAEoverIceland.png>]
+<Figures/MAPEoverIceland.png, id=297, 707.5233pt x 473.3685pt>
+File: Figures/MAPEoverIceland.png Graphic file (type png)
+<use Figures/MAPEoverIceland.png>
+Package pdftex.def Info: Figures/MAPEoverIceland.png  used on input line 74.
+(pdftex.def)             Requested size: 424.51724pt x 284.02328pt.
+ [17] [18 <./Figures/MAPEoverIceland.png>] (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/03/11 1.10a listings language file
+)
+Overfull \hbox (32.6345pt too wide) in paragraph at lines 84--85
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (17.81432pt too wide) in paragraph at lines 43--44
+Overfull \hbox (17.81432pt too wide) in paragraph at lines 87--88
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (32.6345pt too wide) in paragraph at lines 44--45
+Overfull \hbox (32.6345pt too wide) in paragraph at lines 88--89
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[24]) [25]
+[19]) [20]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (Chapters/Chapter4.tex [26
+ (Chapters/Chapter4.tex
+chapter 4.
+[21
 
 
 
 
 
 ]
-chapter 4.
-[27]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 32.
- (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-<Figures/shap_bar_nn_256_example100.png, id=421, 596.73338pt x 578.01546pt>
+<Figures/shap_bar_nn_256_example100.png, id=345, 596.73338pt x 578.01546pt>
 File: Figures/shap_bar_nn_256_example100.png Graphic file (type png)
 <use Figures/shap_bar_nn_256_example100.png>
-Package pdftex.def Info: Figures/shap_bar_nn_256_example100.png  used on input line 38.
+Package pdftex.def Info: Figures/shap_bar_nn_256_example100.png  used on input line 34.
 (pdftex.def)             Requested size: 358.04279pt x 346.81195pt.
+) [22 <./Figures/shap_bar_nn_256_example100.png>]
+\openout2 = `Chapters/Chapter5.aux'.
 
+ (Chapters/Chapter5.tex
+chapter 5.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7.
+(C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [28] [29 <./Figures/shap_bar_nn_256_example100.png>]
-\openout2 = `Chapters/Chapter5.aux'.
-
- (Chapters/Chapter5.tex [30
+[23
 
 
 
 
 
 ]
-chapter 5.
-<Figures/difference_measured_reanalysis_cropped.png, id=439, 642.90187pt x 386.94562pt>
-File: Figures/difference_measured_reanalysis_cropped.png Graphic file (type png)
-<use Figures/difference_measured_reanalysis_cropped.png>
-Package pdftex.def Info: Figures/difference_measured_reanalysis_cropped.png  used on input line 19.
-(pdftex.def)             Requested size: 417.88126pt x 251.51167pt.
-[31]
-<Figures/transformed_reanalysis_measured.png, id=448, 1003.75pt x 602.25pt>
-File: Figures/transformed_reanalysis_measured.png Graphic file (type png)
-<use Figures/transformed_reanalysis_measured.png>
-Package pdftex.def Info: Figures/transformed_reanalysis_measured.png  used on input line 43.
-(pdftex.def)             Requested size: 501.87378pt x 301.12425pt.
 
-Overfull \hbox (75.08238pt too wide) in paragraph at lines 43--44
- [][] 
- []
+LaTeX Warning: Reference `fig:SHAP_final_model' on page 24 undefined on input line 34.
 
-[32 <./Figures/difference_measured_reanalysis_cropped.png>] [33 <./Figures/transformed_reanalysis_measured.png>]
-
-LaTeX Warning: Reference `fig:SHAP_final_model' on page 34 undefined on input line 50.
-
-) [34] (MSc.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux))
+) [24] (MSc.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -1441,18 +1401,15 @@ Package logreq Info: Writing requests to 'MSc.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37997 strings out of 474423
- 735495 string characters out of 5741718
- 1949496 words of memory out of 5000000
- 59558 multiletter control sequences out of 15000+600000
- 639983 words of font info for 80 fonts, out of 8000000 for 9000
+ 38088 strings out of 474423
+ 735488 string characters out of 5741718
+ 1950496 words of memory out of 5000000
+ 59687 multiletter control sequences out of 15000+600000
+ 640023 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,9n,117p,10960b,1985s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,12n,117p,10960b,1985s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{cite.0@wind_power} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@pca_information} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{cite.0@hyperparameters_definition} has been referenced but does not exist, replaced by a fixed one
@@ -1521,9 +1478,9 @@ pdfTeX warning (dest): name{cite.0@uncertainties_in_numerical_weather_prediction
 pdfTeX warning (dest): name{cite.0@why_wind_gusts} has been referenced but does not exist, replaced by a fixed one
 
 <C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on MSc.pdf (52 pages, 1487133 bytes).
+Output written on MSc.pdf (42 pages, 1486149 bytes).
 PDF statistics:
- 661 PDF objects out of 1000 (max. 8388607)
- 151 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 546 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

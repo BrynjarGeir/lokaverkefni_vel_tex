@@ -2379,23 +2379,22 @@
     <bcf:citekey order="16" intorder="1">GraphCast</bcf:citekey>
     <bcf:citekey order="17" intorder="1">SecondRevolution</bcf:citekey>
     <bcf:citekey order="18" intorder="1">mean_gust_HA_HO</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">GNP_vidtal</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">nn_black_box</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">shapley_information</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">eli5_information</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">vegagerdin_postur</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">carra_information</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">nn_black_box</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">shapley_information</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">eli5_information</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">vegagerdin_postur</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">carra_information</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">GNP_vidtal</bcf:citekey>
     <bcf:citekey order="25" intorder="1">GNP_vidtal</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">GNP_vidtal</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">richardson_number_skybrary</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">brunt_vaisala_freq_eumtrain</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">mean_gust_HA_HO</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">richardson_number_skybrary</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">brunt_vaisala_freq_eumtrain</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">shapley_information</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">hyperparameters_definition</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">pca_information</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">wind_power</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">richardson_number_skybrary</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">brunt_vaisala_freq_eumtrain</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">mean_gust_HA_HO</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">richardson_number_skybrary</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">brunt_vaisala_freq_eumtrain</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">shapley_information</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">hyperparameters_definition</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">mean_gust_HA_HO</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">wind_power</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

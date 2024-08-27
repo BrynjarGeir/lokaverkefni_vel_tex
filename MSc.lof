@@ -2,18 +2,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Locations of automatic weather stations in Iceland}}{10}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Measurements that fit filtering by year (from 2004\xspace to 2023).}}{12}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Number of stations that have measurements in a range.}}{13}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Number of measurement data points by year.}}{15}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Number of measurement data points by month.}}{16}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Number of measurement data points by wind speed.}}{17}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Number of measurement data points by wind gust.}}{18}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A flow chart showing how data sources were combined}}{22}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The number of stations whose number of nails are in a certain percentage range of the overall}}{23}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A flow chart showing how data sources were combined}}{14}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Distribution of mean absolute errors by station}}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of MAPE by station}}{18}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Feature importance of a neural network.}}{29}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Feature importance of a neural network.}}{22}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Measured wind speed and corresponding points for reanalysis.}}{32}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Transformed reanalysis wind speed and measured wind speed.}}{33}{figure.caption.22}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -13,29 +13,25 @@ The structure of the neural network is such that it contains some number $n$ of 
 
 \begin{table}[h]
     \centering
-    \caption[Hyperparamter search with best performing combination.]{Hyperparamter search with best performing combination shown. Hyperparameter search was done using hyperband algorithm that initially searches randomly for the best parameters but then hones in on the what is working and as such is neither exhaustive nor completely random. This means that an upper limit will nont be set on the number of combinations to try like with randomsearch.}
+    \caption[Hyperparamter search with best performing combination.]{Hyperparamter search with best performing combination shown. Hyperparameter search was done using hyperband algorithm that initially searches randomly for the best parameters but then hones in on what is working and as such is neither exhaustive nor completely random. This means that an upper limit will not be set on the number of combinations to try like with randomsearch.}
     \label{table:gridSearchHyperparamters}
     \begin{tabular}{c|c|c}
         Parameter & Range of values & Selected\\\hline
-        Layers &  min\_value = 4, max\_value = 15, step = 1 & \textbf{11}\\\hline
+        Layers &  min\_value = 4, max\_value = 15, step = 1 & \textbf{10}\\\hline
         Units &  min\_value = 32, max\_value = 512, step = 32 & \textbf{64}\\\hline
-        Penalties & min\_value = 1e-4, max\_value = 1, sampling = log & \textbf{0.000168}\\\hline
-        Epochs & min\_value = 50, max\_value = 1000, step = 50 & \textbf{750}\\\hline
-        Optimizers & Adam, RMSprop, Adamax & \textbf{RMSProp}\\\hline
-        Activation & ReLU, ELu, Softmax & \textbf{eLU}\\\hline
+        Penalties & min\_value = 1e-5, max\_value = 1, sampling = log & \textbf{1e-4}\\\hline
+        Epochs & min\_value = 10, max\_value = 1000, step = 10 & \textbf{30}\\\hline
+        Optimizers & Adam, RMSprop, Adamax & \textbf{Adamax}\\\hline
+        Activation & ReLU, ELu, Softmax & \textbf{ReLU}\\\hline
     \end{tabular}
 \end{table}
 
 \section{Feature selection and importance}
-Using the three datasources, a model is trained. The data from IMO only represents the ground truth and is not used as part of the training data. The gust ($f_g$) and wind speed ($f$) are used to calculate the target gust factor. All weather parameters used in predictions come from the CARRA reanalysis data, with variables wind speed, wind direction, temperature, pressure. All of these variables are queried in three height levels (15, 250, 500 meters above ground) at the location of a given weather station. The second data source for the training data, is the elevation data. Using the GeoTIFF file that IMO provided, several different landscape elevation distributions were looked at. A sector upwind, a sector upwind and downwind as well as a circle surrounding a weather station.
-
-To begin with all the available parameters were used to train the model along with the derived variables. This is done to be able to then use tools such as Shapley to see which features are impacting the predictions. Using Shapley values to see which features, will then enable the exclusion of features that don't affect the model prediction and simplify the training data. This means starting with much higher dimensionality of our training data and reduce it as much as possible without impacting our results. This crystallizes in the landscape points. Starting with $n$ points that describe the elevation of the landscape around our weather station. This $n$ might be in the hundreds. Looking at concentric circles outward from a given weather station, there might be 10 circles (largest with radius 20 km), each with 72 points (5° spacing) and end up with 720 points for the landscape. This might slow down training. In addition, certain landscape features might be more important than others. There might be a large mountain up- or downwind of a given weather station, that might be the most important feature. To address this principal component analysis (PCA) is used to try to reduce the dimensionality of our landscape elevation data. PCA is a statistical procedure that allows the summarization of multivariate data to lower dimension and thus can ease visualization or increase speed of training a complex model with only minimal adverse effect to performance\cite{pca_information}.
-
-Using all the variables from CARRA, along with the two derived factors ($Ri$, $N$) and two sectors (upwind and downwind) downscaled to 10 features using PCA, the feature importance can be seen in Figure \ref{fig:ShapleyWaterfallFirstTry}. The waterfall graph in Figure \ref{fig:ShapleyWaterfallFirstTry} shows that the Richardson number for higher levels is most important.
+Using the three datasources, a model is trained. The data from IMO only represents the ground truth and is not used as part of the training data. The gust ($f_g$) and wind speed ($f$) are used to calculate the target gust factor. All weather parameters used in predictions come from the CARRA reanalysis data, with variables wind speed, wind direction, temperature, pressure. All of these variables are queried in three height levels (15, 250, 500 meters above ground) at the location of a given weather station. The second data source for the training data, is the elevation data. Using the GeoTIFF file that IMO provided, a sector upwind were looked at.
 
 \begin{figure}[h]
     \centering
     \includegraphics[scale = 0.6]{Figures/shap_bar_nn_256_example100.png}
-    \caption[Feature importance of a neural network.]{Feature importance of a neural network as described with 5 hidden layers and 256 units in each}
+    \caption[Feature importance of a neural network.]{Feature importance of a neural network with model architecture as described in table \ref{table:gridSearchHyperparamters} and data as described in table \ref{table:trainDataExample}.}
     \label{fig:ShapleyWaterfallFirstTry}
 \end{figure}

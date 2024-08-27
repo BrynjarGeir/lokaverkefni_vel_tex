@@ -777,33 +777,6 @@
       \field{title}{Meeting at Veðurstofa}
       \field{year}{2023}
     \endentry
-    \entry{pca_information}{website}{}
-      \name{author}{1}{}{%
-        {{hash=5f96c82cf28694bf3288d769c94ae694}{%
-           family={Sartorius},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{5f96c82cf28694bf3288d769c94ae694}
-      \strng{fullhash}{5f96c82cf28694bf3288d769c94ae694}
-      \strng{bibnamehash}{5f96c82cf28694bf3288d769c94ae694}
-      \strng{authorbibnamehash}{5f96c82cf28694bf3288d769c94ae694}
-      \strng{authornamehash}{5f96c82cf28694bf3288d769c94ae694}
-      \strng{authorfullhash}{5f96c82cf28694bf3288d769c94ae694}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{urlday}{3}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2020}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.sartorius.com/en/knowledge/science-snippets/what-is-principal-component-analysis-pca-and-how-it-is-used-507186
-      \endverb
-      \verb{url}
-      \verb https://www.sartorius.com/en/knowledge/science-snippets/what-is-principal-component-analysis-pca-and-how-it-is-used-507186
-      \endverb
-    \endentry
     \entry{scher2018}{article}{}
       \name{author}{1}{}{%
         {{hash=0a85a23a68545315c5a55473d732e3ce}{%
