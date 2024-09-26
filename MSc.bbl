@@ -777,6 +777,72 @@
       \field{title}{Meeting at Veðurstofa}
       \field{year}{2023}
     \endentry
+    \entry{Salih_2024}{article}{}
+      \name{author}{7}{}{%
+        {{hash=71cc7a471324dcd6f181497acc03e751}{%
+           family={Salih},
+           familyi={S\bibinitperiod},
+           given={Ahmed\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=613d13d8f4fc2e49d6b974e9f9325c51}{%
+           family={Raisi‐Estabragh},
+           familyi={R\bibinithyphendelim E\bibinitperiod},
+           given={Zahra},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=061e41bf0f82d4fde89f7746755e0ccb}{%
+           family={Galazzo},
+           familyi={G\bibinitperiod},
+           given={Ilaria\bibnamedelima Boscolo},
+           giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=6d839b48e2382fec538c109895b536f5}{%
+           family={Radeva},
+           familyi={R\bibinitperiod},
+           given={Petia},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d7b5c8def89d4066e2f84eec806b1586}{%
+           family={Petersen},
+           familyi={P\bibinitperiod},
+           given={Steffen\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=7afea3dacf80d06a4da14f3689e1b2ae}{%
+           family={Lekadir},
+           familyi={L\bibinitperiod},
+           given={Karim},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3c60ec3d1224c0dc3491c2728509b6b9}{%
+           family={Menegaz},
+           familyi={M\bibinitperiod},
+           given={Gloria},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{4ffc58376305aa845d93ed64c0ffca61}
+      \strng{fullhash}{d985a77a52c9aa8aaa0a0888c7fed0b1}
+      \strng{bibnamehash}{4ffc58376305aa845d93ed64c0ffca61}
+      \strng{authorbibnamehash}{4ffc58376305aa845d93ed64c0ffca61}
+      \strng{authornamehash}{4ffc58376305aa845d93ed64c0ffca61}
+      \strng{authorfullhash}{d985a77a52c9aa8aaa0a0888c7fed0b1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2640-4567}
+      \field{journaltitle}{Advanced Intelligent Systems}
+      \field{month}{6}
+      \field{title}{A Perspective on Explainable Artificial Intelligence Methods: SHAP and LIME}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1002/aisy.202400304
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1002/aisy.202400304
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/aisy.202400304
+      \endverb
+    \endentry
     \entry{scher2018}{article}{}
       \name{author}{1}{}{%
         {{hash=0a85a23a68545315c5a55473d732e3ce}{%

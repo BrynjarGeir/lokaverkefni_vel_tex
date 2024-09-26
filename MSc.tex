@@ -30,6 +30,13 @@
 
 
 % Packages
+% BETRI TÖFLUR OG LISTAR
+\usepackage{booktabs}         % Fyrir betri töflur
+\usepackage{caption}          % M.a. aukabil á undan töflufyrirsögnum
+\captionsetup{font=small,   % Smærra letur á mynda- og töflutexta,
+              labelfont=bf, % "Mynd 1" og "Tafla 2" feitletrað 
+              margin=2cm,
+              skip = 0.5\baselineskip} 
 \usepackage[utf8]{inputenc}
 \usepackage[icelandic, english]{babel}
 \usepackage{t1enc}
@@ -46,7 +53,7 @@
 \usepackage[sf,normalsize]{subfigure}
 \usepackage[format=plain,labelformat=simple,labelsep=colon]{caption}
 \usepackage{placeins}
-\usepackage{tabularx}
+%\usepackage{tabularx}
 \usepackage{enumitem}
 \usepackage{listings}
 \usepackage{xspace}
@@ -131,7 +138,7 @@
 \def\thesisyear{2024}       					% Year thesis submitted
 \def\thesismonth{September}					% Month thesis submitted, e.g. "December"
 \def\thesisauthor{Brynjar Geir Sigurðsson}				% Thesis authoreiningaraðferðinni
-\def\thesistitle{A NN approach to predicting gust factors in complex landscape} % Title of thesis
+\def\thesistitle{A Neural Network Approach to Predicting Gust Factors in Complex Landscape} % Title of thesis
 %\def\thesissubtitle{XXSubtitle is rarely usedXX}		% Subtitle of thesis (optional)
 \def\thesisshorttitle{} 	% Optional: if title of thesis is longer than 50 characters, it would not fit on the spine (kjölur) and in this case you, need to provide a short title here for the print shop. Otherwhise: make it empty
 \def\thesiscredits{60} 						% Credits awarded for the project
@@ -146,7 +153,7 @@
 %\def\thesispublisher{XX}					% Publisher (not used)
 \def\thesissupervisors{Kristján Jónasson}					% Names of supervisors (split by \\ if more than one).
 \def\thesisnrofsupervisors{1}					% Number of supervisors (to use "Supervisor" vs. "Supervisors")
-\def\thesiscommittee{Kristján Jónasson \\ Ólafur Pétur Pálsson}			% Thesis commitee must include the supervisor(s)
+\def\thesiscommittee{Kristján Jónasson \\ Ólafur Pétur Pálsson \\ Guðrún Nína Petersen}			% Thesis commitee must include the supervisor(s)
 \def\thesisexaminer{XXNN3XX}				        % Examiner (prófdómari)
 \def\thesisISBN{}           					% Thesis ISBN number (keep empty: not used anymore)
 \def\thesisprinting{}						% Name of printsthop (keep empty if thesis is never printed)

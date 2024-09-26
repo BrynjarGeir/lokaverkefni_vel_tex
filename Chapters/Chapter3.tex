@@ -48,7 +48,7 @@ Another thing to look at is the distribution of error by station, both in terms 
 Table \ref{table:station_mae_distribution} shows the 5 best and worst stations in terms of MAE.
 
 \begin{table}[h]
-    \caption[]{}
+    \caption[Mean absolute difference of measured wind speed and reanalysis wind speed at select stations]{Mean absolute error for reanalysis wind speed as compared to measured wind speed, for the five stations with the highest difference and the five stations with the lowest difference.}
     \label{table:station_mae_distribution}
     \resizebox{\textwidth}{!}{
     \centering
@@ -71,8 +71,8 @@ Table \ref{table:station_mae_distribution} shows the 5 best and worst stations i
 If the 0 m/s is excluded from the measurement data, then the error distribution using MAPE can be plotted. This plot can be seen in Figure \ref{fig:station_mape_distribution}
 
 \begin{figure}
-    \includegraphics[scale=0.6]{Figures/MAPEoverIceland.png}
     \caption[Distribution of MAPE by station]{The distribution of MAPE. Using MAPE instead of MAE, necessitates the exclusion of 0 values from the ground truth (measured values).}
+    \includegraphics[scale=0.6]{Figures/MAPEoverIceland.png}
     \label{fig:station_mape_distribution}
 \end{figure}
 

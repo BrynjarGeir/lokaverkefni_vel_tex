@@ -2395,6 +2395,7 @@
     <bcf:citekey order="32" intorder="1">hyperparameters_definition</bcf:citekey>
     <bcf:citekey order="33" intorder="1">mean_gust_HA_HO</bcf:citekey>
     <bcf:citekey order="34" intorder="1">wind_power</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">Salih_2024</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
