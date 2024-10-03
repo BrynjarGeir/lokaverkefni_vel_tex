@@ -13,8 +13,10 @@
 \contentsline {chapter}{\numberline {3}Data processing and structure}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Combining data sources}{13}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Data Structure}{19}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Model architecture}{21}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Model Architecture and Training}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Model structure}{21}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Results}{23}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Results}{23}{section.5.1}%
+\contentsline {section}{\numberline {4.2}Model Training}{22}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Results}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Results}{25}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Discussion}{35}{chapter.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  26 SEP 2024 16:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  2 OCT 2024 21:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1009,7 +1009,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 LaTeX Warning: Label `table:specific_sites' multiply defined.
 
-))
+) (Chapters/Chapter6.aux))
 \openout1 = `MSc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 175.
@@ -1288,7 +1288,7 @@ Class scrbook Warning: \float@addtolists detected!
 
 ]
 chapter 2.
-<Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png, id=275, 332.442pt x 241.3818pt>
+<Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png, id=285, 332.442pt x 241.3818pt>
 File: Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png Graphic file (type png)
 <use Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png>
 Package pdftex.def Info: Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png  used on input line 13.
@@ -1304,10 +1304,10 @@ Package pdftex.def Info: Figures/stationsOverIceland_2024-05-16_stripped_to_fram
 
 ]
 chapter 3.
-<Figures/data-preprocessing-flow-chart.png, id=299, 572.1375pt x 797.98125pt>
+<Figures/data-preprocessing-flow-chart.png, id=309, 572.1375pt x 797.98125pt>
 File: Figures/data-preprocessing-flow-chart.png Graphic file (type png)
 <use Figures/data-preprocessing-flow-chart.png>
-Package pdftex.def Info: Figures/data-preprocessing-flow-chart.png  used on input line 10.
+Package pdftex.def Info: Figures/data-preprocessing-flow-chart.png  used on input line 8.
 (pdftex.def)             Requested size: 286.06804pt x 398.98964pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1318,7 +1318,7 @@ Overfull \hbox (1.92924pt too wide) in paragraph at lines 15--16
  []
 
 [14 <./Figures/data-preprocessing-flow-chart.png>]
-<Figures/MAEoverIceland.png, id=315, 704.6325pt x 468.3096pt>
+<Figures/MAEoverIceland.png, id=325, 704.6325pt x 468.3096pt>
 File: Figures/MAEoverIceland.png Graphic file (type png)
 <use Figures/MAEoverIceland.png>
 Package pdftex.def Info: Figures/MAEoverIceland.png  used on input line 43.
@@ -1327,16 +1327,11 @@ Package pdftex.def Info: Figures/MAEoverIceland.png  used on input line 43.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/MAPEoverIceland.png, id=318, 707.5233pt x 473.3685pt>
+<Figures/MAPEoverIceland.png, id=328, 707.5233pt x 473.3685pt>
 File: Figures/MAPEoverIceland.png Graphic file (type png)
 <use Figures/MAPEoverIceland.png>
-Package pdftex.def Info: Figures/MAPEoverIceland.png  used on input line 75.
+Package pdftex.def Info: Figures/MAPEoverIceland.png  used on input line 74.
 (pdftex.def)             Requested size: 424.51724pt x 284.02328pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
-[][]
- []
-
 [15] [16 <./Figures/MAEoverIceland.png>] [17] [18 <./Figures/MAPEoverIceland.png>] (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/03/11 1.10a listings language file
 )
@@ -1359,16 +1354,37 @@ Overfull \hbox (32.6345pt too wide) in paragraph at lines 88--89
 
  (Chapters/Chapter4.tex
 chapter 4.
-) [21
+[21
 
 
 
 
 
 ]
+<Figures/loss_plot_wo_elevation.png, id=388, 722.7pt x 433.62pt>
+File: Figures/loss_plot_wo_elevation.png Graphic file (type png)
+<use Figures/loss_plot_wo_elevation.png>
+Package pdftex.def Info: Figures/loss_plot_wo_elevation.png  used on input line 35.
+(pdftex.def)             Requested size: 433.62334pt x 260.17401pt.
+
+Overfull \hbox (6.83194pt too wide) in paragraph at lines 35--36
+ [][] 
+ []
+
+<Figures/loss_plot_w_elevation.png, id=389, 722.7pt x 433.62pt>
+File: Figures/loss_plot_w_elevation.png Graphic file (type png)
+<use Figures/loss_plot_w_elevation.png>
+Package pdftex.def Info: Figures/loss_plot_w_elevation.png  used on input line 43.
+(pdftex.def)             Requested size: 433.62334pt x 260.17401pt.
+
+Overfull \hbox (6.83194pt too wide) in paragraph at lines 43--44
+ [][] 
+ []
+
+) [22] [23 <./Figures/loss_plot_wo_elevation.png> <./Figures/loss_plot_w_elevation.png>]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (Chapters/Chapter5.tex [22
+ (Chapters/Chapter5.tex [24
 
 
 
@@ -1379,15 +1395,15 @@ chapter 5.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7.
 (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [23]
-Overfull \hbox (35.18994pt too wide) in paragraph at lines 36--47
+) [25]
+Overfull \hbox (35.18994pt too wide) in paragraph at lines 42--53
  [][] 
  []
 
-<Figures/errorMap.png, id=392, 850.377pt x 513.117pt>
+<Figures/errorMap.png, id=418, 850.377pt x 513.117pt>
 File: Figures/errorMap.png Graphic file (type png)
 <use Figures/errorMap.png>
-Package pdftex.def Info: Figures/errorMap.png  used on input line 54.
+Package pdftex.def Info: Figures/errorMap.png  used on input line 59.
 (pdftex.def)             Requested size: 425.18745pt x 256.55788pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1398,61 +1414,79 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/shap_plots/waterfall_plot.png, id=404, 646.0938pt x 372.9132pt>
+<Figures/shap_plots/waterfall_plot.png, id=424, 646.0938pt x 372.9132pt>
 File: Figures/shap_plots/waterfall_plot.png Graphic file (type png)
 <use Figures/shap_plots/waterfall_plot.png>
-Package pdftex.def Info: Figures/shap_plots/waterfall_plot.png  used on input line 97.
+Package pdftex.def Info: Figures/shap_plots/waterfall_plot.png  used on input line 103.
 (pdftex.def)             Requested size: 387.65927pt x 223.74963pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24]
-<Figures/shap_plots/summary_plot.png, id=417, 578.16pt x 339.669pt>
+[26]
+<Figures/shap_plots/summary_plot.png, id=439, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot.png  used on input line 106.
+Package pdftex.def Info: Figures/shap_plots/summary_plot.png  used on input line 112.
 (pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
-<Figures/shap_plots/summary_plot_190924_.png, id=426, 578.16pt x 339.669pt>
+<Figures/shap_plots/summary_plot_190924_.png, id=446, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot_190924_.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_190924_.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_.png  used on input line 115.
+Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_.png  used on input line 119.
 (pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
- [25 <./Figures/errorMap.png>]
-<Figures/shap_plots/summary_plot_190924_full_10ms.png, id=441, 578.16pt x 339.669pt>
+<Figures/shap_plots/summary_plot_190924_full_10ms.png, id=457, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot_190924_full_10ms.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_190924_full_10ms.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_full_10ms.png  used on input line 126.
+Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_full_10ms.png  used on input line 128.
 (pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
-<Figures/shap_plots/summary_plot_31572.png, id=449, 550.6974pt x 331.7193pt>
+ [27 <./Figures/errorMap.png>]
+<Figures/shap_plots/summary_plot_31572.png, id=470, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_31572.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_31572.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot_31572.png  used on input line 135.
+Package pdftex.def Info: Figures/shap_plots/summary_plot_31572.png  used on input line 137.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_35553.png, id=454, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_35553.png, id=475, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_35553.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_35553.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot_35553.png  used on input line 142.
+Package pdftex.def Info: Figures/shap_plots/summary_plot_35553.png  used on input line 144.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_6745.png, id=459, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_6745.png, id=480, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_6745.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_6745.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot_6745.png  used on input line 149.
+Package pdftex.def Info: Figures/shap_plots/summary_plot_6745.png  used on input line 151.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_1470.png, id=464, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_1470.png, id=485, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_1470.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_1470.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot_1470.png  used on input line 156.
+Package pdftex.def Info: Figures/shap_plots/summary_plot_1470.png  used on input line 158.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_1350.png, id=469, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_1350.png, id=490, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_1350.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_1350.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot_1350.png  used on input line 163.
+Package pdftex.def Info: Figures/shap_plots/summary_plot_1350.png  used on input line 165.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-) [26] [27] [28 <./Figures/shap_plots/waterfall_plot.png> <./Figures/shap_plots/summary_plot.png>] [29 <./Figures/shap_plots/summary_plot_190924_.png> <./Figures/shap_plots/summary_plot_190924_full_10ms.png>] [30 <./Figures/shap_plots/summary_plot_31572.png> <./Figures/shap_plots/summary_plot_35553.png>] [31 <./Figures/shap_plots/summary_plot_6745.png> <./Figures/shap_plots/summary_plot_1470.png>] [32 <./Figures/shap_plots/summary_plot_1350.png>] (MSc.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux))
+ [28]
+
+LaTeX Warning: Reference `table:SetsOfParams' on page 29 undefined on input line 172.
+
+) [29] [30 <./Figures/shap_plots/waterfall_plot.png> <./Figures/shap_plots/summary_plot.png>] [31 <./Figures/shap_plots/summary_plot_190924_.png> <./Figures/shap_plots/summary_plot_190924_full_10ms.png>] [32 <./Figures/shap_plots/summary_plot_31572.png> <./Figures/shap_plots/summary_plot_35553.png>] [33 <./Figures/shap_plots/summary_plot_6745.png> <./Figures/shap_plots/summary_plot_1470.png>] [34 <./Figures/shap_plots/summary_plot_1350.png>]
+\openout2 = `Chapters/Chapter6.aux'.
+
+ (Chapters/Chapter6.tex
+chapter 6.
+) [35
+
+
+
+
+
+] (MSc.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux) (Chapters/Chapter6.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1464,10 +1498,10 @@ Package logreq Info: Writing requests to 'MSc.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38124 strings out of 474423
- 738042 string characters out of 5741718
+ 38178 strings out of 474423
+ 739783 string characters out of 5741718
  1951496 words of memory out of 5000000
- 59698 multiletter control sequences out of 15000+600000
+ 59737 multiletter control sequences out of 15000+600000
  653815 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,107p,10960b,1985s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1544,9 +1578,9 @@ pdfTeX warning (dest): name{cite.0@uncertainties_in_numerical_weather_prediction
 pdfTeX warning (dest): name{cite.0@why_wind_gusts} has been referenced but does not exist, replaced by a fixed one
 
 <C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on MSc.pdf (50 pages, 1777688 bytes).
+Output written on MSc.pdf (53 pages, 1868198 bytes).
 PDF statistics:
- 706 PDF objects out of 1000 (max. 8388607)
- 128 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 743 PDF objects out of 1000 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 
