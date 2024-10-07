@@ -1,0 +1,972 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{nn_black_box}{website}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{urlday}{9}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://spectrum.ieee.org/black-box-ai
+      \endverb
+      \verb{url}
+      \verb https://spectrum.ieee.org/black-box-ai
+      \endverb
+    \endentry
+    \entry{eli5_information}{website}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{urlday}{9}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://eli5.readthedocs.io/en/latest/overview.html
+      \endverb
+      \verb{url}
+      \verb https://eli5.readthedocs.io/en/latest/overview.html
+      \endverb
+    \endentry
+    \entry{carra_information}{website}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{urlday}{8}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://climate.copernicus.eu/copernicus-arctic-regional-reanalysis-data-now-updated-monthly
+      \endverb
+      \verb{url}
+      \verb https://climate.copernicus.eu/copernicus-arctic-regional-reanalysis-data-now-updated-monthly
+      \endverb
+    \endentry
+    \entry{hyperparameters_definition}{webiste}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{urlday}{3}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://deepai.org/machine-learning-glossary-and-terms/hyperparameter
+      \endverb
+      \verb{url}
+      \verb https://deepai.org/machine-learning-glossary-and-terms/hyperparameter
+      \endverb
+    \endentry
+    \entry{wind_power}{website}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.linkedin.com/advice/0/how-can-you-calculate-power-output-wind-turbine-viidf
+      \endverb
+      \verb{url}
+      \verb https://www.linkedin.com/advice/0/how-can-you-calculate-power-output-wind-turbine-viidf
+      \endverb
+    \endentry
+    \entry{mean_gust_HA_HO}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b2dc6558e90da7729c346128b8a0652d}{%
+           family={Ágústsson},
+           familyi={Á\bibinitperiod},
+           given={Hálfdán},
+           giveni={H\bibinitperiod}}}%
+        {{hash=04fc0bcfcf98afe74aed8a21d6a0ee76}{%
+           family={Ólafsson},
+           familyi={Ó\bibinitperiod},
+           given={Haraldur},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
+      \strng{fullhash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
+      \strng{bibnamehash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
+      \strng{authorbibnamehash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
+      \strng{authornamehash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
+      \strng{authorfullhash}{3c656697e7ee4ab67c9fe8c6ca4080ac}
+      \field{sortinit}{Á}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Meteorologische Zeitschrift}
+      \field{month}{04}
+      \field{title}{Mean gust factors in complex terrain}
+      \field{volume}{13}
+      \field{year}{2004}
+      \field{pages}{149\bibrangedash 155}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1127/0941-2948/2004/0013-0149
+      \endverb
+    \endentry
+    \entry{uncertainties_in_numerical_weather_predictions}{book}{}
+      \name{author}{2}{}{%
+        {{hash=8d5244cdb57e208dae705436edefef4d}{%
+           family={Author\bibnamedelima Ólafsson},
+           familyi={A\bibinitperiod\bibinitdelim Ó\bibinitperiod},
+           given={Haraldur},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c4c45219f7a5931646958bc0b8b773e7}{%
+           family={Author\bibnamedelima Bao},
+           familyi={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Jian-Wen},
+           giveni={J\bibinithyphendelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{f0c46ef2bd0f483ba1e147449db28a69}
+      \strng{fullhash}{f0c46ef2bd0f483ba1e147449db28a69}
+      \strng{bibnamehash}{f0c46ef2bd0f483ba1e147449db28a69}
+      \strng{authorbibnamehash}{f0c46ef2bd0f483ba1e147449db28a69}
+      \strng{authornamehash}{f0c46ef2bd0f483ba1e147449db28a69}
+      \strng{authorfullhash}{f0c46ef2bd0f483ba1e147449db28a69}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st edition}
+      \field{isbn}{9780128154915}
+      \field{note}{Accessed on 26th of March 2024, from lecture notes of Ólafsson, Haraldur in course EÐL401M at UoI, which referenced the book.}
+      \field{title}{Uncertainties in Numerical Weather Predictions}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://uhi.on.worldcat.org/oclc/1225354709
+      \endverb
+      \verb{url}
+      \verb https://uhi.on.worldcat.org/oclc/1225354709
+      \endverb
+    \endentry
+    \entry{medium_range_3d_weather_forecasting_NN}{article}{}
+      \name{author}{6}{}{%
+        {{hash=6ce83c6930257f1bda3f2d26cf0da663}{%
+           family={Bi},
+           familyi={B\bibinitperiod},
+           given={Kaifeng},
+           giveni={K\bibinitperiod}}}%
+        {{hash=465fac3aefe5aab59dc6ab47670a1bdd}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Lingxi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e1e92d80edcb00bf72d15567731837f1}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hengheng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c6b0b16d268b7266380aa15c23031fcf}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ac565d0f91eabaa258728d27ef55d4ab}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Xiaotao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=9632951617f2079b7d7fa6a955341020}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{a738364c3e52c207ca122b03ff948481}
+      \strng{fullhash}{1b27191b9fc28f6626c696777ba858d5}
+      \strng{bibnamehash}{a738364c3e52c207ca122b03ff948481}
+      \strng{authorbibnamehash}{a738364c3e52c207ca122b03ff948481}
+      \strng{authornamehash}{a738364c3e52c207ca122b03ff948481}
+      \strng{authorfullhash}{1b27191b9fc28f6626c696777ba858d5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{month}{07}
+      \field{title}{Accurate medium-range global weather forecasting with 3D neural networks}
+      \field{volume}{619}
+      \field{year}{2023}
+      \field{pages}{533\bibrangedash 538}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/s41586-023-06185-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/s41586-023-06185-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/s41586-023-06185-3
+      \endverb
+    \endentry
+    \entry{dueben2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7b9f6487ce8a2748681e7aa17928878a}{%
+           family={Dueben},
+           familyi={D\bibinitperiod},
+           given={P.\bibnamedelimi D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=c73704e7b0c140d8aa302c45b7df5cd7}{%
+           family={Bauer},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb63d6e8e5a8de8a585257048d85c18c}
+      \strng{fullhash}{fb63d6e8e5a8de8a585257048d85c18c}
+      \strng{bibnamehash}{fb63d6e8e5a8de8a585257048d85c18c}
+      \strng{authorbibnamehash}{fb63d6e8e5a8de8a585257048d85c18c}
+      \strng{authornamehash}{fb63d6e8e5a8de8a585257048d85c18c}
+      \strng{authorfullhash}{fb63d6e8e5a8de8a585257048d85c18c}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geoscientific Model Development}
+      \field{number}{10}
+      \field{title}{Challenges and design choices for global weather and climate models based on machine learning}
+      \field{volume}{11}
+      \field{year}{2018}
+      \field{pages}{3999\bibrangedash 4009}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.5194/gmd-11-3999-2018
+      \endverb
+      \verb{urlraw}
+      \verb https://gmd.copernicus.org/articles/11/3999/2018/
+      \endverb
+      \verb{url}
+      \verb https://gmd.copernicus.org/articles/11/3999/2018/
+      \endverb
+    \endentry
+    \entry{brunt_vaisala_freq_eumtrain}{website}{}
+      \name{author}{1}{}{%
+        {{hash=df6f92cc327a5d94b9750966bd63d8e6}{%
+           family={Eumtrain},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{df6f92cc327a5d94b9750966bd63d8e6}
+      \strng{fullhash}{df6f92cc327a5d94b9750966bd63d8e6}
+      \strng{bibnamehash}{df6f92cc327a5d94b9750966bd63d8e6}
+      \strng{authorbibnamehash}{df6f92cc327a5d94b9750966bd63d8e6}
+      \strng{authornamehash}{df6f92cc327a5d94b9750966bd63d8e6}
+      \strng{authorfullhash}{df6f92cc327a5d94b9750966bd63d8e6}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Brunt-Väisälä Frequency}
+      \field{urlday}{3}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://resources.eumetrain.org/data/4/452/navmenu.php?tab=4&page=4.0.0
+      \endverb
+      \verb{url}
+      \verb https://resources.eumetrain.org/data/4/452/navmenu.php?tab=4&page=4.0.0
+      \endverb
+    \endentry
+    \entry{historyNWP}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0edbbaf9d890391d8b895002f81d3863}{%
+           family={Kristine},
+           familyi={K\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cec07676db30662a38f217b2a31524cd}{%
+           family={Louis},
+           familyi={L\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+        {{hash=14b4e19de87e2c18eb0b28034cb7fb29}{%
+           family={Eugenia},
+           familyi={E\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=06b0b1bd76972273b96cf9784d5c1bfd}{%
+           family={Kenneth},
+           familyi={K\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=617858f347e6bdf8fca2f134e9904025}{%
+           family={Lauren},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7cb8107ee898243dbd872d9330faf86}
+      \strng{fullhash}{a79bf1679e0922f067401254e57c8ff2}
+      \strng{bibnamehash}{c7cb8107ee898243dbd872d9330faf86}
+      \strng{authorbibnamehash}{c7cb8107ee898243dbd872d9330faf86}
+      \strng{authornamehash}{c7cb8107ee898243dbd872d9330faf86}
+      \strng{authorfullhash}{a79bf1679e0922f067401254e57c8ff2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{5}
+      \field{journaltitle}{Bulletin of the American Meteorological}
+      \field{month}{05}
+      \field{title}{50th anniversary of operational numerical weather prediction}
+      \field{volume}{88}
+      \field{year}{2007}
+      \field{pages}{639\bibrangedash 650}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1175/BAMS-88-5-639
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1175/BAMS-88-5-639
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1175/BAMS-88-5-639
+      \endverb
+    \endentry
+    \entry{GraphCast}{misc}{}
+      \name{author}{18}{}{%
+        {{hash=1fc5717e2ceebd1f57d66fd797f6f74e}{%
+           family={Lam},
+           familyi={L\bibinitperiod},
+           given={Remi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cfe62c9365c523ba7d4f7fd1147cff41}{%
+           family={Sanchez-Gonzalez},
+           familyi={S\bibinithyphendelim G\bibinitperiod},
+           given={Alvaro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=42d2fec26cb0bf53d710afb65898039d}{%
+           family={Willson},
+           familyi={W\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=09f9c673c1deaaeb68701d1d87e9532f}{%
+           family={Wirnsberger},
+           familyi={W\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=dfc7f8069848dbc66435c3acc3172871}{%
+           family={Fortunato},
+           familyi={F\bibinitperiod},
+           given={Meire},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6d3d4dd10dfa9d2ff6aebafa13b49c51}{%
+           family={Alet},
+           familyi={A\bibinitperiod},
+           given={Ferran},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8ade4d0ea217bc28fcacd7065f2f9b18}{%
+           family={Ravuri},
+           familyi={R\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2687d58e59afed22249974d723704f56}{%
+           family={Ewalds},
+           familyi={E\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=db8a6c42ed8708617798d0915cef125a}{%
+           family={Eaton-Rosen},
+           familyi={E\bibinithyphendelim R\bibinitperiod},
+           given={Zach},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=164c7f22cde069c57bf9b80f76441fa9}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Weihua},
+           giveni={W\bibinitperiod}}}%
+        {{hash=08fd7cbc2c64482b4a32a0fc0a6be49b}{%
+           family={Merose},
+           familyi={M\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4a22828b76006f42d747b699d2ef5167}{%
+           family={Hoyer},
+           familyi={H\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bdbb3a16673eedc75efed8f7d5a0eecf}{%
+           family={Holland},
+           familyi={H\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=494b568c5dc85ba8f3f409635f9c5f25}{%
+           family={Vinyals},
+           familyi={V\bibinitperiod},
+           given={Oriol},
+           giveni={O\bibinitperiod}}}%
+        {{hash=dd5ff4aa35cc699b5d29946477bd39a1}{%
+           family={Stott},
+           familyi={S\bibinitperiod},
+           given={Jacklynn},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4295e4094c426f01903ac60155866130}{%
+           family={Pritzel},
+           familyi={P\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b520f2e46ec8803dd4c66bf1d6059482}{%
+           family={Mohamed},
+           familyi={M\bibinitperiod},
+           given={Shakir},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5a63429a6e1733e8f3f4dc71cbb6eec9}{%
+           family={Battaglia},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f2e4c632a27fd34473e46d2272ab599}
+      \strng{fullhash}{a7cd42ab420870e65fce891795ee4253}
+      \strng{bibnamehash}{5f2e4c632a27fd34473e46d2272ab599}
+      \strng{authorbibnamehash}{5f2e4c632a27fd34473e46d2272ab599}
+      \strng{authornamehash}{5f2e4c632a27fd34473e46d2272ab599}
+      \strng{authorfullhash}{a7cd42ab420870e65fce891795ee4253}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{GraphCast: Learning skillful medium-range global weather forecasting}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2212.12794
+      \endverb
+    \endentry
+    \entry{SecondRevolution}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=78fee2f5760b1a0488b5439a0b7dd64a}{%
+           family={Ling},
+           familyi={L\bibinitperiod},
+           given={Fenghua},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f5067be98534d9d194b8928751c97fa2}{%
+           family={Ouyang},
+           familyi={O\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6927e50fe1bcd24cea4583b774e23217}{%
+           family={Larbi},
+           familyi={L\bibinitperiod},
+           given={Boufeniza\bibnamedelima Redouane},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=949ac811b67dc9ef6a4acf4b62e3a733}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Jing-Jia},
+           giveni={J\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=43e9a5b73b47e74d55cbc6a770b5bafa}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e2fdbd891519e99e8b4a855e86b73fc9}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Xiaohui},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b69cbcd914a52e22b2d75d4133ca7258}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{72dc547f637c6187a8358efaa797f307}
+      \strng{fullhash}{9dd66122cec0b0a880203fe189bd28ce}
+      \strng{bibnamehash}{72dc547f637c6187a8358efaa797f307}
+      \strng{authorbibnamehash}{72dc547f637c6187a8358efaa797f307}
+      \strng{authornamehash}{72dc547f637c6187a8358efaa797f307}
+      \strng{authorfullhash}{9dd66122cec0b0a880203fe189bd28ce}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Is Artificial Intelligence Providing the Second Revolution for Weather Forecasting?}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2401.16669
+      \endverb
+    \endentry
+    \entry{TheENIACForecastsARecreation}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bb6e2fa4da417b8e18a6a074ca00bc17}{%
+           family={Lynch},
+           familyi={L\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {American Meteorological Society}%
+      }
+      \strng{namehash}{bb6e2fa4da417b8e18a6a074ca00bc17}
+      \strng{fullhash}{bb6e2fa4da417b8e18a6a074ca00bc17}
+      \strng{bibnamehash}{bb6e2fa4da417b8e18a6a074ca00bc17}
+      \strng{authorbibnamehash}{bb6e2fa4da417b8e18a6a074ca00bc17}
+      \strng{authornamehash}{bb6e2fa4da417b8e18a6a074ca00bc17}
+      \strng{authorfullhash}{bb6e2fa4da417b8e18a6a074ca00bc17}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of the American Meteorological Society}
+      \field{number}{1}
+      \field{title}{The ENIAC Forecasts: A Re-creation}
+      \field{volume}{89}
+      \field{year}{2008}
+      \field{pages}{45\bibrangedash 56}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1175/BAMS-89-1-45
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.ametsoc.org/view/journals/bams/89/1/bams-89-1-45.xml
+      \endverb
+      \verb{url}
+      \verb https://journals.ametsoc.org/view/journals/bams/89/1/bams-89-1-45.xml
+      \endverb
+    \endentry
+    \entry{shapley_information}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9d661396f5824ac09af63e61d3981e8d}{%
+           family={Molnar},
+           familyi={M\bibinitperiod},
+           given={Cristoph},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Independently published}%
+      }
+      \strng{namehash}{9d661396f5824ac09af63e61d3981e8d}
+      \strng{fullhash}{9d661396f5824ac09af63e61d3981e8d}
+      \strng{bibnamehash}{9d661396f5824ac09af63e61d3981e8d}
+      \strng{authorbibnamehash}{9d661396f5824ac09af63e61d3981e8d}
+      \strng{authornamehash}{9d661396f5824ac09af63e61d3981e8d}
+      \strng{authorfullhash}{9d661396f5824ac09af63e61d3981e8d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd edition}
+      \field{isbn}{979-8411463330}
+      \field{subtitle}{A Guide for Making Black Box Models Explainable}
+      \field{title}{Interpretable Machine Learning}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://christophm.github.io/interpretable-ml-book/
+      \endverb
+      \verb{url}
+      \verb https://christophm.github.io/interpretable-ml-book/
+      \endverb
+    \endentry
+    \entry{nasa_extreme_weather}{website}{}
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={NASA},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{NASA Website}
+      \field{month}{3}
+      \field{note}{The article site was last updated in March of 2024, not original publish date.}
+      \field{title}{Extreme Weather and Climate Change}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://science.nasa.gov/climate-change/extreme-weather/
+      \endverb
+      \verb{url}
+      \verb https://science.nasa.gov/climate-change/extreme-weather/
+      \endverb
+    \endentry
+    \entry{why_wind_gusts}{website}{}
+      \name{author}{1}{}{%
+        {{hash=ba1b376eae5727bb306fcff72a5d1f1f}{%
+           family={Oblack},
+           familyi={O\bibinitperiod},
+           given={Rachelle},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba1b376eae5727bb306fcff72a5d1f1f}
+      \strng{fullhash}{ba1b376eae5727bb306fcff72a5d1f1f}
+      \strng{bibnamehash}{ba1b376eae5727bb306fcff72a5d1f1f}
+      \strng{authorbibnamehash}{ba1b376eae5727bb306fcff72a5d1f1f}
+      \strng{authornamehash}{ba1b376eae5727bb306fcff72a5d1f1f}
+      \strng{authorfullhash}{ba1b376eae5727bb306fcff72a5d1f1f}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Thought Co. website}
+      \field{month}{4}
+      \field{note}{An article by Rachelle Oblack on the Thought Co. website. She is a textbook writer for Holt McDougal.}
+      \field{title}{Causes of Wind Gusts and Squalls}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.thoughtco.com/why-wind-gusts-3444339
+      \endverb
+      \verb{url}
+      \verb https://www.thoughtco.com/why-wind-gusts-3444339
+      \endverb
+    \endentry
+    \entry{vegagerdin_postur}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7f80a66b5d777500a0c54bba825e2b92}{%
+           family={Pálsson},
+           familyi={P\bibinitperiod},
+           given={Einar},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f80a66b5d777500a0c54bba825e2b92}
+      \strng{fullhash}{7f80a66b5d777500a0c54bba825e2b92}
+      \strng{bibnamehash}{7f80a66b5d777500a0c54bba825e2b92}
+      \strng{authorbibnamehash}{7f80a66b5d777500a0c54bba825e2b92}
+      \strng{authornamehash}{7f80a66b5d777500a0c54bba825e2b92}
+      \strng{authorfullhash}{7f80a66b5d777500a0c54bba825e2b92}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Email correspondance}
+      \field{note}{Sent to author on 9/4/2024 from einar.palsson@vegagerdin.is}
+      \field{title}{Personal Communication}
+      \field{year}{2024}
+    \endentry
+    \entry{FourCastNet}{misc}{}
+      \name{author}{13}{}{%
+        {{hash=e0b52fc61a09e5d4ec0bd3c377bc091d}{%
+           family={Pathak},
+           familyi={P\bibinitperiod},
+           given={Jaideep},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cee0a41a2d73198900f69a061866e73d}{%
+           family={Subramanian},
+           familyi={S\bibinitperiod},
+           given={Shashank},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c7bdb6e2f179a795e5fea5ee3f1dd881}{%
+           family={Harrington},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=eb774f60409e05626cc346a9a585d798}{%
+           family={Raja},
+           familyi={R\bibinitperiod},
+           given={Sanjeev},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ec66805f28d18e0e2f0f76ee7c50b35e}{%
+           family={Chattopadhyay},
+           familyi={C\bibinitperiod},
+           given={Ashesh},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f748ee717de2f584b77f2adcaa39ac4f}{%
+           family={Mardani},
+           familyi={M\bibinitperiod},
+           given={Morteza},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e84cf6f21e69401629dd298190e27af0}{%
+           family={Kurth},
+           familyi={K\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+        {{hash=787c1284a811cd99828ca8d83ec36001}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=009036050bf23abe561429f6eaa0b018}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zongyi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=3648b51d63e1ae389e46f87296d4c89a}{%
+           family={Azizzadenesheli},
+           familyi={A\bibinitperiod},
+           given={Kamyar},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2ccb4b0a6b27706de9e4f071c8c738f3}{%
+           family={Hassanzadeh},
+           familyi={H\bibinitperiod},
+           given={Pedram},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4a3e85c858b9a959e43705465ae86759}{%
+           family={Kashinath},
+           familyi={K\bibinitperiod},
+           given={Karthik},
+           giveni={K\bibinitperiod}}}%
+        {{hash=d759f492243bb3ad5b49139f1d2f99c4}{%
+           family={Anandkumar},
+           familyi={A\bibinitperiod},
+           given={Animashree},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{90d400c82744120a09fce15eccfc6c69}
+      \strng{fullhash}{fd24a8d9f02f5683431ca0df70a66bcb}
+      \strng{bibnamehash}{90d400c82744120a09fce15eccfc6c69}
+      \strng{authorbibnamehash}{90d400c82744120a09fce15eccfc6c69}
+      \strng{authornamehash}{90d400c82744120a09fce15eccfc6c69}
+      \strng{authorfullhash}{fd24a8d9f02f5683431ca0df70a66bcb}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.ao-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2202.11214
+      \endverb
+    \endentry
+    \entry{GNP_vidtal}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=42d90c94dddfff57d91f38abd7ec5d73}{%
+           family={Petersen},
+           familyi={P\bibinitperiod},
+           given={Guðrún\bibnamedelima Nína},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{42d90c94dddfff57d91f38abd7ec5d73}
+      \strng{fullhash}{42d90c94dddfff57d91f38abd7ec5d73}
+      \strng{bibnamehash}{42d90c94dddfff57d91f38abd7ec5d73}
+      \strng{authorbibnamehash}{42d90c94dddfff57d91f38abd7ec5d73}
+      \strng{authornamehash}{42d90c94dddfff57d91f38abd7ec5d73}
+      \strng{authorfullhash}{42d90c94dddfff57d91f38abd7ec5d73}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{In-person meeting}
+      \field{month}{11}
+      \field{note}{Date of communication: November 14th, 2023}
+      \field{title}{Meeting at Veðurstofa}
+      \field{year}{2023}
+    \endentry
+    \entry{Salih_2024}{article}{}
+      \name{author}{7}{}{%
+        {{hash=71cc7a471324dcd6f181497acc03e751}{%
+           family={Salih},
+           familyi={S\bibinitperiod},
+           given={Ahmed\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=613d13d8f4fc2e49d6b974e9f9325c51}{%
+           family={Raisi‐Estabragh},
+           familyi={R\bibinithyphendelim E\bibinitperiod},
+           given={Zahra},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=061e41bf0f82d4fde89f7746755e0ccb}{%
+           family={Galazzo},
+           familyi={G\bibinitperiod},
+           given={Ilaria\bibnamedelima Boscolo},
+           giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=6d839b48e2382fec538c109895b536f5}{%
+           family={Radeva},
+           familyi={R\bibinitperiod},
+           given={Petia},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d7b5c8def89d4066e2f84eec806b1586}{%
+           family={Petersen},
+           familyi={P\bibinitperiod},
+           given={Steffen\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=7afea3dacf80d06a4da14f3689e1b2ae}{%
+           family={Lekadir},
+           familyi={L\bibinitperiod},
+           given={Karim},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3c60ec3d1224c0dc3491c2728509b6b9}{%
+           family={Menegaz},
+           familyi={M\bibinitperiod},
+           given={Gloria},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{4ffc58376305aa845d93ed64c0ffca61}
+      \strng{fullhash}{d985a77a52c9aa8aaa0a0888c7fed0b1}
+      \strng{bibnamehash}{4ffc58376305aa845d93ed64c0ffca61}
+      \strng{authorbibnamehash}{4ffc58376305aa845d93ed64c0ffca61}
+      \strng{authornamehash}{4ffc58376305aa845d93ed64c0ffca61}
+      \strng{authorfullhash}{d985a77a52c9aa8aaa0a0888c7fed0b1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2640-4567}
+      \field{journaltitle}{Advanced Intelligent Systems}
+      \field{month}{6}
+      \field{title}{A Perspective on Explainable Artificial Intelligence Methods: SHAP and LIME}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1002/aisy.202400304
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1002/aisy.202400304
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/aisy.202400304
+      \endverb
+    \endentry
+    \entry{scher2018}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0a85a23a68545315c5a55473d732e3ce}{%
+           family={Scher},
+           familyi={S\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a85a23a68545315c5a55473d732e3ce}
+      \strng{fullhash}{0a85a23a68545315c5a55473d732e3ce}
+      \strng{bibnamehash}{0a85a23a68545315c5a55473d732e3ce}
+      \strng{authorbibnamehash}{0a85a23a68545315c5a55473d732e3ce}
+      \strng{authornamehash}{0a85a23a68545315c5a55473d732e3ce}
+      \strng{authorfullhash}{0a85a23a68545315c5a55473d732e3ce}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{month}{11}
+      \field{title}{Toward Data-Driven Weather and Climate Forecasting: Approximating a Simple General Circulation Model With Deep Learning}
+      \field{volume}{45}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1029/2018GL080704
+      \endverb
+    \endentry
+    \entry{canNNBeatNWP}{article}{}
+      \name{author}{8}{}{%
+        {{hash=65cbe6a1d6a3557783c78c84a06e3a29}{%
+           family={Schultz},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6d72e45bd326e3c487f00fb36b27274a}{%
+           family={Betancourt},
+           familyi={B\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8f3c1bf641c1057bc1a62172c5122884}{%
+           family={Gong},
+           familyi={G\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8f750fbf8ac8864c069c6241ad649837}{%
+           family={Kleinert},
+           familyi={K\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a7929880cfff975e6039b8f011de103f}{%
+           family={Langguth},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8a77047927768672fef5aedbd06083ff}{%
+           family={Leufen},
+           familyi={L\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=5b7f570acd9a6a59657341c512897438}{%
+           family={Mozaffari},
+           familyi={M\bibinitperiod},
+           given={Amirpasha},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1194cab01a18206472a428af44f3158d}{%
+           family={Stadtler},
+           familyi={S\bibinitperiod},
+           given={Scarlet},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8bcb7994cdfd169dcf998e7f3100c57b}
+      \strng{fullhash}{9cb7eb849c4f094e177f442dd6526ec9}
+      \strng{bibnamehash}{8bcb7994cdfd169dcf998e7f3100c57b}
+      \strng{authorbibnamehash}{8bcb7994cdfd169dcf998e7f3100c57b}
+      \strng{authornamehash}{8bcb7994cdfd169dcf998e7f3100c57b}
+      \strng{authorfullhash}{9cb7eb849c4f094e177f442dd6526ec9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Philosophical Transactions of The Royal Society A Mathematical Physical and Engineering Sciences}
+      \field{month}{02}
+      \field{title}{Can deep learning beat numerical weather prediction?}
+      \field{volume}{379}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1098/rsta.2020.0097
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1098/rsta.2020.0097
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1098/rsta.2020.0097
+      \endverb
+    \endentry
+    \entry{richardson_number_skybrary}{website}{}
+      \name{author}{1}{}{%
+        {{hash=b7eb24f94214171f3565a15c0d2ba9f6}{%
+           family={Skybrary},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{fullhash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{bibnamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{authorbibnamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{authornamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{authorfullhash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Richardson Number}
+      \field{urlday}{3}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://skybrary.aero/articles/richardson-number
+      \endverb
+      \verb{url}
+      \verb https://skybrary.aero/articles/richardson-number
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

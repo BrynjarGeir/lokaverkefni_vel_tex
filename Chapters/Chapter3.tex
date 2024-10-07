@@ -26,17 +26,17 @@ The error in reanalysis wind speed and measured wind speed can be significant. T
     \label{table:measuredVSReanalysis_wind_speed}
     \centering
     \begin{tabular}{cccc}
-        
+        \toprule
         f & n & MAE & MAPE \\
-        
-        {[}0;5{[} & 6.2e6 & 2.1 & 1.6\\
-        {[}5;10{[} & 4.2e6 & 2.2 & 0.3\\
-        {[}10;15{[} & 1.5e6 & 2.5 & 0.2\\
-        {[}15;20{[} & 3.9e5 & 3.0 & 0.2\\
-        {[}20;25{[} & 8.4e4 & 4.0 & 0.2\\
-        {[}25;$\infty${[} & 2.0e4 & 6.6 & 0.2\\
-        {[}0;$\infty${[} & 1.2e7 & 2.2 & 1.0\\
-        
+        \midrule
+        $[0;5[$ & 6.2e6 & 2.1 & 1.6\\
+        $[5;10[$ & 4.2e6 & 2.2 & 0.3\\
+        $[10;15[$ & 1.5e6 & 2.5 & 0.2\\
+        $[15;20[$ & 3.9e5 & 3.0 & 0.2\\
+        $[20;25[$ & 8.4e4 & 4.0 & 0.2\\
+        $[25;\infty[$ & 2.0e4 & 6.6 & 0.2\\
+        $[0;\infty[$ & 1.2e7 & 2.2 & 1.0\\
+        \bottomrule
     \end{tabular}
 \end{table}
 
@@ -56,9 +56,9 @@ Table \ref{table:station_mae_distribution} shows the 5 best and worst stations i
     \resizebox{\textwidth}{!}{
     \centering
     \begin{tabular}{cccc}
-        
+        \toprule
         Station & Number of measurements & MAE & Location \\
-        
+        \midrule
         1470 & 6.8e3 & 1.17 & Reykjavík Háahlíð \\
         1350 & 5.2e4 & 1.18 & Keflavíkurflugvöllur \\
         1482 & 1.4e4 & 1.23 & Reykjavík Víðidalur \\
@@ -69,7 +69,7 @@ Table \ref{table:station_mae_distribution} shows the 5 best and worst stations i
         35978 & 7.9e3 & 4.40 & Fáskrúðsfjarðargöng suður\\
         2640 & 1.6e3 & 4.51 & Seljalandsdalur\\
         32635 & 3.2e4 & 4.95 & Botn í Súgandafirði\\
-        
+        \bottomrule
     \end{tabular}
     }
 \end{table}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  6 OCT 2024 23:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  7 OCT 2024 09:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1272,84 +1272,7 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface.
 
-
-LaTeX Warning: Citation 'why_wind_gusts' on page 3 undefined on input line 17.
-
-
-LaTeX Warning: Citation 'uncertainties_in_numerical_weather_predictions' on page 3 undefined on input line 17.
-
-
-LaTeX Warning: Citation 'medium_range_3d_weather_forecasting_NN' on page 3 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'GNP_vidtal' on page 3 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'canNNBeatNWP' on page 3 undefined on input line 23.
-
-
-Overfull \hbox (20.3648pt too wide) in paragraph at lines 23--24
-\T1/lmr/m/n/12 an-a-lyze weather patterns[[]]. These
- []
-
-
-LaTeX Warning: Citation 'nasa_extreme_weather' on page 3 undefined on input line 25.
-
-
-LaTeX Warning: Citation 'TheENIACForecastsARecreation' on page 3 undefined on input line 28.
-
-
-LaTeX Warning: Citation 'historyNWP' on page 3 undefined on input line 28.
-
-
-Overfull \hbox (3.44568pt too wide) in paragraph at lines 28--29
-\T1/lmr/m/n/12 ture. It was a proof of con-cept but not usable[[]].
- []
-
-[3{C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-
-LaTeX Warning: Citation 'canNNBeatNWP' on page 4 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'dueben2018' on page 4 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'scher2018' on page 4 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'SecondRevolution' on page 4 undefined on input line 32.
-
-[4]
-
-LaTeX Warning: Citation 'SecondRevolution' on page 5 undefined on input line 37.
-
-
-LaTeX Warning: Citation 'FourCastNet' on page 5 undefined on input line 40.
-
-
-LaTeX Warning: Citation 'FourCastNet' on page 5 undefined on input line 40.
-
-
-LaTeX Warning: Citation 'GraphCast' on page 5 undefined on input line 40.
-
-
-LaTeX Warning: Citation 'SecondRevolution' on page 5 undefined on input line 42.
-
-[5]
-
-LaTeX Warning: Citation 'mean_gust_HA_HO' on page 6 undefined on input line 47.
-
-[6]
-
-LaTeX Warning: Citation 'nn_black_box' on page 7 undefined on input line 58.
-
-
-LaTeX Warning: Citation 'shapley_information' on page 7 undefined on input line 58.
-
-
-LaTeX Warning: Citation 'eli5_information' on page 7 undefined on input line 58.
-
-) [7]
+[3{C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [4] [5]) [6] [7]
 \openout2 = `Chapters/Chapter2.aux'.
 
  (Chapters/Chapter2.tex [8
@@ -1360,19 +1283,12 @@ LaTeX Warning: Citation 'eli5_information' on page 7 undefined on input line 58.
 
 ]
 chapter 2.
-
-LaTeX Warning: Citation 'vegagerdin_postur' on page 9 undefined on input line 9.
-
-<Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png, id=246, 332.442pt x 241.3818pt>
+<Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png, id=284, 332.442pt x 241.3818pt>
 File: Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png Graphic file (type png)
 <use Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png>
 Package pdftex.def Info: Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png  used on input line 13.
 (pdftex.def)             Requested size: 332.44118pt x 241.38121pt.
-[9]
-
-LaTeX Warning: Citation 'carra_information' on page 10 undefined on input line 19.
-
-[10 <./Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png>]) [11]
+[9] [10 <./Figures/stationsOverIceland_2024-05-16_stripped_to_frame.png>]) [11]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (Chapters/Chapter3.tex [12
@@ -1383,7 +1299,7 @@ LaTeX Warning: Citation 'carra_information' on page 10 undefined on input line 1
 
 ]
 chapter 3.
-<Figures/data-preprocessing-flow-chart.png, id=267, 572.1375pt x 797.98125pt>
+<Figures/data-preprocessing-flow-chart.png, id=308, 572.1375pt x 797.98125pt>
 File: Figures/data-preprocessing-flow-chart.png Graphic file (type png)
 <use Figures/data-preprocessing-flow-chart.png>
 Package pdftex.def Info: Figures/data-preprocessing-flow-chart.png  used on input line 8.
@@ -1391,28 +1307,23 @@ Package pdftex.def Info: Figures/data-preprocessing-flow-chart.png  used on inpu
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation 'GNP_vidtal' on page 13 undefined on input line 13.
-
 [13]
 Overfull \hbox (1.92924pt too wide) in paragraph at lines 15--16
 []\T1/lmr/m/n/12 Once CARRA data has been merged with AWS data, us-ing sta-tion and time columns,
  []
 
 [14 <./Figures/data-preprocessing-flow-chart.png>]
-
-LaTeX Warning: Citation 'GNP_vidtal' on page 15 undefined on input line 19.
-
-<Figures/MAEoverIceland.png, id=281, 704.6325pt x 468.3096pt>
+<Figures/MAEoverIceland.png, id=324, 704.6325pt x 468.3096pt>
 File: Figures/MAEoverIceland.png Graphic file (type png)
 <use Figures/MAEoverIceland.png>
 Package pdftex.def Info: Figures/MAEoverIceland.png  used on input line 46.
 (pdftex.def)             Requested size: 422.78278pt x 280.98793pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15] [16 <./Figures/MAEoverIceland.png>]
-<Figures/MAPEoverIceland.png, id=293, 707.5233pt x 473.3685pt>
+<Figures/MAPEoverIceland.png, id=336, 707.5233pt x 473.3685pt>
 File: Figures/MAPEoverIceland.png Graphic file (type png)
 <use Figures/MAPEoverIceland.png>
 Package pdftex.def Info: Figures/MAPEoverIceland.png  used on input line 80.
@@ -1434,48 +1345,11 @@ Overfull \hbox (32.6345pt too wide) in paragraph at lines 94--95
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-LaTeX Warning: Citation 'richardson_number_skybrary' on page 19 undefined on input line 111.
-
-
-LaTeX Warning: Citation 'brunt_vaisala_freq_eumtrain' on page 19 undefined on input line 111.
-
-
-LaTeX Warning: Citation 'mean_gust_HA_HO' on page 19 undefined on input line 111.
-
-
-Overfull \hbox (100.54099pt too wide) in paragraph at lines 111--112
-\T1/lmr/m/n/12 scribe the sta-bil-ity of the air. These are the Richard-son num-ber ($\OML/lmm/m/it/12 Ri$\T1/lmr/m/n/12 )[[]]
- []
-
-[19]
-
-LaTeX Warning: Citation 'richardson_number_skybrary' on page 20 undefined on input line 122.
-
-
-LaTeX Warning: Citation 'brunt_vaisala_freq_eumtrain' on page 20 undefined on input line 122.
-
-
-LaTeX Warning: Citation 'shapley_information' on page 20 undefined on input line 122.
-
-)
-Overfull \hbox (23.66365pt too wide) in paragraph at lines 122--441
-\T1/lmr/m/n/12 with val-ues be-low 1 in-di-cat-ing sig-nif-i-cant turbulence[[]].
- []
-
-
-Overfull \hbox (36.67134pt too wide) in paragraph at lines 122--441
-\T1/lmr/m/n/12 (an air par-cel will move away from its orig-i-nal position)[[]].
- []
-
-[20]
+[19]) [20]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (Chapters/Chapter4.tex
 chapter 4.
-
-LaTeX Warning: Citation 'hyperparameters_definition' on page 21 undefined on input line 8.
-
 [21
 
 
@@ -1483,7 +1357,7 @@ LaTeX Warning: Citation 'hyperparameters_definition' on page 21 undefined on inp
 
 
 ]
-<Figures/loss_plot_wo_elevation.png, id=333, 722.7pt x 433.62pt>
+<Figures/loss_plot_wo_elevation.png, id=387, 722.7pt x 433.62pt>
 File: Figures/loss_plot_wo_elevation.png Graphic file (type png)
 <use Figures/loss_plot_wo_elevation.png>
 Package pdftex.def Info: Figures/loss_plot_wo_elevation.png  used on input line 35.
@@ -1493,7 +1367,7 @@ Overfull \hbox (6.83194pt too wide) in paragraph at lines 35--36
  [][] 
  []
 
-<Figures/loss_plot_w_elevation.png, id=334, 722.7pt x 433.62pt>
+<Figures/loss_plot_w_elevation.png, id=388, 722.7pt x 433.62pt>
 File: Figures/loss_plot_w_elevation.png Graphic file (type png)
 <use Figures/loss_plot_w_elevation.png>
 Package pdftex.def Info: Figures/loss_plot_w_elevation.png  used on input line 43.
@@ -1514,22 +1388,15 @@ Overfull \hbox (6.83194pt too wide) in paragraph at lines 43--44
 
 ]
 chapter 5.
-
-LaTeX Warning: Citation 'mean_gust_HA_HO' on page 25 undefined on input line 4.
-
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7.
 (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-
-LaTeX Warning: Citation 'wind_power' on page 25 undefined on input line 37.
-
-[25]
+) [25]
 Overfull \hbox (35.18994pt too wide) in paragraph at lines 43--57
  [][] 
  []
 
-<Figures/errorMap.png, id=361, 850.377pt x 513.117pt>
+<Figures/errorMap.png, id=417, 850.377pt x 513.117pt>
 File: Figures/errorMap.png Graphic file (type png)
 <use Figures/errorMap.png>
 Package pdftex.def Info: Figures/errorMap.png  used on input line 63.
@@ -1543,7 +1410,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/shap_plots/waterfall_plot.png, id=367, 646.0938pt x 372.9132pt>
+<Figures/shap_plots/waterfall_plot.png, id=423, 646.0938pt x 372.9132pt>
 File: Figures/shap_plots/waterfall_plot.png Graphic file (type png)
 <use Figures/shap_plots/waterfall_plot.png>
 Package pdftex.def Info: Figures/shap_plots/waterfall_plot.png  used on input line 110.
@@ -1552,52 +1419,48 @@ Package pdftex.def Info: Figures/shap_plots/waterfall_plot.png  used on input li
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [26]
-<Figures/shap_plots/summary_plot.png, id=381, 578.16pt x 339.669pt>
+<Figures/shap_plots/summary_plot.png, id=438, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot.png  used on input line 119.
 (pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
-<Figures/shap_plots/summary_plot_190924_.png, id=388, 578.16pt x 339.669pt>
+<Figures/shap_plots/summary_plot_190924_.png, id=445, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot_190924_.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_190924_.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_.png  used on input line 126.
 (pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
-<Figures/shap_plots/summary_plot_190924_full_10ms.png, id=399, 578.16pt x 339.669pt>
+<Figures/shap_plots/summary_plot_190924_full_10ms.png, id=456, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot_190924_full_10ms.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_190924_full_10ms.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_full_10ms.png  used on input line 135.
 (pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
  [27 <./Figures/errorMap.png>]
-<Figures/shap_plots/summary_plot_31572.png, id=412, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_31572.png, id=469, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_31572.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_31572.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_31572.png  used on input line 144.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_35553.png, id=417, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_35553.png, id=474, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_35553.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_35553.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_35553.png  used on input line 151.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_6745.png, id=422, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_6745.png, id=479, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_6745.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_6745.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_6745.png  used on input line 158.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_1470.png, id=427, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_1470.png, id=484, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_1470.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_1470.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_1470.png  used on input line 165.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_1350.png, id=432, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_1350.png, id=489, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_1350.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_1350.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_1350.png  used on input line 172.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-
-
-LaTeX Warning: Citation 'Salih_2024' on page 28 undefined on input line 177.
-
-[28]) [29] [30 <./Figures/shap_plots/waterfall_plot.png> <./Figures/shap_plots/summary_plot.png>] [31 <./Figures/shap_plots/summary_plot_190924_.png> <./Figures/shap_plots/summary_plot_190924_full_10ms.png>] [32 <./Figures/shap_plots/summary_plot_31572.png> <./Figures/shap_plots/summary_plot_35553.png>] [33 <./Figures/shap_plots/summary_plot_6745.png> <./Figures/shap_plots/summary_plot_1470.png>] [34 <./Figures/shap_plots/summary_plot_1350.png>]
+ [28]) [29] [30 <./Figures/shap_plots/waterfall_plot.png> <./Figures/shap_plots/summary_plot.png>] [31 <./Figures/shap_plots/summary_plot_190924_.png> <./Figures/shap_plots/summary_plot_190924_full_10ms.png>] [32 <./Figures/shap_plots/summary_plot_31572.png> <./Figures/shap_plots/summary_plot_35553.png>] [33 <./Figures/shap_plots/summary_plot_6745.png> <./Figures/shap_plots/summary_plot_1470.png>] [34 <./Figures/shap_plots/summary_plot_1350.png>]
 \openout2 = `Chapters/Chapter6.aux'.
 
  (Chapters/Chapter6.tex
@@ -1613,33 +1476,96 @@ chapter 6.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `MSc.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                MSc
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'MSc.run.xml'.
 \openout1 = `MSc.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38098 strings out of 474423
- 737213 string characters out of 5741718
+ 38177 strings out of 474423
+ 739783 string characters out of 5741718
  1951496 words of memory out of 5000000
- 59682 multiletter control sequences out of 15000+600000
+ 59737 multiletter control sequences out of 15000+600000
  653815 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,107p,10960b,1985s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{cite.0@Salih_2024} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@wind_power} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@hyperparameters_definition} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@brunt_vaisala_freq_eumtrain} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@richardson_number_skybrary} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@carra_information} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@vegagerdin_postur} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@eli5_information} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@shapley_information} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@nn_black_box} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@mean_gust_HA_HO} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@GraphCast} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@FourCastNet} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@SecondRevolution} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@scher2018} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@dueben2018} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@historyNWP} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@TheENIACForecastsARecreation} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@nasa_extreme_weather} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@canNNBeatNWP} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@GNP_vidtal} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@medium_range_3d_weather_forecasting_NN} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@uncertainties_in_numerical_weather_predictions} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@why_wind_gusts} has been referenced but does not exist, replaced by a fixed one
+
 <C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on MSc.pdf (53 pages, 1866388 bytes).
+Output written on MSc.pdf (53 pages, 1871426 bytes).
 PDF statistics:
- 680 PDF objects out of 1000 (max. 8388607)
- 111 named destinations out of 1000 (max. 500000)
+ 743 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
  266 words of extra memory for PDF output out of 10000 (max. 10000000)
 
