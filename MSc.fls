@@ -494,6 +494,7 @@ OUTPUT Chapters\Chapter1.aux
 INPUT .\Chapters\Chapter1.tex
 INPUT .\Chapters\Chapter1.tex
 INPUT Chapters\Chapter1.tex
+INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx8.tfm
 INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx6.tfm
@@ -554,7 +555,6 @@ OUTPUT Chapters\Chapter4.aux
 INPUT .\Chapters\Chapter4.tex
 INPUT .\Chapters\Chapter4.tex
 INPUT Chapters\Chapter4.tex
-INPUT C:\Users\brynj\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT .\Figures\loss_plot_wo_elevation.png
 INPUT .\Figures\loss_plot_wo_elevation.png
 INPUT .\Figures\loss_plot_wo_elevation.png

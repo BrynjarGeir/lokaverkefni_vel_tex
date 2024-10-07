@@ -10,7 +10,8 @@ A baseline model was constructed. This model looked at the gust factor for some 
     \begin{tabular}{lccc}
         \toprule
         \textbf{AWSL} & \textbf{MAPE} & &\\ 
-        $[m/s]$ & \textit{Baseline} &  \textit{Without DEM} & \textit{With DEM} \\\hline
+        $[m/s]$ & \textit{Baseline} &  \textit{Without DEM} & \textit{With DEM} \\
+        \midrule
         $\geq 0$ & 39.2\% & 19.7\% & 18.6\% \\
         $\geq 5$ & 28.1\% & 15.9\% & 14.1\%\\
         $\geq 10$ & 23.9\% & 13.6\% & 11.5\%\\
@@ -21,7 +22,7 @@ A baseline model was constructed. This model looked at the gust factor for some 
     \end{tabular}
 \end{table}
 
-%m/s & $ws_{15}$ & f & $ws_{15}$ & f & $ws_{15}$ & f\\\hline
+%m/s & $ws_{15}$ & f & $ws_{15}$ & f & $ws_{15}$ & f\\
 %$\geq 0$ & 39.2\% & 39.2\% & 19.7\% & 15.9\% & 18.6\% & 15.3\%\\
 %$\geq 5$ & 28.1\% & 14.8\% & 15.9\% & 9.9\% & 14.1\% & 9.4\%\\
 %$\geq 10$ & 23.9\% & 11.1\%& 13.6\% & 7.6\% & 11.5\% & 7.4\%\\
@@ -40,8 +41,10 @@ This is some improvement upon the baseline error, with a decrease in error from 
     \label{table:specific_sites}
     \centering
     \begin{tabular}{lccc}
+        \toprule
         \textbf{Station name} & \textbf{Number of measurement points} & \multicolumn{2}{c}{\textbf{MAPE}}\\
-        & & General training & Site training\\\hline
+        & & General training & Site training\\
+        \midrule
         Akrafjall & 42,791 & 18.6\% & 93.7\%\\
         Almannaskarð & 4,014 & 12.2\% & 86.7\%\\
         Ásgarðsfjall & 15,121 & 9.1\% & 9.4\%\\
@@ -49,6 +52,7 @@ This is some improvement upon the baseline error, with a decrease in error from 
         Sandbúðir & 18,718 & 6.8\% & 6.4\%\\
         Stórholt & 35,126 & 7.1\% & 29.2\% \\
         Þúfuver & 19,538 & 6.4\% & 6.8\%\\
+        \bottomrule
     \end{tabular}
 \end{table}
 
@@ -65,14 +69,17 @@ Instead of looking at the exact values of MAPE at select stations, a plot of the
     \caption[Model result looking at closed wind speed intervals]{The MAPE results for different AWSL intervals. Here instead of training for all data above a certain threshold put of the wind, training is done only on data between two wind speeds. The percentage variance in gust factor as a function of wind speed increases with decreasing wind speed. Measured wind speed is used for the cutoff and thus have data leakage. This results should thus be somewhat comparable to the last column in Table (\ref{table:results})}
     \label{table:closed_intervals}
     \centering
-    \begin{tabular}{l | cc}
+    \begin{tabular}{lcc}
+        \toprule
         \textbf{Interval} &  \multicolumn{2}{c}{\textbf{MAPE}}\\
-        $[m/s]$ & Without Elevation & With Elevation\\\hline
+        $[m/s]$ & Without Elevation & With Elevation\\
+        \midrule
         $[5, 10[$ & 17.2\% & 15.4\%\\ %10.6\%\\
         $[10, 15[$ & 14.1\% & 11.9\%\\ %7.8\%\\
         $[15, 20[$ & 13.2\% & 10.9\%\\ %6.4\%\\
         $[20, 25[$ & 14.9 \% & 11.6\%\\ %6.3\%\\
         $[25, 30[$ & 17.0\% & 16.0\%\\ %7.1\%\\
+        \bottomrule
     \end{tabular}
 \end{table}
 
@@ -80,13 +87,13 @@ Table (\ref{table:closed_intervals}) shows no improvement over the values in the
 
 \begin{table}[h]
     \caption[Model result by stations of interest]{The MAPE results of different stations for several stations of interest, both when training for the specific site and when the stations are a part of the general data. For every station the AWSL is set at 10 m/s. In training for a single station at a time, some site specific information can be gauged. This does not mean that the a better result can be reached for that site. Factors such as the number of datapoints at given location can significantly impact the result. This table uses the measured wind speed to determine the cut off for data points. This leads to some data leakage and an increased performance compared to using the reanalysis CARRA speed for cut off.}
-    \label{table:specific_sites}
+    \label{table:more_specific_sites}
     \centering
-    \begin{tabular}{l | cc}
+    \begin{tabular}{lcc}
         \toprule
         \textbf{Station name} & \multicolumn{2}{c}{\textbf{MAPE}}\\
          & Baseline & Model\\
-         \midrule
+        \midrule
         Fáskrúðsfjörður & 28.2\% & 21.8\%\\
         Ingólfsfjall & 30.0\% & 19.6\%\\
         Kjalarnes & 20.7\% & 13.5\% \\
@@ -167,9 +174,7 @@ These plots can also be done by looking at individual stations. The model is the
     \label{fig:ShapleySummaryKeflavikurflugvollur}
 \end{figure}
 
-In each of these plots, even without the feature labels, the station elevation is easily noticed as the value is constant for a station. This is not noteworthy. What is noteworthy is the range of impact from this single value. For simpler models, this would not happen. It is important to note that SHAP assumes feature independece\cite{Salih_2024}. This might explain why the impact of the Richardson number is so low. Both the squared Brunt–Väisälä frequency and the Richardson number are derived features from reanalysis data. They carry with them some extra information over the other features in the dataset. This is because both are variables over elevation ranges. That is, as seen in Equations (\ref{eqn:Ri}, \ref{eqn:N}), both are dependent on values at lower and upper elevations and try to describe the stability of that range. Shapley tries to assign contribution values for each feature for each observation. SHAP assumes that the features are independent, but this is not the case. It is clearly not the case for the derived variables, but how the contribution should be distributed between the features is not clear. Seemingly the SHAP python package is giving all the impact to the Brunt–Väisälä squared frequency and none to Richardson number. If the Brunt–Väisälä would be excluded from the data, the impact of the Richardson number would likely increase. Another point to note is that the features are ordered by their impact. This means that the station elevation is the most impactful for each plot, but the ordering of other variables changes. Looking at Figure (\ref{fig:ShapleySummary3}), which shows the Shapley summary plot for all data, the wind speed is the second most important feature. This is reversed in Figure (\ref{fig:ShapleySummaryAkrafjall}). This is not unexpected as Akrafjall station was specifically selected as the MAE for reanalysis wind speed was very high as can be seen in Table (\ref{fig:ShapleySummaryAkrafjall}), where you will also find the stations whose summary plot is shown in Figures (\ref{fig:ShapleySummaryAlmannaskarð}, \ref{fig:ShapleySummaryAsgarðsfjall}) and these also fall into the category of very high MAE for wind speed. What is interesting is that the reanalysis wind speed is also of low impact at stations like Háahlíð and Keflavíkurflugvöllur, as shown in Figures (\ref{fig:ShapleySummaryHaahlid}, \ref{fig:ShapleySummaryKeflavikurflugvollur}). These stations had the lowest of MAE for difference between measured wind speed and reanalysis wind speed. As the summary plot over all stations (Figure (\ref{fig:ShapleySummary3})) shows that reanalysis wind speed is impactful, might lead to the conclusion that the reanalysis wind speed is not a good predictor at these locations or something else is skewing the data.
-
-A simpler way to look at feature importance is to create models that are trained on and use to predict different sets of parameters. The results of such a comparison can be seen in Table \ref{table:setsOfParams}.
+In each of these plots, even without the feature labels, the station elevation is easily noticed as the value is constant for a station. This is not noteworthy. What is noteworthy is the range of impact from this single value. For simpler models, this would not happen. It is important to note that SHAP assumes feature independece\cite{Salih_2024}. This might explain why the impact of the Richardson number is so low. Both the squared Brunt–Väisälä frequency and the Richardson number are derived features from reanalysis data. They carry with them some extra information over the other features in the dataset. This is because both are variables over elevation ranges. That is, as seen in Equations (\ref{eqn:Ri}, \ref{eqn:N}), both are dependent on values at lower and upper elevations and try to describe the stability of that range. Shapley tries to assign contribution values for each feature for each observation. SHAP assumes that the features are independent, but this is not the case. It is clearly not the case for the derived variables, but how the contribution should be distributed between the features is not clear. Seemingly the SHAP python package is giving all the impact to the Brunt–Väisälä squared frequency and none to Richardson number. If the Brunt–Väisälä would be excluded from the data, the impact of the Richardson number would likely increase. Another point to note is that the features are ordered by their impact. This means that the station elevation is the most impactful for each plot, but the ordering of other variables changes. Looking at Figure (\ref{fig:ShapleySummary3}), which shows the Shapley summary plot for all data, the wind speed is the second most important feature. This is reversed in Figure (\ref{fig:ShapleySummaryAkrafjall}). This is not unexpected as Akrafjall station was specifically selected as the MAE for reanalysis wind speed was very high as can be seen in Table (\ref{fig:ShapleySummaryAkrafjall}), where you will also find the stations whose summary plot is shown in Figures (\ref{fig:ShapleySummaryAlmannaskarð}, \ref{fig:ShapleySummaryAsgarðsfjall}) and these also fall into the category of very high MAE for wind speed. What is interesting is that the reanalysis wind speed is also of low impact at stations like Háahlíð and Keflavíkurflugvöllur, as shown in Figures (\ref{fig:ShapleySummaryHaahlid}, \ref{fig:ShapleySummaryKeflavikurflugvollur}). These stations had the lowest of MAE for difference between measured wind speed and reanalysis wind speed. As the summary plot over all stations (Figure (\ref{fig:ShapleySummary3})) shows that reanalysis wind speed is impactful, might lead to the conclusion that the reanalysis wind speed is not a good predictor at these locations or something else is skewing the data. A simpler way to look at feature importance is to create models that are trained on and use to predict different sets of parameters. The results of such a comparison can be seen in Table \ref{table:setsOfParams}.
 
 \begin{table}[h]
     \caption[Model results for different sets of parameters.]{...}
@@ -177,7 +182,7 @@ A simpler way to look at feature importance is to create models that are trained
     \centering
     \begin{tabular}{lc}
         \toprule
-        \textbf{Model parameters} & \textbf{MAPE}\\ 
+        \textbf{Model parameters} & \textbf{MAPE}\\
         \midrule
         Baseline constant & 23.9\%\\
         $ws_{15}$ & 17.2\%\\
@@ -185,7 +190,7 @@ A simpler way to look at feature importance is to create models that are trained
         $[ws_{15}, t_{15}, p_{15}, wd_{15}, ASL, twd]$ & 13.8\% \\
         $[ws_{15}, t_{15}, p_{15}, wd_{15}, ASL, twd, N, Ri]$ & ---\\
         $[ws_{15}, t_{15}, p_{15}, wd_{15}, ASL, twd, N, Ri]$ + DEM & ---\\
-        $[ws_{15,250,500}, t_{15,250,500}, p_{15,250,500}, wd_{15,250,500}, ASL, twd, N, Ri]$
+        $[ws_{15,250,500}, t_{15,250,500}, p_{15,250,500}, wd_{15,250,500}, ASL, twd, N, Ri]$ & --- \\
         \bottomrule
     \end{tabular}
 \end{table}

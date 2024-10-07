@@ -25,15 +25,18 @@ The error in reanalysis wind speed and measured wind speed can be significant. T
     \caption[Comparison of measured and reanalysis wind speed]{Comparison of measured and reanalysis wind speed using mean absolute error (MAE) and mean absolute percentage error (MAPE). Note that for the computation of MAPE for ranges that otherwise include 0, 0 values have been excluded so as to prevent division by zero and exploding values. The comparisons are done using measured wind speed (at 10 meters above ground for IMO and 6-7 meters above ground for IRCA) and reanalysis wind speed at 15 meters above ground.}
     \label{table:measuredVSReanalysis_wind_speed}
     \centering
-    \begin{tabular}{c|ccc}
-        f & n & MAE & MAPE \\ \hline
+    \begin{tabular}{cccc}
+        
+        f & n & MAE & MAPE \\
+        
         {[}0;5{[} & 6.2e6 & 2.1 & 1.6\\
         {[}5;10{[} & 4.2e6 & 2.2 & 0.3\\
         {[}10;15{[} & 1.5e6 & 2.5 & 0.2\\
         {[}15;20{[} & 3.9e5 & 3.0 & 0.2\\
         {[}20;25{[} & 8.4e4 & 4.0 & 0.2\\
         {[}25;$\infty${[} & 2.0e4 & 6.6 & 0.2\\
-        {[}0;$\infty${[} & 1.2e7 & 2.2 & 1.0
+        {[}0;$\infty${[} & 1.2e7 & 2.2 & 1.0\\
+        
     \end{tabular}
 \end{table}
 
@@ -52,8 +55,10 @@ Table \ref{table:station_mae_distribution} shows the 5 best and worst stations i
     \label{table:station_mae_distribution}
     \resizebox{\textwidth}{!}{
     \centering
-    \begin{tabular}{c|ccc}
-        Station & Number of measurements & MAE & Location \\\hline
+    \begin{tabular}{cccc}
+        
+        Station & Number of measurements & MAE & Location \\
+        
         1470 & 6.8e3 & 1.17 & Reykjavík Háahlíð \\
         1350 & 5.2e4 & 1.18 & Keflavíkurflugvöllur \\
         1482 & 1.4e4 & 1.23 & Reykjavík Víðidalur \\
@@ -64,6 +69,7 @@ Table \ref{table:station_mae_distribution} shows the 5 best and worst stations i
         35978 & 7.9e3 & 4.40 & Fáskrúðsfjarðargöng suður\\
         2640 & 1.6e3 & 4.51 & Seljalandsdalur\\
         32635 & 3.2e4 & 4.95 & Botn í Súgandafirði\\
+        
     \end{tabular}
     }
 \end{table}
