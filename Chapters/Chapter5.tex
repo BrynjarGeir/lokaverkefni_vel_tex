@@ -42,7 +42,7 @@ This is some improvement upon the baseline error, with a decrease in error from 
     \centering
     \begin{tabular}{lccc}
         \toprule
-        \textbf{Station name} & \textbf{Number of measurement points} & \multicolumn{2}{c}{\textbf{MAPE}}\\
+        \textbf{Station name} & \textbf{\# points} & \multicolumn{2}{c}{\textbf{MAPE}}\\
         & & General training & Site training\\
         \midrule
         Akrafjall & 42,791 & 18.6\% & 93.7\%\\
@@ -83,7 +83,7 @@ Instead of looking at the exact values of MAPE at select stations, a plot of the
     \end{tabular}
 \end{table}
 
-Table (\ref{table:closed_intervals}) shows no improvement over the values in the last column in Table (\ref{table:results}). As previously mentioned, the gust factor decreases with increasing wind speed and thus, training on intervals and lessening this effect might be expected to give better results. This does not seem to be the case. Some interesting sites to look closer at for drivers might include places like Kjalarnes, Ingólfsfjall, Þrengsli and others. These can be seen in Table (\ref{table:specific_sites}).
+Table (\ref{table:closed_intervals}) shows no improvement over the values in the last column in Table (\ref{table:results}). As previously mentioned, the gust factor decreases with increasing wind speed and thus, training on intervals and lessening this effect might be expected to give better results. This does not seem to be the case. Some interesting sites to look closer at for drivers might include places such as Ingólfsfjall, Kjalarnes and others. These can be seen in Table (\ref{table:more_specific_sites}).
 
 \begin{table}[h]
     \caption[Model result by stations of interest]{The MAPE results of different stations for several stations of interest, both when training for the specific site and when the stations are a part of the general data. For every station the AWSL is set at 10 m/s. In training for a single station at a time, some site specific information can be gauged. This does not mean that the a better result can be reached for that site. Factors such as the number of datapoints at given location can significantly impact the result. This table uses the measured wind speed to determine the cut off for data points. This leads to some data leakage and an increased performance compared to using the reanalysis CARRA speed for cut off.}
@@ -105,14 +105,7 @@ Table (\ref{table:closed_intervals}) shows no improvement over the values in the
     \end{tabular}
 \end{table}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale = 0.6]{Figures/shap_plots/waterfall_plot.png}
-    \caption[Feature importance for a single observation of a neural network.]{Feature importance of a neural network with model architecture as described in Table \ref{table:gridSearchHyperparamters} and data as described in Table \ref{table:trainDataExample}. In this specific instance the wind direction ($wd_{15}$) has the highest negative influence and the temperature has the highest positive influence. Elevation data is excluded when working with Shapley values, as the contribution of each elevation point is very low and there are very many of them. To see their influence on the model output see Table \ref{table:results}.}
-    \label{fig:ShapleyWaterfall}
-\end{figure}
-
-In Figure (\ref{fig:ShapleySummary}) the contribution of each feature, excluding the elevation points, can be seen for the model in general (a significant subset of data is used). Looking at Figure (\ref{fig:ShapleySummary}), there is an outlier. Exactly calculating the Shapley values is time intensive, in the subset shown there is an outlier that skews the figure and makes it so that viewing the importance distribution excluding the outlier is difficult. For this reason, another shapley summary vas created that looked at different, and larger distribution. This can be seen in Figure (\ref{fig:ShapleySummary2}).
+In Figure (\ref{fig:ShapleySummary}) the contribution of each feature, excluding the elevation points, can be seen for the model in general (a significant subset of data is used). Looking at Figure (\ref{fig:ShapleySummary}), there is an outlier. Exactly calculating the Shapley values is time intensive, in the subset shown there is an outlier that skews the figure and makes it so that viewing the importance distribution excluding the outlier is difficult. For this reason, another shapley summary vas created that looked at different, and larger distribution. This can be seen in Figure (\ref{fig:ShapleySummary2}). The Figures (\ref{fig:ShapleySummary}) and (\ref{fig:ShapleySummary2}) show the summary for a model trained only on the features shown and not on landscape elevation of the surrounding area. This is done as the number of points there is too high to display in one figure (70 total points). Looking specifically at Figure (\ref{fig:ShapleySummary2}), the station elevation is most influential and the Richardson number's influence is very low. Most of the feature values bunch up in the middle, while the station elevation is elongated compared to other features. Station elevation seems to have two bunches on either side of 0. Overall, the values seem to be skewed to the right of 0. This would be expected as the predicted values are expected to be in the range of 1.2-2, or at least always above 1 by definition. Finally, for the Shapley values, looking that all the data there are again outliers that skew the data so that spotting general distribution is difficult. This can be seen in Figure (\ref{fig:ShapleySummary3}).
 
 \begin{figure}
     \centering
@@ -128,53 +121,7 @@ In Figure (\ref{fig:ShapleySummary}) the contribution of each feature, excluding
     \label{fig:ShapleySummary2}
 \end{figure}
 
-The Figures (\ref{fig:ShapleySummary}) and (\ref{fig:ShapleySummary2}) show the summary for a model trained only on the features shown and not on landscape elevation of the surrounding area. This is done as the number of points there is too high to display in one figure (70 total points). Looking specifically at Figure (\ref{fig:ShapleySummary2}), the station elevation is most influential and the Richardson number's influence is very low. Most of the feature values bunch up in the middle, while the station elevation is elongated compared to other features. Station elevation seems to have two bunches on either side of 0. Overall, the values seem to be skewed to the right of 0. This would be expected as the predicted values are expected to be in the range of 1.2-2, or at least always above 1 by definition. Finally, for the Shapley values, looking that all the data there are again outliers that skew the data so that spotting general distribution is difficult. This can be seen in Figure (\ref{fig:ShapleySummary3}).
-
-\begin{figure}
-    \centering
-    \includegraphics[scale = 0.6]{Figures/shap_plots/summary_plot_190924_full_10ms.png}
-    \caption[Summary feature importance of a neural network using entire dataset.]{Feature importance of a neural network with model architecture as described in Table \ref{table:gridSearchHyperparamters} and data as described in Table \ref{table:trainDataExample}. The distribution seems to be the same as before, discounting the outliers.}
-    \label{fig:ShapleySummary3}
-\end{figure}
-
-These plots can also be done by looking at individual stations. The model is then trained on all examples and afterwards the summary plot created using only points for each station. Stations of interest include stations listed in Table \ref{table:specific_sites}. These plots can all be seen in Figures (\ref{fig:ShapleySummaryAkrafjall} - \ref{fig:ShapleySummaryKeflavikurflugvollur}).
-
-\begin{figure}
-    \centering
-    \includegraphics[scale = 0.6]{Figures/shap_plots/summary_plot_31572.png}
-    \caption[Summary feature importance of a neural network only looking at AWS at Akrafjall.]{Feature importance of a neural network with model architecture as described in Table \ref{table:gridSearchHyperparamters} and data as described in Table \ref{table:trainDataExample}. This plot only looks at datapoints from Akrafjall. This seems to show the same distribution as previous summary plots. Station elevation is influential and Richardson number has no impact.}
-    \label{fig:ShapleySummaryAkrafjall}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[scale = 0.6]{Figures/shap_plots/summary_plot_35553.png}
-    \caption[Summary feature importance of a neural network only looking at AWS at Almannaskarð.]{Feature importance of a neural network with model architecture as described in Table \ref{table:gridSearchHyperparamters} and data as described in Table \ref{table:trainDataExample}. This plot only looks at datapoints from Almannaskarð. This seems to show the same distribution as previous summary plots. Station elevation is influential and Richardson number has no impact.}
-    \label{fig:ShapleySummaryAlmannaskarð}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[scale = 0.6]{Figures/shap_plots/summary_plot_6745.png}
-    \caption[Summary feature importance of a neural network only looking at AWS at Ásgarðsfjall.]{Feature importance of a neural network with model architecture as described in Table \ref{table:gridSearchHyperparamters} and data as described in Table \ref{table:trainDataExample}. This plot only looks at datapoints from Ásgarðsfjall. This seems to show the same distribution as previous summary plots. Station elevation is influential and Richardson number has no impact.}
-    \label{fig:ShapleySummaryAsgarðsfjall}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[scale = 0.6]{Figures/shap_plots/summary_plot_1470.png}
-    \caption[Summary feature importance of a neural network only looking at AWS at Háahlíð.]{Feature importance of a neural network with model architecture as described in Table \ref{table:gridSearchHyperparamters} and data as described in Table \ref{table:trainDataExample}. This plot only looks at datapoints from Háahlíð. This seems to show the same distribution as previous summary plots. Station elevation is influential and Richardson number has no impact.}
-    \label{fig:ShapleySummaryHaahlid}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[scale = 0.6]{Figures/shap_plots/summary_plot_1350.png}
-    \caption[Summary feature importance of a neural network only looking at AWS at Keflavíkurflugvöllur.]{Feature importance of a neural network with model architecture as described in Table \ref{table:gridSearchHyperparamters} and data as described in Table \ref{table:trainDataExample}. This plot only looks at datapoints from Keflavíkurflugvöllur. This seems to show the same distribution as previous summary plots. Station elevation is influential and Richardson number has no impact.}
-    \label{fig:ShapleySummaryKeflavikurflugvollur}
-\end{figure}
-
-In each of these plots, even without the feature labels, the station elevation is easily noticed as the value is constant for a station. This is not noteworthy. What is noteworthy is the range of impact from this single value. For simpler models, this would not happen. It is important to note that SHAP assumes feature independece\cite{Salih_2024}. This might explain why the impact of the Richardson number is so low. Both the squared Brunt–Väisälä frequency and the Richardson number are derived features from reanalysis data. They carry with them some extra information over the other features in the dataset. This is because both are variables over elevation ranges. That is, as seen in Equations (\ref{eqn:Ri}, \ref{eqn:N}), both are dependent on values at lower and upper elevations and try to describe the stability of that range. Shapley tries to assign contribution values for each feature for each observation. SHAP assumes that the features are independent, but this is not the case. It is clearly not the case for the derived variables, but how the contribution should be distributed between the features is not clear. Seemingly the SHAP python package is giving all the impact to the Brunt–Väisälä squared frequency and none to Richardson number. If the Brunt–Väisälä would be excluded from the data, the impact of the Richardson number would likely increase. Another point to note is that the features are ordered by their impact. This means that the station elevation is the most impactful for each plot, but the ordering of other variables changes. Looking at Figure (\ref{fig:ShapleySummary3}), which shows the Shapley summary plot for all data, the wind speed is the second most important feature. This is reversed in Figure (\ref{fig:ShapleySummaryAkrafjall}). This is not unexpected as Akrafjall station was specifically selected as the MAE for reanalysis wind speed was very high as can be seen in Table (\ref{fig:ShapleySummaryAkrafjall}), where you will also find the stations whose summary plot is shown in Figures (\ref{fig:ShapleySummaryAlmannaskarð}, \ref{fig:ShapleySummaryAsgarðsfjall}) and these also fall into the category of very high MAE for wind speed. What is interesting is that the reanalysis wind speed is also of low impact at stations like Háahlíð and Keflavíkurflugvöllur, as shown in Figures (\ref{fig:ShapleySummaryHaahlid}, \ref{fig:ShapleySummaryKeflavikurflugvollur}). These stations had the lowest of MAE for difference between measured wind speed and reanalysis wind speed. As the summary plot over all stations (Figure (\ref{fig:ShapleySummary3})) shows that reanalysis wind speed is impactful, might lead to the conclusion that the reanalysis wind speed is not a good predictor at these locations or something else is skewing the data. A simpler way to look at feature importance is to create models that are trained on and use to predict different sets of parameters. The results of such a comparison can be seen in Table \ref{table:setsOfParams}.
+Further Shapley figures can be seen in Appendix~\ref{appendix:A}. In each of these plots, even without the feature labels, the station elevation is easily noticed as the value is constant for a station. This is not noteworthy. What is noteworthy is the range of impact from this single value. For simpler models, this would not happen. It is important to note that SHAP assumes feature independece\cite{Salih_2024}. This might explain why the impact of the Richardson number is so low. Both the squared Brunt–Väisälä frequency and the Richardson number are derived features from reanalysis data. They carry with them some extra information over the other features in the dataset. This is because both are variables over elevation ranges. That is, as seen in Equations (\ref{eqn:Ri}, \ref{eqn:N}), both are dependent on values at lower and upper elevations and try to describe the stability of that range. Shapley tries to assign contribution values for each feature for each observation. SHAP assumes that the features are independent, but this is not the case. It is clearly not the case for the derived variables, but how the contribution should be distributed between the features is not clear. Seemingly the SHAP python package is giving all the impact to the Brunt–Väisälä squared frequency and none to Richardson number. If the Brunt–Väisälä would be excluded from the data, the impact of the Richardson number would likely increase. Another point to note is that the features are ordered by their impact. This means that the station elevation is the most impactful for each plot, but the ordering of other variables changes. Looking at Figure (\ref{fig:ShapleySummary3}), which shows the Shapley summary plot for all data, the wind speed is the second most important feature. This is reversed in Figure (\ref{fig:ShapleySummaryAkrafjall}). This is not unexpected as Akrafjall station was specifically selected as the MAE for reanalysis wind speed was very high as can be seen in Table (\ref{fig:ShapleySummaryAkrafjall}), where you will also find the stations whose summary plot is shown in Figures (\ref{fig:ShapleySummaryAlmannaskarð}, \ref{fig:ShapleySummaryAsgarðsfjall}) and these also fall into the category of very high MAE for wind speed. What is interesting is that the reanalysis wind speed is also of low impact at stations like Háahlíð and Keflavíkurflugvöllur, as shown in Figures (\ref{fig:ShapleySummaryHaahlid}, \ref{fig:ShapleySummaryKeflavikurflugvollur}). These stations had the lowest of MAE for difference between measured wind speed and reanalysis wind speed. As the summary plot over all stations (Figure (\ref{fig:ShapleySummary3})) shows that reanalysis wind speed is impactful, might lead to the conclusion that the reanalysis wind speed is not a good predictor at these locations or something else is skewing the data. A simpler way to look at feature importance is to create models that are trained on and use to predict different sets of parameters. The results of such a comparison can be seen in Table \ref{table:setsOfParams}.
 
 \begin{table}[h]
     \caption[Model results for different sets of parameters.]{Showing the results of different models. Models defined by different sets of parameters, with increasing complexity. This table shows the feature importance as the loss decreases as more variables are added. Adding all height levels decreases the loss but very little.}

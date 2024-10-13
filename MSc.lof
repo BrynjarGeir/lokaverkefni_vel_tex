@@ -5,20 +5,22 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces A flow chart showing how data sources were combined}}{14}{figure.caption.10}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Distribution of mean absolute errors by station}}{16}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of MAPE by station}}{18}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of MAPE by station}}{17}{figure.caption.14}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Loss plot of model trained for 2000 without DEM.}}{23}{figure.caption.17}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Loss plot of model trained for 2000 with DEM.}}{23}{figure.caption.18}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces MAPE error distribution of stations shown on a map of Iceland.}}{27}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Feature importance for a single observation of a neural network.}}{30}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Summary feature importance of a neural network.}}{30}{figure.caption.25}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Summary feature importance of a neural network using a larger distribution of data.}}{31}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Summary feature importance of a neural network using entire dataset.}}{31}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Akrafjall.}}{32}{figure.caption.28}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Almannaskarð.}}{32}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Ásgarðsfjall.}}{33}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Háahlíð.}}{33}{figure.caption.31}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Keflavíkurflugvöllur.}}{34}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Summary feature importance of a neural network.}}{30}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Summary feature importance of a neural network using a larger distribution of data.}}{31}{figure.caption.25}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Feature importance for a single observation of a neural network.}}{35}{figure.caption.28}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Summary feature importance of a neural network.}}{36}{figure.caption.29}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Summary feature importance of a neural network using a larger distribution of data.}}{37}{figure.caption.30}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Summary feature importance of a neural network using entire dataset.}}{37}{figure.caption.31}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Akrafjall.}}{38}{figure.caption.32}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Almannaskarð.}}{38}{figure.caption.33}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Ásgarðsfjall.}}{39}{figure.caption.34}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Háahlíð.}}{39}{figure.caption.35}%
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Keflavíkurflugvöllur.}}{40}{figure.caption.36}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

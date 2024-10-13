@@ -63,6 +63,7 @@
 \usepackage{xcolor}
 \usepackage{tikz}
 \usepackage{arydshln}
+\usepackage{acronym}
 \usetikzlibrary{positioning}
 \pgfkeys{/pgf/number format/.cd,fixed,precision=2}
 
@@ -394,44 +395,38 @@ In many industries, whether it be windmill farming or transportation, being able
 \chapter*{Abbreviations}
 \addcontentsline{toc}{chapter}{Abbreviations}
 \markboth{Abbreviations}{Abbreviations}
-
-Í þessum kafla mega koma fram listar yfir skammstafanir og/eða breytuheiti. Gefið kaflanum nafn við hæfi, t.d.\ Skammstafanir eða Breytuheiti. Þessum kafla má sleppa ef hans er ekki þörf. \\
-
-The section could be titled: Glossary, Variable Names, etc.
-
-If you use acronyms, it is strongly recommended to use a LaTeX
-acronyms package. For example, to use the package \emph{acronym}, add
-in the preamble:
-\begin{verbatim}
-\usepackage{acronym}
-\end{verbatim}
-and then here in this chapter (to create the list of all acronyms), use:
-\begin{verbatim}
-\begin{acronym}[SENS]
+\begin{acronym}[GeoTIFF]
+  \acro{API}{Application Programming Interface}
+  \acro{ASL}{Above Sea Level}
+  \acro{AWS}{Automatic Weather Stations}
+  \acro{AWSL}{Average Wind Speed Limit}
+  \acro{CARRA}{Copernicus Artic Regional ReAnalysis dataset}
+  \acro{CNN}{Convolutional Neural Networks}
+  \acro{DEM}{Digital Elevaiton Model}
+  \acro{ELI5}{Explain Like I am 5}
+  \acro{ECMWF}{European Centre for Medium-Range Weather Forecast}
+  \acro{GCM}{General Circulation Model}
+  \acro{GeoTIFF}{Georeferenced TIFF}
+  \acro{GPU}{Graphical Processing Unit}
+  \acro{HRES}{High Resolution forecas}
+  \acro{IMO}{Icelandic Meteoroligcal Office}
+  \acro{IRCA}{Icelandic Road and Coastal Administration}
+  \acro{JNWPU}{Joint Numerical Weather Prediction Unit}
+  \acro{LWM}{Large AI Weather forecast Model}
+  \acro{MAE}{Mean Asbolute Error}
+  \acro{MAPE}{Mean Absolute Percentage Error}
+  \acro{NN}{Neural Network}
+  \acro{NWP}{Numerical Weather Prediction}
   \acro{SENS}{School of Engineering and Natural Sciences}
+  \acro{TIFF}{Tag Image File Format}
   \acro{UoI}{University of Iceland}
 \end{acronym}
-\end{verbatim}
-In the square bracket above, you need to put the longest acronym, so
-that the list gets proper indentation based on the longest acronym.
-Also note that you need to manually sort here that list.
-
-Then, whereever you use the acronym in your text: \verb|\ac{UoI}|:
-that will automatically expand the acronym at the first use, but use
-only the short version after the first use.  (Use \verb|\acp| if need
-the plural form. \verb|\acl| if you explicitly want to have the long
-form only, \verb|\acf| if you explicitly want to have the full long
-and short form, i.e.\ like first use of \verb|\ac|.)
-
-Use \verb|\acresetall| to forget about earlier usage (=expansion) of
-acronyms, e.g.\ if despite already used in Abstract or Introduction,
-but you want to expand them later once again (starting from, e.g., in
-Foundations chapter): add \verb|\acresetall| at start of Introduction
-chapter (and maybe also again at start of Foundations chapter).
 
 \chapter*{Acknowledgments}
 \addcontentsline{toc}{chapter}{Acknowledgments}
-Í þessum kafla koma fram þakkir til þeirra sem hafa styrkt rannsóknina með fjárframlögum, aðstöðu eða vinnu. t.d.\ styrktarsjóðir, fyrirtæki, leiðbeinendur, og aðrir aðilar sem hafa á einhvern hátt aðstoðað við gerð verkefnisins, þ.m.t.\ vinir og fjölskylda ef við á. Þakkir byrja á oddatölusíðu (hægri síðu).
+Special thanks go to my advisor, Kristján Jónasson. He would help me with the actual work of the thesis and sit with go over the code with me. Thanks also go to Ólafur Pétur Pálsson, who would read over the thesis with notes and give helpful suggestions. Guðrún Nína Petersen, also provided valuable insight whenever questioned about meteoroligcal matters as well as giving notes on the thesis.
+
+Finally, I would like to thank my parents without whom I would probably never had any want to finish.
 
 \pagenumbering{arabic}
 \setcounter{page}{1}
@@ -442,5 +437,6 @@ chapter (and maybe also again at start of Foundations chapter).
 \include{Chapters/Chapter4}
 \include{Chapters/Chapter5}
 \include{Chapters/Chapter6}
+\include{Appendicies/AppendixA}
 
 \end{document}
