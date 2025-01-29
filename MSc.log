@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  13 OCT 2024 21:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  26 NOV 2024 16:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1016,14 +1016,7 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 175.
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (MSc.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux) (Chapters/Chapter6.aux) (Appendicies/AppendixA.aux
-
-LaTeX Warning: Label `fig:ShapleySummary' multiply defined.
-
-
-LaTeX Warning: Label `fig:ShapleySummary2' multiply defined.
-
-))
+) (MSc.aux (Chapters/Chapter1.aux) (Chapters/Chapter2.aux) (Chapters/Chapter3.aux) (Chapters/Chapter4.aux) (Chapters/Chapter5.aux) (Chapters/Chapter6.aux) (Appendicies/AppendixA.aux))
 \openout1 = `MSc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 175.
@@ -1478,12 +1471,13 @@ Package pdftex.def Info: Figures/MAEoverIceland.png  used on input line 44.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/MAPEoverIceland.png, id=355, 707.5233pt x 473.3685pt>
+[15] [16 <./Figures/MAEoverIceland.png>]
+<Figures/MAPEoverIceland.png, id=364, 707.5233pt x 473.3685pt>
 File: Figures/MAPEoverIceland.png Graphic file (type png)
 <use Figures/MAPEoverIceland.png>
 Package pdftex.def Info: Figures/MAPEoverIceland.png  used on input line 78.
 (pdftex.def)             Requested size: 424.51724pt x 284.02328pt.
-[15] [16 <./Figures/MAEoverIceland.png>] [17 <./Figures/MAPEoverIceland.png>] (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+ [17] [18 <./Figures/MAPEoverIceland.png>] (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/03/11 1.10a listings language file
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 87.
@@ -1504,7 +1498,7 @@ Overfull \hbox (32.6345pt too wide) in paragraph at lines 92--93
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[18]) [19] [20]
+[19]) [20]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (Chapters/Chapter4.tex
@@ -1650,9 +1644,6 @@ L3 programming layer <2024-03-14>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `MSc.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'MSc.run.xml'.
@@ -1740,7 +1731,7 @@ pdfTeX warning (dest): name{cite.0@uncertainties_in_numerical_weather_prediction
 pdfTeX warning (dest): name{cite.0@why_wind_gusts} has been referenced but does not exist, replaced by a fixed one
 
 <C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on MSc.pdf (58 pages, 1878585 bytes).
+Output written on MSc.pdf (58 pages, 1878685 bytes).
 PDF statistics:
  810 PDF objects out of 1000 (max. 8388607)
  167 named destinations out of 1000 (max. 500000)

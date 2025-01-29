@@ -5,7 +5,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces A flow chart showing how data sources were combined}}{14}{figure.caption.10}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Distribution of mean absolute errors by station}}{16}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of MAPE by station}}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Distribution of MAPE by station}}{18}{figure.caption.14}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Loss plot of model trained for 2000 without DEM.}}{23}{figure.caption.17}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Loss plot of model trained for 2000 with DEM.}}{23}{figure.caption.18}%
