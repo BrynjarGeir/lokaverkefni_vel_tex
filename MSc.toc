@@ -6,17 +6,17 @@
 \contentsline {section}{\numberline {1.2}Methodology and related work}{6}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Model architechture}{6}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Model explainability}{7}{subsection.1.2.2}%
-\contentsline {chapter}{\numberline {2}Data gathering and preprocessing}{9}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Data gathering and processing}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Automatic Weather Station Data}{9}{section.2.1}%
 \contentsline {section}{\numberline {2.2}CARRA Data}{10}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Elevation data}{11}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Data processing and structure}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Combining data sources}{13}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Data Structure}{19}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Model Architecture and Training}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Model structure}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Model Training}{22}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Results}{25}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Results}{25}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Discussion}{33}{chapter.6}%
+\contentsline {section}{\numberline {2.4}Combining data sources}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Data Structure}{16}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Data distribution}{17}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Model Architecture and Training}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Model structure}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Model Training}{22}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Results}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Results}{25}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Discussion}{33}{chapter.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
