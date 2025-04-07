@@ -96,8 +96,6 @@ Table \ref{table:station_mae_distribution} shows the 5 best and worst stations i
     }
 \end{table}
 
-If the 0 m/s is excluded from the measurement data, then the error distribution using MAPE can be plotted. This plot can be seen in Figure \ref{fig:station_mape_distribution}
-
 \section{Data Structure}
 
 Once data has been retrieved for all three sources and processed, including interpolating values, it needs to be made ready to use by the model, for both training, validation and test. The starting point is a dataframe that contains measured information from AWS. This includes the average wind, the wind gust, wind direction along with the station number and coordinates. When selecting the CARRA data certain height levels are chosen. These present as separate lines in the CARRA dataframe. Information for one observation is represented in as many lines as height levels requested in the reanalysis data. These rows need to be combined on the position (the weather station). When this is done it is possible to combine the AWS IMO data and CARRA reanalysis data on the location and time columns. The last data source is the elevation. A circle sector upwind is looked at. In any case the points, that represent these sections, were selected as shown in Code Listing \ref{code:sectorElevation}. A range of angles are defined based on the wind direction $d$ at some distance from the given point. This means that the resultant points (equal in number to the length of angleRange by k) from arcs at several distances from the given weather station.
@@ -151,7 +149,6 @@ The CARRA data is reanalysis and as such might have a bias or some systemic dist
     \begin{subfigure}[b]{0.8\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/obs_wind_speeds.png}
-        \caption[Histogram of observed wind speeds]{A histogram distribution of observed wind speeds provided by IMO and IRCA for all used weather stations.}
         \label{fig:obs_wind_speeds}
     \end{subfigure}
     
@@ -161,11 +158,10 @@ The CARRA data is reanalysis and as such might have a bias or some systemic dist
     \begin{subfigure}[b]{0.8\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/carra_wind_speeds.png}
-        \caption[Distribution of interpolated CARRA wind speeds at weather stations]{Distribution of interpolated CARRA reanalysis values at weather stations. The reanalysis data is only available at 3 hour intervals and 2.5km grid. These values are interpolated from data given by CARRA at the weather stations.}
         \label{fig:carra_wind_speeds}
     \end{subfigure}
 
-    \caption[Distribution of CARRA and observed wind speeds]{Distribution of CARRA reanalysis wind speed and observed wind speed at weather stations provided by}
+    \caption[Distribution of CARRA and observed wind speeds]{Upper figure shows a histogram of observed wind speeds provided by IMO and IRCA for all used weather stations. Lower figure shows the interpolated CARRA reanalysis values at weather stations. The reanalysis data is only available at 3 hour intervals and 2.5km grid. As such the observed values are only chosen at these specific times (00, 03, 06, ..., 21). Spatial interpolation is needed and is linearly weighted based on distance of CARRA grid points from stations.}
     \label{fig:obs_carra_wind_speeds}
 \end{figure}
 
