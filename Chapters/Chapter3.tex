@@ -20,7 +20,7 @@ The structure of the neural network is such that it contains some number $n$ of 
         Penalties & min\_value = 1e-5, max\_value = 1, sampling = log & \textbf{1e-4}\\
         Epochs & min\_value = 10, max\_value = 1000, step = 10 & \textbf{250}\\
         Optimizers & Adam, RMSprop, Adamax & \textbf{Adamax}\\
-        Activation & ReLU, ELu, tanh & \textbf{ReLU}\\
+        Activation & ReLU, ELU, tanh & \textbf{ReLU}\\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -28,7 +28,7 @@ The structure of the neural network is such that it contains some number $n$ of 
 As mentioned, hyperband doesn't set a hard upper limit to the number of epochs it will train in total. When using the \href{https://keras.io/api/keras_tuner/tuners/hyperband/}{hyperband class} several factors can be set. One of interest here is the $hyperband_iterations$ argument. This determines how often the hyperband algorithm is run and defaults to 1. For each iteration the epochs are distributed between tries (that is each set of hyperparameters) with the total amount of epochs approximately $n_{epochs} = max_{epochs} * log^2(max_{epochs})\approx 10^4$, where $max_{epochs} = 1000$ gives the maximum number of epochs that one set of hyperparameters can be trained for. Searching a space generally takes a lot of time but this drastically improves on gridsearch. If each epoch takes around 10 seconds to run then the total search would take around 28 hours on a shared resource. This is resource intensive and cannot be repeated often. Another question that remains is whether the ranges given are optimal.
 
 \section{Model Training}
-To determine the required number of epochs a high number of epochs can be selected and the loss plotted. These plots can be seen in Figures (\ref{fig:loss_plot_wo_elevation}, \ref{fig:loss_plot_w_elevation}). Looking at these two plots, training loss decreases for over 1900 epochs in both plots, while the validation loss stops decreasing at around 200 epochs for DEM model and 1800 epochs for model without DEM. This is unexpected. The DEM model has vastly more parameters and as such should contain more useful information to be learned, which one might expect to take longer to learn. This does not seem to be the case. The DEM model only gets trivially better after 1000 epochs while the non DEM model keeps meaningfully improving until around 1800 epochs. With respect to time constraints of shared resources models were trained for 250 epochs.
+To determine the required number of epochs a high number of epochs can be selected and the loss plotted. These plots can be seen in Figures \ref{fig:loss_plot_wo_elevation} and \ref{fig:loss_plot_w_elevation}. Looking at these two plots, training loss decreases for over 1900 epochs in both plots, while the validation loss stops decreasing at around 200 epochs for DEM model and 1800 epochs for model without DEM. This is unexpected. The DEM model has vastly more parameters and as such should contain more useful information to be learned, which one might expect to take longer to learn. This does not seem to be the case. The DEM model only gets trivially better after 1000 epochs while the non DEM model keeps meaningfully improving until around 1800 epochs. With respect to time constraints of shared resources models were trained for 250 epochs.
 
 \begin{figure}
     \centering

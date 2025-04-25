@@ -15,13 +15,13 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Summary feature importance of a neural network.}}{30}{figure.caption.26}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Summary feature importance of a neural network using a larger distribution of data.}}{31}{figure.caption.27}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Feature importance for a single observation of a neural network.}}{35}{figure.caption.30}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Summary feature importance of a neural network.}}{36}{figure.caption.31}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Summary feature importance of a neural network using a larger distribution of data.}}{37}{figure.caption.32}%
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Summary feature importance of a neural network using entire dataset.}}{37}{figure.caption.33}%
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Akrafjall.}}{38}{figure.caption.34}%
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Almannaskarð.}}{38}{figure.caption.35}%
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Ásgarðsfjall.}}{39}{figure.caption.36}%
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Háahlíð.}}{39}{figure.caption.37}%
-\contentsline {figure}{\numberline {A.9}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Keflavíkurflugvöllur.}}{40}{figure.caption.38}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Feature importance for a single observation of a neural network.}}{39}{figure.caption.31}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Summary feature importance of a neural network.}}{40}{figure.caption.32}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Summary feature importance of a neural network using a larger distribution of data.}}{41}{figure.caption.33}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Summary feature importance of a neural network using entire dataset.}}{41}{figure.caption.34}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Akrafjall.}}{42}{figure.caption.35}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Almannaskarð.}}{42}{figure.caption.36}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Ásgarðsfjall.}}{43}{figure.caption.37}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Háahlíð.}}{43}{figure.caption.38}%
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Keflavíkurflugvöllur.}}{44}{figure.caption.39}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

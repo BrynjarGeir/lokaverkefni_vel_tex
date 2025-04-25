@@ -19,76 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{nn_black_box}{website}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \field{urlday}{9}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://spectrum.ieee.org/black-box-ai
-      \endverb
-      \verb{url}
-      \verb https://spectrum.ieee.org/black-box-ai
-      \endverb
-    \endentry
-    \entry{eli5_information}{website}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \field{urlday}{9}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://eli5.readthedocs.io/en/latest/overview.html
-      \endverb
-      \verb{url}
-      \verb https://eli5.readthedocs.io/en/latest/overview.html
-      \endverb
-    \endentry
-    \entry{carra_information}{website}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \field{urlday}{8}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://climate.copernicus.eu/copernicus-arctic-regional-reanalysis-data-now-updated-monthly
-      \endverb
-      \verb{url}
-      \verb https://climate.copernicus.eu/copernicus-arctic-regional-reanalysis-data-now-updated-monthly
-      \endverb
-    \endentry
-    \entry{hyperparameters_definition}{webiste}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \field{urlday}{3}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://deepai.org/machine-learning-glossary-and-terms/hyperparameter
-      \endverb
-      \verb{url}
-      \verb https://deepai.org/machine-learning-glossary-and-terms/hyperparameter
-      \endverb
-    \endentry
-    \entry{wind_power}{website}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \field{urlday}{6}
-      \field{urlmonth}{5}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.linkedin.com/advice/0/how-can-you-calculate-power-output-wind-turbine-viidf
-      \endverb
-      \verb{url}
-      \verb https://www.linkedin.com/advice/0/how-can-you-calculate-power-output-wind-turbine-viidf
-      \endverb
-    \endentry
     \entry{mean_gust_HA_HO}{article}{}
       \name{author}{2}{}{%
         {{hash=b2dc6558e90da7729c346128b8a0652d}{%
@@ -221,6 +151,93 @@
       \verb https://doi.org/10.1038/s41586-023-06185-3
       \endverb
     \endentry
+    \entry{nn_black_box}{website}{}
+      \name{author}{1}{}{%
+        {{hash=5aa0953630388a8b126ac75587e61f4b}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Charles\bibnamedelima Q.},
+           giveni={C\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aa0953630388a8b126ac75587e61f4b}
+      \strng{fullhash}{5aa0953630388a8b126ac75587e61f4b}
+      \strng{bibnamehash}{5aa0953630388a8b126ac75587e61f4b}
+      \strng{authorbibnamehash}{5aa0953630388a8b126ac75587e61f4b}
+      \strng{authornamehash}{5aa0953630388a8b126ac75587e61f4b}
+      \strng{authorfullhash}{5aa0953630388a8b126ac75587e61f4b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{200-Year-Old Math Opens Up AI’s Mysterious Black Box}
+      \field{urlday}{9}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://spectrum.ieee.org/black-box-ai
+      \endverb
+      \verb{url}
+      \verb https://spectrum.ieee.org/black-box-ai
+      \endverb
+    \endentry
+    \entry{carra_information}{website}{}
+      \name{author}{1}{}{%
+        {{hash=38c78f6b69aff09502aa1c698fdddb10}{%
+           family={Copernicus},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{38c78f6b69aff09502aa1c698fdddb10}
+      \strng{fullhash}{38c78f6b69aff09502aa1c698fdddb10}
+      \strng{bibnamehash}{38c78f6b69aff09502aa1c698fdddb10}
+      \strng{authorbibnamehash}{38c78f6b69aff09502aa1c698fdddb10}
+      \strng{authornamehash}{38c78f6b69aff09502aa1c698fdddb10}
+      \strng{authorfullhash}{38c78f6b69aff09502aa1c698fdddb10}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Copernicus Arctic Regional Reanalysis data now updated monthly}
+      \field{urlday}{8}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://climate.copernicus.eu/copernicus-arctic-regional-reanalysis-data-now-updated-monthly
+      \endverb
+      \verb{url}
+      \verb https://climate.copernicus.eu/copernicus-arctic-regional-reanalysis-data-now-updated-monthly
+      \endverb
+    \endentry
+    \entry{hyperparameters_definition}{webiste}{}
+      \name{author}{1}{}{%
+        {{hash=ffb2e1f6d47fa06b63ab645a65d4144a}{%
+           family={DeepAI},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{ffb2e1f6d47fa06b63ab645a65d4144a}
+      \strng{fullhash}{ffb2e1f6d47fa06b63ab645a65d4144a}
+      \strng{bibnamehash}{ffb2e1f6d47fa06b63ab645a65d4144a}
+      \strng{authorbibnamehash}{ffb2e1f6d47fa06b63ab645a65d4144a}
+      \strng{authornamehash}{ffb2e1f6d47fa06b63ab645a65d4144a}
+      \strng{authorfullhash}{ffb2e1f6d47fa06b63ab645a65d4144a}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is a hyperparameter?}
+      \field{urlday}{3}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://deepai.org/machine-learning-glossary-and-terms/hyperparameter
+      \endverb
+      \verb{url}
+      \verb https://deepai.org/machine-learning-glossary-and-terms/hyperparameter
+      \endverb
+    \endentry
     \entry{dueben2018}{article}{}
       \name{author}{2}{}{%
         {{hash=7b9f6487ce8a2748681e7aa17928878a}{%
@@ -281,12 +298,49 @@
       \field{urlday}{3}
       \field{urlmonth}{4}
       \field{urlyear}{2024}
+      \field{year}{2017}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://resources.eumetrain.org/data/4/452/navmenu.php?tab=4&page=4.0.0
       \endverb
       \verb{url}
       \verb https://resources.eumetrain.org/data/4/452/navmenu.php?tab=4&page=4.0.0
+      \endverb
+    \endentry
+    \entry{eli5_information}{website}{}
+      \name{author}{2}{}{%
+        {{hash=02359c940fd96a86c95589c624d9ce06}{%
+           family={Korobov},
+           familyi={K\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod}}}%
+        {{hash=138b13358a283f23e88dde604f252d4b}{%
+           family={Lopuhin},
+           familyi={L\bibinitperiod},
+           given={Konstantin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{09c7b5240741d1ebe19d504df21ae9d0}
+      \strng{fullhash}{09c7b5240741d1ebe19d504df21ae9d0}
+      \strng{bibnamehash}{09c7b5240741d1ebe19d504df21ae9d0}
+      \strng{authorbibnamehash}{09c7b5240741d1ebe19d504df21ae9d0}
+      \strng{authornamehash}{09c7b5240741d1ebe19d504df21ae9d0}
+      \strng{authorfullhash}{09c7b5240741d1ebe19d504df21ae9d0}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ELI5 documentation}
+      \field{urlday}{9}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://eli5.readthedocs.io/en/latest/overview.html
+      \endverb
+      \verb{url}
+      \verb https://eli5.readthedocs.io/en/latest/overview.html
       \endverb
     \endentry
     \entry{historyNWP}{article}{}
@@ -343,6 +397,35 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1175/BAMS-88-5-639
+      \endverb
+    \endentry
+    \entry{wind_power}{website}{}
+      \name{author}{1}{}{%
+        {{hash=904f5f0e672006d03db60370382355c7}{%
+           family={L.},
+           familyi={L\bibinitperiod},
+           given={Franklin\bibnamedelimb A.\bibnamedelimi Mendoza},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{904f5f0e672006d03db60370382355c7}
+      \strng{fullhash}{904f5f0e672006d03db60370382355c7}
+      \strng{bibnamehash}{904f5f0e672006d03db60370382355c7}
+      \strng{authorbibnamehash}{904f5f0e672006d03db60370382355c7}
+      \strng{authornamehash}{904f5f0e672006d03db60370382355c7}
+      \strng{authorfullhash}{904f5f0e672006d03db60370382355c7}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.linkedin.com/advice/0/how-can-you-calculate-power-output-wind-turbine-viidf
+      \endverb
+      \verb{url}
+      \verb https://www.linkedin.com/advice/0/how-can-you-calculate-power-output-wind-turbine-viidf
       \endverb
     \endentry
     \entry{GraphCast}{misc}{}
@@ -958,6 +1041,7 @@
       \field{urlday}{3}
       \field{urlmonth}{4}
       \field{urlyear}{2024}
+      \field{year}{2022}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://skybrary.aero/articles/richardson-number
