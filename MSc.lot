@@ -1,16 +1,16 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Comparison of measured and reanalysis wind speed}}{15}{table.caption.11}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Mean absolute difference of measured wind speed and reanalysis wind speed at select stations}}{15}{table.caption.13}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces An example of data structure used to train model}}{16}{table.caption.14}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparison of measured and reanalysis wind speed}}{13}{table.caption.15}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Mean absolute difference of measured wind speed and reanalysis wind speed at select stations}}{15}{table.caption.17}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces An example of data structure used to train model}}{16}{table.caption.18}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Hyperparameter search with best performing combination.}}{21}{table.caption.18}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Hyperparameter search with best performing combination.}}{21}{table.caption.22}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Model results for different AWSL}}{25}{table.caption.21}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Model result by station}}{26}{table.caption.22}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Model result looking at closed wind speed intervals}}{28}{table.caption.24}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Model result by stations of interest}}{29}{table.caption.25}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Model results for different sets of parameters.}}{29}{table.caption.28}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Model results for different AWSL}}{25}{table.caption.25}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Model result by station}}{26}{table.caption.26}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Model result looking at closed wind speed intervals}}{28}{table.caption.28}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Model result by stations of interest}}{29}{table.caption.29}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Model results for different sets of parameters.}}{29}{table.caption.32}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
