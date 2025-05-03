@@ -26,12 +26,12 @@ The network consists of \(n\) fully connected layers, with \(n\) around 10. Each
     \end{tabular}
 \end{table}
 
-As mentioned, hyperband doesn't set a hard upper limit to the number of epochs it will train in total. When using the \href{https://keras.io/api/keras_tuner/tuners/hyperband/}{hyperband class} several factors can be set. One of interest here is the $hyperband_iterations$ argument. This determines how often the hyperband algorithm is run and defaults to 1. For each iteration the epochs are distributed between tries (that is each set of hyperparameters) with the total amount of epochs approximately $n_{epochs} = max_{epochs} * log^2(max_{epochs})\approx 10^4$, where $max_{epochs} = 1000$ gives the maximum number of epochs that one set of hyperparameters can be trained for. Searching a space generally takes a lot of time but this drastically improves on gridsearch. If each epoch takes around 10 seconds to run then the total search would take around 28 hours on a shared resource. This is resource intensive and cannot be repeated often. Another question that remains is whether the ranges given are optimal.
+As mentioned, hyperband doesn't set a hard upper limit to the number of epochs it will train in total. When using the \href{https://keras.io/api/keras_tuner/tuners/hyperband/}{hyperband class} several factors can be set. One of interest here is the hyperband iterations argument. This determines how often the hyperband algorithm is run and defaults to 1. For each iteration the epochs are distributed between tries (that is each set of hyperparameters) with the total amount of epochs approximately $n_{epochs} = max_{epochs} * log^2(max_{epochs})\approx 10^4$, where $max_{epochs} = 1000$ gives the maximum number of epochs that one set of hyperparameters can be trained for. Searching a space generally takes a lot of time but this drastically improves on gridsearch. If each epoch takes around 10 seconds to run then the total search would take around 28 hours on a shared resource. This is resource intensive and cannot be repeated often. Another question that remains is whether the ranges given are optimal.
 
 As noted, Hyperband does not impose a fixed limit on the total number of training epochs. When using the \href{https://keras.io/api/keras_tuner/tuners/hyperband/}{Hyperband tuner}, the parameter \texttt{hyperband\_iterations} controls how many times Hyperband is run and defaults to 1. On each run, the total number of epochs is distributed across the hyperparameter trials. The total number of epochs is approximately
-
+%
 \begin{equation*}
 n_{\mathrm{epochs}} = \text{max\_epochs} \times \bigl(\log(\text{max\_epochs})\bigr)^2 \approx 10^4
 \end{equation*}
-
+%
 for $ \text{max\_epochs} = 1000$. Although this method is more efficient than grid search, if each epoch takes about 10 seconds, a complete Hyperband search can still require about 28 hours on shared resources, making repeated searches impractical. It remains unclear whether the current hyperparameter ranges are optimal.

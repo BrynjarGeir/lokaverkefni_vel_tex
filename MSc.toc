@@ -14,13 +14,13 @@
 \contentsline {section}{\numberline {2.4}Combining data sources}{11}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Comparison of observed and reanalysis wind speed}{13}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Layout of combined data}{14}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Distributions of observed and reanalysis data}{15}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Distributions of observed and reanalysis data}{16}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Model Architecture and Training}{19}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Model structure}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Model Training}{20}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Comparison with baseline}{23}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Results for specific locations}{24}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Comparison for models with variable parameters}{27}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Discussion and conclusions}{31}{chapter.5}%
+\contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Baseline models}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Modeling for CARRA wind speed above 10 m/s}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Results for specific locations}{23}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Comparison for models with variable parameters}{26}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Discussion and conclusions}{29}{chapter.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

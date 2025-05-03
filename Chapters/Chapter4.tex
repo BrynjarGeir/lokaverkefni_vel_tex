@@ -1,7 +1,52 @@
 \chapter{Results}
 \label{Chapter4}
-\section{Comparison with baseline}
-A baseline model was constructed. This model looked at the gust factor for some training data and took the average of this and predicted this average everytime. Several baseline guesses were created based on a lower limit assigned to the average wind speed limit (AWSL). As the average wind speed increases, then the variability in gust as a percentage decreases\cite{mean_gust_HA_HO}. This means looking at a subset of the data where the AWSL is higher, a better result can be expected. The results show this. Several different AWSL were used for the baseline model, as can be seen in table \ref{table:results}. This sets a goal. A model that does not significantly improve on this baseline suggests either failure to capture essential patterns in the data or that the data itself may lack the necessary information for substantial improvements upon the baseline. Using the previously described neural network architecture setups for each AWSL, with and without landscape elevation information, MAPE was determined. The results can be seen in Table \ref{table:results}.
+\section{Baseline models}
+The simplest model for the gust factor is to guess the average gust factor for all available observations, i.e. use no variables from the training data. A slightly better model is obtained by using the wind speed as a training feature, either through regression or NN training. The MAPEs for the constructed base models are shown in Table \ref{table:baseline_models}. The ws$_{15}$ model was obtained with NN training but regression produces an almost identical result.
+
+\begin{table}[h]
+  \caption[MAPE for baseline models]{MAPE for several lower limits on the reanalysis 15 m wind speed ($ws_{15}$). Note that the ws$_{15}$ model was only evaluated for the 10 m/s lower bound.}
+    \label{table:baseline_models}
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        Wind speed & \multicolumn{2}{c}{MAPE}\\ 
+        limit $[m/s]$ & mean model & ws$_{15}$ model\\
+        \midrule
+        $\geq 0$ & 39.2\%  & \\
+        $\geq 5$ & 28.1\%  & \\
+        $\geq 10$ & 23.9\% & 17.2\%\\
+        $\geq 15$ & 23.2\% & \\
+        $\geq 20$ & 24.7\% & \\
+        $\geq 25$ & 27.7\% & \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+As the average wind speed increases, then the variability in gust as a percentage decreases\cite{mean_gust_HA_HO}. Therefore lower MAPE woult be expected if the training data is restricted to higher wind speeds. This fact explains why several models were created for different lower bounds.
+
+\section{Modeling for CARRA wind speed above 10 m/s}
+As noted in Chapter 1, it is more important to predict accurate gust factor when it is windy than when the weather is calm. Therefore, at first, the data is restricted to ws$_{15} \geq 10$ m/s. The first constructed model incorporates the features temperature, pressure and wind direction at 15 m height. This gives a moderately reduced MAPE of 16.7\% compared with 17.2\% for the baseline ws$_{15}$ model. When the next pair of features, station altitude and transformed wind direction, is included, the MAPE is reduced considerably, down to 13.8\%. The atmospheric stability indicators, Ri and $N^2$, add little to the model performance, contrary to what might have been expected. When the atmosphere is unstable, wind gusts from higher up might be expected. However, another considerable perfomance increase is observed when digital elevation model (DEM) information is included, down to a MAPE of 12.0\%. This represents over 30\% reduction in the MAPE from the ws$_{15}$ baseline model.
+
+\begin{table}[h]
+    \caption[Model results for different sets of parameters.]{Showing the results of different models. Models defined by different sets of parameters, with increasing complexity. This table shows the feature importance as the loss decreases as more variables are added. Adding all height levels decreases the loss but very little.}
+    \label{table:setsOfParams}
+    \centering
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{Model variables} & \textbf{MAPE}\\
+        \midrule
+        Baseline constant & 23.9\%\\
+        $ws_{15}$ & 17.2\%\\
+        $[ws_{15}, t_{15}, p_{15}, wd_{15}]$ & 16.7\% \\
+        $[ws_{15}, t_{15}, p_{15}, wd_{15}, \text{altitude}, twd]$ & 13.8\% \\
+        $[ws_{15}, t_{15}, p_{15}, wd_{15}, \text{altitude}, twd, N^2, Ri]$ & 13.7\%\\
+        $[ws_{15}, t_{15}, p_{15}, wd_{15}, \text{altitude}, twd, N^2, Ri]$ + DEM & 12.0\%\\
+        $[ws_{15,250,500}, t_{15,250,500}, p_{15,250,500}, wd_{15,250,500}, \text{altitude}, twd, N^2, Ri]$ & 12.0\% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The results show this. Several different AWSL were used for the baseline model, as can be seen in table \ref{table:results}. This sets a goal. A model that does not significantly improve on this baseline suggests either failure to capture essential patterns in the data or that the data itself may lack the necessary information for substantial improvements upon the baseline. Using the previously described neural network architecture setups for each AWSL, with and without landscape elevation information, MAPE was determined. The results can be seen in Table \ref{table:results}.
 
 \begin{table}[h]
     \caption[Model results for different AWSL]{MAPE for each average wind speed limit with and without landscape elevation in a 30° sector around the point of interest into the direction of the reanalysis wind. The influence of adding elevation data seems to reduce the error. The percentage error is higher for lower wind speeds and thus observing the error for different lower bound of wind speed will produce different results. This lower bound is determined using the reanalysis wind speed at 15 meters ($ws_{15}$).}
@@ -127,21 +172,3 @@ In Figure (\ref{fig:ShapleySummary}) the contribution of each feature, excluding
 
 Further Shapley figures can be seen in Appendix~\ref{appendix:A}. In each of these plots, even without the feature labels, the station elevation is easily noticed as the value is constant for a station. This is not noteworthy. What is noteworthy is the range of impact from this single value. For simpler models, this would not happen. It is important to note that SHAP assumes feature independece\cite{Salih_2024}. This might explain why the impact of the Richardson number is so low. Both the squared Brunt–Väisälä frequency and the Richardson number are derived features from reanalysis data. They carry with them some extra information over the other features in the dataset. This is because both are variables over elevation ranges. That is, as seen in Equations (\ref{eqn:Ri}, \ref{eqn:N}), both are dependent on values at lower and upper elevations and try to describe the stability of that range. Shapley tries to assign contribution values for each feature for each observation. SHAP assumes that the features are independent, but this is not the case. It is clearly not the case for the derived variables, but how the contribution should be distributed between the features is not clear. Seemingly the SHAP python package is giving all the impact to the Brunt–Väisälä squared frequency and none to Richardson number. If the Brunt–Väisälä would be excluded from the data, the impact of the Richardson number would likely increase. Another point to note is that the features are ordered by their impact. This means that the station elevation is the most impactful for each plot, but the ordering of other variables changes. Looking at Figure (\ref{fig:ShapleySummary3}), which shows the Shapley summary plot for all data, the wind speed is the second most important feature. This is reversed in Figure (\ref{fig:ShapleySummaryAkrafjall}). This is not unexpected as Akrafjall station was specifically selected as the MAE for reanalysis wind speed was very high as can be seen in Table (\ref{fig:ShapleySummaryAkrafjall}), where you will also find the stations whose summary plot is shown in Figures (\ref{fig:ShapleySummaryAlmannaskarð}, \ref{fig:ShapleySummaryAsgarðsfjall}) and these also fall into the category of very high MAE for wind speed. What is interesting is that the reanalysis wind speed is also of low impact at stations like Háahlíð and Keflavíkurflugvöllur, as shown in Figures (\ref{fig:ShapleySummaryHaahlid}, \ref{fig:ShapleySummaryKeflavikurflugvollur}). These stations had the lowest of MAE for difference between measured wind speed and reanalysis wind speed. As the summary plot over all stations (Figure (\ref{fig:ShapleySummary3})) shows that reanalysis wind speed is impactful, might lead to the conclusion that the reanalysis wind speed is not a good predictor at these locations or something else is skewing the data. A simpler way to look at feature importance is to create models that are trained on and use to predict different sets of parameters. The results of such a comparison can be seen in Table \ref{table:setsOfParams}.
 
-\begin{table}[h]
-    \caption[Model results for different sets of parameters.]{Showing the results of different models. Models defined by different sets of parameters, with increasing complexity. This table shows the feature importance as the loss decreases as more variables are added. Adding all height levels decreases the loss but very little.}
-    \label{table:setsOfParams}
-    \centering
-    \begin{tabular}{lc}
-        \toprule
-        \textbf{Model parameters} & \textbf{MAPE}\\
-        \midrule
-        Baseline constant & 23.9\%\\
-        $ws_{15}$ & 17.2\%\\
-        $[ws_{15}, t_{15}, p_{15}, wd_{15}]$ & 16.7\% \\
-        $[ws_{15}, t_{15}, p_{15}, wd_{15}, ASL, twd]$ & 13.8\% \\
-        $[ws_{15}, t_{15}, p_{15}, wd_{15}, ASL, twd, N, Ri]$ & 13.7\%\\
-        $[ws_{15}, t_{15}, p_{15}, wd_{15}, ASL, twd, N, Ri]$ + DEM & 12.0\%\\
-        $[ws_{15,250,500}, t_{15,250,500}, p_{15,250,500}, wd_{15,250,500}, ASL, twd, N, Ri]$ & 12.0\% \\
-        \bottomrule
-    \end{tabular}
-\end{table}

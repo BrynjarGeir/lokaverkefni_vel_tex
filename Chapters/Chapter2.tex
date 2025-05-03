@@ -8,7 +8,7 @@ Data were sourced from several streams. The Icelandic Meteorological Office (IMO
 
 IMO provided measurements from \nStationsMin weather stations across Iceland. The measurements that met the filtering criteria began in \startDateVedur and ended in 2023. Of these \nStationsMin stations, \nVedurMin were from the IMO, with the anemometer at 10~m above ground, while the remaining \nVGMin stations were from \href{https://www.vegagerdin.is/}{the Icelandic Road and Coastal Administration (IRCA)}, with the anemometer at 6–7~m above ground \cite{vegagerdin_postur}. The locations of these weather stations are shown in Figure \ref{fig:aws_map}.
 
-Data from these automatic weather stations (AWS) are stored in hourly files, which aggregate the original 10-minute files; measurement errors—unrealistic spikes known as “nails”—have been removed in most cases. Each record contains the following information: date and time; station number (convertible to coordinates using another dataset of Icelandic meteorological stations); average wind speed (\(f\)); wind gust (\(f_g\)); standard deviation of the wind gust; wind direction (\(d\)); and standard deviation of the wind direction.
+Data from these automatic weather stations (AWS) are stored in hourly files, which aggregate the original 10-minute files; measurement errors—unrealistic spikes known as “nails”—have been removed in most cases. Each record contains the following information: date and time; station number (convertible to coordinates using another dataset of Icelandic meteorological stations); average wind speed ($f$); wind gust ($f_g$); standard deviation of the wind gust; wind direction ($d$); and standard deviation of the wind direction.
 
 These measurements began at the end of the 20th century with the installation of the first AWSs, and more stations have been added in subsequent decades.
 
@@ -27,7 +27,7 @@ The CARRA dataset covers all the IMO observations that fulfill criteria of consi
 The requests to the API were made at each available CARRA hour ([00, 03, 06, 09, 12, 15, 18, 21]) on a grid covering Iceland, for each available observation time. The downloaded data were interpolated to get values at the weather stations. CARRA contains several types of layers: single levels, model levels, height levels, and pressure levels. The data for this thesis was downloaded from height levels. They were requested at heights of 15, 250 and 500 meters above ground. For each point 4 parameters were requested, wind speed, wind direction, pressure, and temperature.
 
 \section{Elevation data}
-A GeoTIFF file containing Iceland’s elevation on a 20~m by 20~m grid was provided by the Icelandic Meteorological Office (IMO). The entire country is covered by this file, and its size is approximately 685\,MB.
+A GeoTIFF file containing a digital elevation model (DEM) for Iceland on a 20~m by 20~m grid was provided by the Icelandic Meteorological Office (IMO). The entire country is covered by this file, and its size is approximately 685\,MB.
 
 The Python package \texttt{rasterio} is used, enabling rapid elevation lookup via its spatial indexing and affine‐transform capabilities. Elevation at specified geographic coordinates can be retrieved directly, and grid indices may be used for efficient access. Elevation for any exact location can be interpolated by fetching neighboring grid points.
 
@@ -107,7 +107,7 @@ Next, the distribution of MAE by station is examined, considering station locati
 
 Once data from all three sources have been retrieved and processed—including interpolation—they must be combined and formatted for modeling (training, validation, and testing). The starting point is a DataFrame containing AWS observations: average wind speed, wind gust, wind direction, station number, and coordinates. CARRA data are provided at selected height levels, each as a separate row in the CARRA DataFrame. Thus a single observation will span multiple rows, one per level. These rows are merged by time and station location, enabling AWS and CARRA data to be joined on station and time fields.
 
-Elevation data are handled by defining an upwind sector: a range of angles relative to the wind direction \(d\) and radial distances from each station. Points within this sector are generated as shown in Code Listing \ref{code:sectorElevation}.
+The DEM elevation data are handled by defining an upwind sector: a range of angles relative to the wind direction $d$ and radial distances from each station. Points within this sector are generated as shown in Code Listing \ref{code:sectorElevation}.
 
 \begin{lstlisting}[
     style=Python,
@@ -126,13 +126,13 @@ The resulting DataFrame includes AWS measurements (our target), CARRA weather va
 
 \begin{table}[h]
     \centering
-    \caption[Example of combined data structure]{Example of the combined data structure used for modeling. Data include derived variables Richardson number (\(Ri\)) and squared Brunt–Väisälä frequency (\(N^2\)), station elevation, wind direction and relative wind direction (twd), along with wind speed, pressure, and temperature at various height levels, and elevation points around each station relative to station elevation.}
+    \caption[Example of combined data structure]{Example of the combined data structure of features used for modeling. Data include derived variables Richardson number (Ri) and squared Brunt–Väisälä frequency ($N^2$), station altitude (meters above sea level), transformed wind direction (twd), wind speed (ws$_{15}$), wind direction (wd$_{15}$), temperature ($t_{15}$), pressure ($p_{15}$) (CARRA values at 15 m height), and elevation points (from DEM) in a sector pointing upwind.}
     \label{table:trainDataExample}
     \resizebox{\textwidth}{!}{
     \begin{tabular}{ccccccccccc}
         \toprule
-        Ri & \(N^2\) & \shortstack{station\\elevation} & twd & ws\(_{15}\) & wd\(_{15}\)
-        & \(t_{15}\) & \(p_{15}\) & \(\text{elevation}_0\) & elevation\(_1\) & \dots\\
+        Ri & $N^2$ & \shortstack{station\\altitude} & twd & ws$_{15}$ & wd$_{15}$
+        & $t_{15}$ & $p_{15}$ & $\text{elevation}_0$ & elevation$_1$ & \dots\\
         \midrule 
         -1.18 &  26700 & 100 & 1.5 & 10 & 5 & 0 & 100 & 2 & 4 & \dots\\
         \dots\\
@@ -141,9 +141,23 @@ The resulting DataFrame includes AWS measurements (our target), CARRA weather va
     }
 \end{table}
 
-In Table \ref{table:trainDataExample}, the first two columns describe atmospheric stability: the Richardson number (\(Ri\)) and squared Brunt–Väisälä frequency (\(N^2\)), defined in Equations (\ref{eqn:Ri}) and (\ref{eqn:N}) \cite{richardson_number_skybrary,brunt_vaisala_freq_eumtrain,mean_gust_HA_HO}. Here, \(g\) is gravitational acceleration; \(dT\) the temperature difference between levels; \(dz\) the height difference; \(T_{\mathrm{ave}}\) the average temperature; and \(dU\) the wind-speed difference. Lower \(Ri\) indicates greater turbulence, with typical values between 0.1 and 10, and values below 1 signifying significant turbulence \cite{richardson_number_skybrary}. Negative \(N^2\) denotes instability, as an air parcel will accelerate away from its original position \cite{brunt_vaisala_freq_eumtrain}.
+The transformed wind direction is a proxy showing whether the wind is coming from land or sea. It is computed as the angle between the wind direction and a vector from the center of Iceland to the station.
 
-Since \(Ri\) and \(N^2\) are derived from reanalysis variables, they add limited new information compared to the raw data, but they can reduce input dimensionality and improve model explainability via Shapley-value analysis \cite{shapley_information}. Shapley values assess feature importance by evaluating all possible feature subsets—an operation of computational complexity \(2^n\). In practice, approximations are used but can still be costly for large models. Because \(dU\) appears squared in the denominator of \(Ri\), if the wind-speed difference between levels is very small, \(Ri\) can become arbitrarily large, potentially distorting predictions.
+The Richardson number and the Brunt–Väisälä frequency describe atmospheric stability, see equations (\ref{eqn:Ri}) and (\ref{eqn:N})  \cite{richardson_number_skybrary,brunt_vaisala_freq_eumtrain,mean_gust_HA_HO}. These values are calculated using reanalysis data at two different height levels. Thus Ri refers to the Richardson number calculated between height levels 15m and 500m. Exactly the same notation is used with the Brunt–Väisälä frequency, except the square is used.
+%
+\begin{equation}
+  \label{eqn:Ri}
+  Ri = \frac{g \cdot dT \cdot dz}{T_{\textrm ave} \cdot dU^2} \unit{[]}
+\end{equation}
+%
+\begin{equation}
+  \label{eqn:N}
+  N = \sqrt{\frac{g \cdot dT }{T_{\textrm ave} \cdot dz}} \unit{[Hz]}
+\end{equation}
+%
+Here, $g$ is gravitational acceleration; $dT$ the temperature difference between levels; $dz$ the height difference; $T_{\mathrm{ave}}$ the average temperature; and $dU$ the wind-speed difference. Lower Ri indicates greater turbulence, with typical values between 0.1 and 10, and values below 1 signifying significant turbulence \cite{richardson_number_skybrary}. Negative $N^2$ denotes instability, as an air parcel will accelerate away from its original position \cite{brunt_vaisala_freq_eumtrain}.
+
+Since Ri and $N^2$ are derived from reanalysis variables, they add limited new information compared to the raw data, but they can reduce input dimensionality and improve model explainability via Shapley-value analysis \cite{shapley_information}. Shapley values assess feature importance by evaluating all possible feature subsets—an operation of computational complexity $2^n$. In practice, approximations are used but can still be costly for large models. Because $dU$ appears squared in the denominator of Ri, if the wind-speed difference between levels is very small, Ri can become arbitrarily large, potentially distorting predictions.
 
 \section{Distributions of observed and reanalysis data}
 
@@ -174,13 +188,13 @@ CARRA reanalysis data may exhibit bias or systematic differences when compared t
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\textwidth]{Figures/station_heights.png}
-  \caption{Distribution of weather station elevations above sea level. One outlier near 2000~m was excluded due to limited and inconsistent data.}
+  \caption{Distribution of weather station altitudes above sea level. One outlier near 2000~m was excluded due to limited and inconsistent data.}
   \label{fig:station_heights}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\textwidth]{Figures/gust_factor_2025.png}
-  \caption{Histogram of gust factors. By definition, gust factor \(\ge1\); most values lie between 1.2 and 2. The gust factor declines as wind speed increases.}
+  \caption{Histogram of gust factors. By definition, gust factor $\ge1$; most values lie between 1.2 and 2. The gust factor declines as wind speed increases.}
   \label{fig:gust_factors}
 \end{figure}
