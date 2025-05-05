@@ -24,23 +24,23 @@ The Navier–Stokes equation (\ref{eqn:navierstokes}) shows that changes in wind
 
 Traditionally, numerical weather prediction (NWP) systems are used to forecast and analyze weather patterns \cite{medium_range_3d_weather_forecasting_NN}. These models describe the evolution of discretized atmospheric states using partial differential equations grounded in physics. Forecasts are typically produced every hour, or at coarser intervals for climate simulations. With increasing computational power and efficiency, the trend is to output data more frequently \cite{GNP_vidtal}. However, such outputs summarize conditions over each period and may not capture short-term fluctuations well, including variations in wind speed and gusts \cite{canNNBeatNWP}.
 
-This thesis examines methods to predict the gust factor using various predictors and multiple data sources, including NWP outputs and observational data. Accurate gust predictions are crucial, as it is ofteh the peak wind gust that will cause damaging incidents, such as structural failures, traffic accidents and downed power lines. Moreover, the prevalence of extreme wind events is expected to increase in the future \cite{nasa_extreme_weather}.
+This thesis examines methods to predict the gust factor using various predictors and multiple data sources, including NWP outputs and observational data. Accurate gust predictions are crucial, as it is often the peak wind gust that will cause damaging incidents, such as structural failures, traffic accidents and downed power lines. Moreover, the prevalence of extreme wind events is expected to increase in the future \cite{nasa_extreme_weather}.
 
 \section{Background}
 
-\subsection*{Numerical weather prediction}
+\subsection{Numerical weather prediction}
 The history of numerical weather prediction dates back to the 1920s, when Lewis Fry Richardson pioneered the field and attempted to produce forecasts. His results were flawed due to numerical noise. The ENIAC, built in 1945, was a general-purpose computer used—among other tasks—for weather prediction. These forecasts took 24 hours to compute and predicted 24 hours into the future. While a proof of concept, they were not operationally useful \cite{TheENIACForecastsARecreation}. 
 
 With the advent of electronic computers in the 1950s, the first operational forecasts emerged. In September 1954, Carl-Gustaf Rossby and his Stockholm-based team produced the first real-time barotropic forecasts. The following year, the Joint Numerical Weather Prediction Unit (JNWPU), based in Princeton, New Jersey, released its first 36-hour forecasts at 400, 700, and 900 mb. Although these forecasts were inferior to subjective human analyses, they demonstrated feasibility and spurred further development in the field \cite{historyNWP}. Since then, NWP has made tremendous strides in parallel with increases in computational power and efficiency.
 
 \subsection*{AI in weather forecasts}
-In the last decade, there has been another transformation in weather prediction driven by artificial intelligence (AI). Interest in AI has come in waves: progress is made, then interest diminishes, but over the past 15 years growth has been steady. Notable drivers of this wave include advances in computational power (notably parallel processing on graphics processing units, GPUs), the developement of neural networks (NNs) for processing massive datasets, and the availability of large online datasets. One type of NN is the convolutional neural network (CNN), originally designed for image processing but applicable to any gridded data with spatial structure \cite{canNNBeatNWP}. Since 2018, significant work has applied AI to weather prediction.
+In the last decade, there has been another transformation in weather prediction driven by artificial intelligence (AI). Interest in AI has come in waves: progress is made, then interest diminishes, but over the past 15 years growth has been steady. Notable drivers of this wave include advances in computational power (notably parallel processing on graphics processing units, GPUs), the development of neural networks (NNs) for processing massive datasets, and the availability of large online datasets. One type of NN is the convolutional neural network (CNN), originally designed for image processing but applicable to any gridded data with spatial structure \cite{canNNBeatNWP}. Since 2018, significant work has applied AI to weather prediction.
 
 There are two common approaches to AI-based forecasting: combining NWP outputs with NNs, or using NNs alone. In the former, NWP forecasts can be used as inputs to NN training or integrated in other ways; in the latter, NNs are trained directly on meteorological observations, bypassing NWP entirely.
 
 In 2018, Düben and Bauer showed that an NN could outperform a simple persistence forecast and compete with very coarse-resolution atmospheric models of similar complexity for short lead times \cite{dueben2018}. Also in 2018, Scher developed a deep CNN to emulate a general circulation model (GCM)—a numerical model representing physical processes—by training on GCM output. This approach allowed stable emulation of model dynamics for much longer horizons \cite{scher2018}. These papers were proofs of concept rather than production-ready replacements for NWP, but they demonstrated that deep-learning–based models could, with further development, compete with standard models in the field.
 
-\subsection*{Large weather models}
+\subsection{Large weather models}
 In the last two years, there have been even more developments with the emergence of Large AI Weather forecast Models (LWMs). In 2024, Ling et al.\ \cite{SecondRevolution} proposed a standardized definition of LWMs in meteorology, outlining three criteria, referred to as the "Three Large Rules":
 
 \begin{enumerate}[label=\textbf{\arabic*}.,rightmargin=1.5em]
@@ -49,20 +49,20 @@ In the last two years, there have been even more developments with the emergence
   \item \textbf{Scalability and downstream applicability:} Demonstrated, for example, by predicting cyclones even when not explicitly trained on cyclone data (e.g., \href{https://www.youtube.com/watch?v=PD1v5PCJs_o&ab_channel=GregBronevetsky}{GraphCast}) to showcase model versatility \cite{SecondRevolution}.
 \end{enumerate}
 
-Before 2022, LWMs had been shown to compete with traditional NWP in specific cases and to generate forecasts much faster after training, No model had been shown to be able to completely replace tradional NWP systems. In early 2022, Pathak et al.\ \cite{FourCastNet} introduced FourCastNet, which employs an Adaptive Fourier Neural Operator model leveraging transformer architecture instead of convolution. FourCastNet matches the performance of standard forecasting techniques at short lead times for large-scale variables and outperforms them for smaller-scale features. It generates a one-week forecast in under two seconds—orders of magnitude faster than conventional physical methods \cite{FourCastNet}. In 2022, several ML-based models demonstrated faster-than-NWP predictions after one-time training, with performance rivaling or exceeding NWP in some cases.
+Before 2022, LWMs had been shown to compete with traditional NWP in specific cases and to generate forecasts much faster after training, No model had been shown to be able to completely replace traditional NWP systems. In early 2022, Pathak et al.\ \cite{FourCastNet} introduced FourCastNet, which employs an Adaptive Fourier Neural Operator model leveraging transformer architecture instead of convolution. FourCastNet matches the performance of standard forecasting techniques at short lead times for large-scale variables and outperforms them for smaller-scale features. It generates a one-week forecast in under two seconds—orders of magnitude faster than conventional physical methods \cite{FourCastNet}. In 2022, several ML-based models demonstrated faster-than-NWP predictions after one-time training, with performance rivaling or exceeding NWP in some cases.
 
 In 2023, Remi Lam and the GraphCast team at Google released GraphCast, which outperformed the European Centre for Medium-Range Weather Forecasts’ (ECMWF) industry-standard High-Resolution Forecast (HRES). GraphCast uses a graph-based representation instead of a regular grid, operating on a global latitude–longitude grid at 0.25° resolution, which introduces nonuniform point spacing near the poles; the graph structure helps mitigate this bias \cite{GraphCast}.
 
-\subsection*{Conclusion}
+\subsection{Conclusion}
 Substantial progress has been made since 2018 and especially since 2022 \cite{SecondRevolution}. The evolution from proof-of-concept ML methods to models competitive with—or surpassing—standard NWP has been remarkably rapid. It is important to note that training data for these large models are drawn from traditional NWP outputs, underscoring the synergy between ML and physics-based approaches. The coming years promise further exciting developments in machine-learning–based weather prediction.
 
 \section{Methodology and related work}
-In this study, data from three sources is used:
+In this study, data from three sources are used:
 
 \begin{enumerate}[label=\textbf{\arabic*}.,rightmargin=1.5em]
   \item Three-hourly reanalysis data for Iceland (2004–2023)
   \item Dense (20 by 20~m) gridded elevation data for Iceland
-  \item Three-hourly observations from Icelandic meteorological stations
+  \item Hourly observations from Icelandic meteorological stations
 \end{enumerate}
 
 The aim of the study is to improve prediction of gust factors that can be applied at any given place in Iceland. Currently, gust factor predictions can be obtained directly from NWP output, but one may also create a simple regression model (involving, e.g., wind speed and location) to predict them. To accomplish this, an NN is used as a backend to the NWP. The network is trained with gust factors from observations as ground truth, and model quality is measured by comparing predictions with either the NWP or the regression values. Note that only data at the prediction time is used; the time-series aspect of the data is not utilized.
@@ -88,7 +88,7 @@ To capture patterns in the data, a neural network was constructed. An NN archite
     \operatorname{tanh}(x):=\frac{e^x-e^{-x}}{e^x+e^{-x}}
 \end{equation}
 
-These activation control neural activation and can help stabilize the network.
+These activation functions control neural activation and can help stabilize the network.
 \subsection{Model evaluation}
 To measure the performance of these models, both in training and testing, mean absolute percentage error (MAPE) as defined in Equation (\ref{eqn:mape}) was used.
 \begin{equation}
