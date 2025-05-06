@@ -24,19 +24,19 @@ The simplest model for the gust factor is to guess the average gust factor for a
 
 As the average wind speed increases, then the variability in gust as a percentage decreases \cite{mean_gust_HA_HO}. Therefore lower MAPE would be expected if the training data is restricted to higher wind speeds. This fact explains why several models were created for different lower bounds.
 
-\section{Modeling for CARRA wind speed above 10 m/s}
+\section{Modeling for ws$_{15}$ above 10 m/s}
 As noted in Chapter \ref{Chapter1}, it is more important to predict accurate gust factor when it is windy than when the weather is calm. Therefore, at first, the data is restricted to ws$_{15} \geq 10$ m/s. The first constructed model incorporates the features temperature, pressure and wind direction at 15 m height. This gives a moderately reduced MAPE of 16.7\% compared with 17.2\% for the baseline ws$_{15}$ model. When the next pair of features, station altitude and transformed wind direction, is included, the MAPE is reduced considerably, down to 13.8\%. The atmospheric stability indicators, Ri and $N^2$, add little to the model performance, contrary to what might have been expected. When the atmosphere is unstable, wind gusts from higher up might be expected. However, another considerable performance increase is observed when digital elevation model (DEM) information is included, down to a MAPE of 12.0\%. This represents over 30\% reduction in the MAPE from the ws$_{15}$ baseline model.
 
 \begin{table}[h]
-    \caption[Model results for different sets of parameters.]{Showing the results of different models. Models defined by different sets of parameters, with increasing complexity. This table shows the feature importance as the loss decreases as more variables are added. Adding all height levels decreases the loss but very little.}
+  \caption[Model results for different sets of parameters.]{Models defined by a selection of parameter sets, with increasing complexity. The table shows decreasing MAPE as more variables are added.}
     \label{table:setsOfParams}
     \centering
     \begin{tabular}{lc}
         \toprule
         Model variables & MAPE\\
         \midrule
-        Baseline constant & 23.9\%\\
-        Simple regression $[ws_{15}]$ & 17.2\%\\
+        $[\,]$ Baseline & 23.9\%\\
+        $[ws_{15}]$ Baseline & 17.2\%\\
         $[ws_{15}, t_{15}, p_{15}, wd_{15}]$ & 16.7\% \\
         $[ws_{15}, t_{15}, p_{15}, wd_{15}, \text{altitude}, twd]$ & 13.8\% \\
         $[ws_{15}, t_{15}, p_{15}, wd_{15}, \text{altitude}, twd, N^2, Ri]$ & 13.7\%\\
@@ -46,16 +46,17 @@ As noted in Chapter \ref{Chapter1}, it is more important to predict accurate gus
     \end{tabular}
 \end{table}
 
-The results show this. Several different wind speed intervals were used for the baseline model, as can be seen in table \ref{table:results}. This sets a goal. A model that does not significantly improve on this baseline suggests either failure to capture essential patterns in the data or that the data itself may lack the necessary information for substantial improvements upon the baseline. Using the previously described neural network architecture setups for each wind speed interval, with and without landscape elevation information, MAPE was determined. The results can be seen in Table \ref{table:results}.
+\section{Modeling for various ws$_{15}$ lower bounds}
+To assess how model performance depends on ws$_{15}$ lower bound several models were trained using the variable sets in rows 5 and 6 in Table \ref{table:setsOfParams}, i.e. $[ws_{15}, t_{15}, p_{15}, wd_{15}, \text{altitude}, twd, N^2, Ri]$, as well as the same set together with DEM. The results can be seen in Table \ref{table:results}. For this investigation comparison was only made with the constant baseline model. In all cases adding the DEM information is seen to increase the model performance. The reason for the difference between the 10 m/s lower bound results seen in Tables \ref{table:setsOfParams} and \ref{table:results} is they were obtained with different training setups. 
 
 \begin{table}[h]
-    \caption[Model results for different wind speed limits]{MAPE for each average wind speed limit with and without landscape elevation in a 30° sector around the point of interest into the direction of the reanalysis wind. The influence of adding elevation data seems to reduce the error. The percentage error is higher for lower wind speeds and thus observing the error for different lower bound of wind speed will produce different results. This lower bound is determined using the reanalysis wind speed at 15 meters ($ws_{15}$).}
+  \caption[Model results for different wind speed limits]{MAPE for each ws$_{15}$ lower bound without and with landscape elevation data (DEM) in a 30° sector into the direction of the reanalysis wind. Adding DEM data reduces the error noticably. Note that the MAPE is higher for both the lower lower bounds and for the higher ones.}
     \label{table:results}
     \centering
     \begin{tabular}{lccc}
         \toprule
-        \shortstack{Wind Speed\\limit} & MAPE & &\\
-        $[m/s]$ & \shortstack{Baseline\\constant} &  Without DEM & With DEM \\
+        Wind Speed & \multicolumn{3}{c}{MAPE} \\
+        limit $[m/s]$ & Baseline & Without DEM & With DEM \\
         \midrule
         $\geq 0$ & 39.2\% & 19.2\% & 18.9\% \\
         $\geq 5$ & 28.1\% & 15.3\% & 14.9\%\\
@@ -65,26 +66,13 @@ The results show this. Several different wind speed intervals were used for the 
         $\geq 25$ & 27.7\% & 19.4\% & 17.3\%\\
         \bottomrule
     \end{tabular}
-\end{table}
-
-%m/s & $ws_{15}$ & f & $ws_{15}$ & f & $ws_{15}$ & f\\
-%$\geq 0$ & 39.2\% & 39.2\% & 19.7\% & 15.9\% & 18.6\% & 15.3\%\\
-%$\geq 5$ & 28.1\% & 14.8\% & 15.9\% & 9.9\% & 14.1\% & 9.4\%\\
-%$\geq 10$ & 23.9\% & 11.1\%& 13.6\% & 7.6\% & 11.5\% & 7.4\%\\
-%$\geq 15$ & 23.2\% & 9.3\% & 13.0\% & 7.0\% & 10.6\% & 6.4\%\\
-%$\geq 20$ & 24.7\% & 8.2\% & 13.6\% & 6.3\% & 11.1\% & 5.8\%\\
-%$\geq 25$ & 27.7\% & 7.3\% & 15.7\% & 5.8\% & 12.9\% & 5.5\% \\
-%7.5 & 25.3\% & 12.6\% & 14.5\% & 8.6\% & 12.5\% & 8.6\%\\
-%12.5 & 23.3\% & 10.1\% & 13.1\% & 7.1\% & 11.0\% & 6.9\%\\
-%17.5 & 23.7\% & 8.7\% & 12.8\% & 6.4\% & 10.5\% & 6.1\%\\
-%22.5 & 26.1\% & 7.8\% & 14.5\% & 6.1\% & 12.6\% & 5.7\%\\
-
-This is some improvement upon the baseline error, with a decrease in error from 23.9\% to 13.6\% and 10.6\% for the baseline, model without DEM and with model with DEM for 10 m/s cutoff. The power generated by wind mill increases with wind speed cubed \cite{wind_power}. The highest wind gusts in Iceland are around 70 m/s. Knowing the gust factor with half as much error as before can allow better anticipation and thus spare turbines for high wind gusts. Another way to look at the error improvement is by station. No location data was directly included in the training data. In Table \ref{table:station_mae_distribution} the mean absolute error of predicted average wind speed and measured average wind speed can be seen for the extreme values. A question to ask is it possible to achieve better results when only looking at a single station?
+  \end{table}
 
 \section{Results for specific locations}
+There are two ways to incorporate location in the model building: To include the station location in the training data, and to train on subsets of the data, e.g. by station or groups of stations. In this section the latter approach is considered. Results of an investigation for a few stations can be seen in Table \ref{table:specific_sites}. For many of the stations, the results are worse than expected, calling for further investigation.
 
 \begin{table}[h]
-    \caption[Model result by station]{The MAPE results for selected stations of interest, both when training for the specific site and when the stations are a part of the general data. For every station the wind speed limit is set at 10 m/s. In training for a single station at a time, some site specific information can be gauged. This does not mean that the a better result can be reached for that site. Factors such as the number of datapoints at given location can significantly impact the result. This table uses the measured wind speed to determine the cut off for data points. This leads to some data leakage and an increased performance compared to using the reanalysis CARRA speed for cut off.}
+  \caption[Model result by station]{MAPE for a few selected stations, for a model trained with the whole data set (general training), and for a model trained only with the data of the station itself (site training), with a lower bound of 10 m/s. This investigation was done in an earlier phase of the study, when $f$ instead of ws$_{15}$ was being used as the lower bound cut off, and that leads to some data leakage and a somewhat lower MAPE.}
     \label{table:specific_sites}
     \centering
     \begin{tabular}{lccc}
@@ -92,16 +80,19 @@ This is some improvement upon the baseline error, with a decrease in error from 
         Station name & n & \multicolumn{2}{c}{MAPE}\\
         & & General training & Site training\\
         \midrule
-        Akrafjall & 42,791 & 18.6\% & 93.7\%\\
-        Almannaskarð & 4,014 & 12.2\% & 86.7\%\\
-        Ásgarðsfjall & 15,121 & 9.1\% & 9.4\%\\
-        Jökulheimar & 17,176 & 7.7\% & 7.7\%\\
-        Sandbúðir & 18,718 & 6.8\% & 6.4\%\\
-        Stórholt & 35,126 & 7.1\% & 29.2\% \\
-        Þúfuver & 19,538 & 6.4\% & 6.8\%\\
+        Akrafjall & 43,000 & 18.6\% & 93.7\%\\
+        Almannaskarð & 4,000 & 12.2\% & 86.7\%\\
+        Ásgarðsfjall & 15,000 & 9.1\% & 9.4\%\\
+        Jökulheimar & 17,000 & 7.7\% & 7.7\%\\
+        Sandbúðir & 19,000 & 6.8\% & 6.4\%\\
+        Stórholt & 35,000 & 7.1\% & 29.2\% \\
+        Þúfuver & 20,000 & 6.4\% & 6.8\%\\
         \bottomrule
     \end{tabular}
 \end{table}
+
+% Færum Mynd 4.1 fram fyrir töflu 4.4.   
+% KOMNIR HINGAÐ
 
 Instead of looking at the exact values of MAPE at select stations, a plot of the error distribution can be created. This can be seen in Figure (\ref{fig:errorMap}). Looking at Figure (\ref{fig:errorMap}), the worst performing stations can be seen at Vestfirðir and around the coastline. Stations further inland seem to have lower error. The worst performing station, at Seljalandsdalur, is at Vestfirðir while the best performing station Garðskagaviti is at the South-Western tip of Iceland in Reykjanes.
 
