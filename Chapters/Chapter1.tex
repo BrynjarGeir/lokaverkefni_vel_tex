@@ -33,7 +33,7 @@ The history of numerical weather prediction dates back to the 1920s, when Lewis 
 
 With the advent of electronic computers in the 1950s, the first operational forecasts emerged. In September 1954, Carl-Gustaf Rossby and his Stockholm-based team produced the first real-time barotropic forecasts. The following year, the Joint Numerical Weather Prediction Unit (JNWPU), based in Princeton, New Jersey, released its first 36-hour forecasts at 400, 700, and 900 mb. Although these forecasts were inferior to subjective human analyses, they demonstrated feasibility and spurred further development in the field \cite{historyNWP}. Since then, NWP has made tremendous strides in parallel with increases in computational power and efficiency.
 
-\subsection*{AI in weather forecasts}
+\subsection{AI in weather forecasts}
 In the last decade, there has been another transformation in weather prediction driven by artificial intelligence (AI). Interest in AI has come in waves: progress is made, then interest diminishes, but over the past 15 years growth has been steady. Notable drivers of this wave include advances in computational power (notably parallel processing on graphics processing units, GPUs), the development of neural networks (NNs) for processing massive datasets, and the availability of large online datasets. One type of NN is the convolutional neural network (CNN), originally designed for image processing but applicable to any gridded data with spatial structure \cite{canNNBeatNWP}. Since 2018, significant work has applied AI to weather prediction.
 
 There are two common approaches to AI-based forecasting: combining NWP outputs with NNs, or using NNs alone. In the former, NWP forecasts can be used as inputs to NN training or integrated in other ways; in the latter, NNs are trained directly on meteorological observations, bypassing NWP entirely.
@@ -54,7 +54,7 @@ Before 2022, LWMs had been shown to compete with traditional NWP in specific cas
 In 2023, Remi Lam and the GraphCast team at Google released GraphCast, which outperformed the European Centre for Medium-Range Weather Forecasts’ (ECMWF) industry-standard High-Resolution Forecast (HRES). GraphCast uses a graph-based representation instead of a regular grid, operating on a global latitude–longitude grid at 0.25° resolution, which introduces nonuniform point spacing near the poles; the graph structure helps mitigate this bias \cite{GraphCast}.
 
 \subsection{Conclusion}
-Substantial progress has been made since 2018 and especially since 2022 \cite{SecondRevolution}. The evolution from proof-of-concept ML methods to models competitive with—or surpassing—standard NWP has been remarkably rapid. It is important to note that training data for these large models are drawn from traditional NWP outputs, underscoring the synergy between ML and physics-based approaches. The coming years promise further exciting developments in machine-learning–based weather prediction.
+Substantial progress has been made since 2018 and especially since 2022 \cite{SecondRevolution}. The evolution from proof-of-concept ML methods to models competitive with—or surpassing—standard NWP has been remarkably rapid. It is important to note that training data for these large models are drawn from traditional NWP outputs, underscoring how ML and physics-based approaches can complement each other. The coming years promise further exciting developments in machine learning based weather prediction.
 
 \section{Methodology and related work}
 In this study, data from three sources are used:

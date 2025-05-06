@@ -11,10 +11,11 @@ Automatic weather stations (AWS) have been set up all around the world, includin
 \begin{figure}
   \centering
   \includegraphics[scale=0.3]{Figures/storhofdi.jpeg}
-  \caption[AWS at Stórhöfði in Vestmannaeyjar, south of Iceland.]{AWS at Stórhöfði in Vestmannaeyjar, south of Iceland. The anemometer can be seen as three pins in the upper-central of the figure just slightly to the left.}
+  \caption[AWS at Stórhöfði in Vestmannaeyjar, south of Iceland.]{AWS at Stórhöfði in Vestmannaeyjar, south of Iceland. The anemometer can be seen as three pins in the upper-central area of the figure just slightly to the left.}
+  \label{fig:storhofdi}
 \end{figure}
 
-Data from these AWS were stored in hourly files, which aggregate the original 10-minute files; measurement errors—unrealistic spikes known as “nails”—have been removed in most cases. Each record contains the following information: date and time; station number (convertible to coordinates using another dataset of Icelandic meteorological stations); average wind speed ($f$); wind gust ($f_g$); standard deviation of the wind gust; wind direction ($d$); and standard deviation of the wind direction.
+Data from these AWSs were stored in hourly files, which aggregate the original 10-minute files; measurement errors—unrealistic spikes known as “nails”—have been removed in most cases. Each record contains the following information: date and time; station number (convertible to coordinates using another dataset of Icelandic meteorological stations); average wind speed ($f$); wind gust ($f_g$); standard deviation of the wind gust; wind direction ($d$); and standard deviation of the wind direction.
 
 These measurements began at the end of the 20th century with the installation of the first AWSs, and more stations have been added in subsequent decades.
 
@@ -26,7 +27,7 @@ These measurements began at the end of the 20th century with the installation of
 \end{figure}
 
 \section{CARRA Data}
-CARRA is a high-resolution atmospheric reanalysis produced by the Copernicus Climate Change Service and run by ECMWF. It covers two regions, a west region covering Greenland and Iceland and an east region covering the European Arctic. It has a 2.5 km horizontal resolution and dates from 1991 to the present, with monthly updates. CARRA provides three-hourly analysis fields and short-term forecasts (hourly for lead times under 6 h and three-hourly beyond) of surface and near-surface variables—wind, temperature, pressure, precipitation, etc. It is based on the HARMONIE-AROME limited-area NWP model, forced at its boundaries by ERA5 (ECMWF Re-Analysis v. 5) and enhanced by local observations to better represent complex terrain, land–sea contrasts, and sea-ice processes. It is updated monthly, with a latency of 2-3 months\cite{carra_information}.
+CARRA is a high-resolution atmospheric reanalysis produced by the Copernicus Climate Change Service and run by ECMWF. It covers two regions, a west region covering Greenland and Iceland and an east region covering the European Arctic. It has a 2.5 km horizontal resolution and dates from 1991 to the present, with monthly updates. CARRA provides three-hourly analysis fields and short-term forecasts (hourly for lead times under 6 h and three-hourly beyond) of surface and near-surface variables—wind, temperature, pressure, precipitation, etc. It is based on the HARMONIE-AROME limited-area NWP model, forced at its boundaries by ERA5 (ECMWF Re-Analysis v. 5) and enhanced by local observations to better represent complex terrain, land–sea contrasts, and sea-ice processes. It is updated monthly, with a latency of 2-3 months \cite{carra_information}.
 
 The CARRA dataset covers all the IMO observations that fulfill criteria of consistent availability – the oldest observation is from \startDateVedur. The CARRA-West region covers a vastly larger area than the area of interest. This leads to having to store a large amount of data. To download CARRA data one has two options, a web interface or using an API client provided by CARRA. Using the API client is the only realistic option here, as there are thousands of requests made for different times. If using the API, it is possible to query a smaller area (such as a rectangular area around Iceland) given a set of coordinates, but this is not possible with the web interface.
 

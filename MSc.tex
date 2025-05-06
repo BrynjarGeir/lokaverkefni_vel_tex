@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,twoside,BCOR=10mm]{scrbook}
+\documentclass[a4paper,12pt,twoside,BCOR=10mm,openany]{scrbook}
 
 % UoI MSc thesis template (English) V2.0.4 25.4.2022
 
@@ -65,6 +65,25 @@
 \usepackage{tikz}
 \usepackage{arydshln}
 \usepackage{acronym}
+% Packages used for header vertical space along with the methods that set the spacing
+% Adjust spacing before and after chapters
+\RedeclareSectionCommand[
+  beforeskip=-0pt, % Space before the chapter title
+  afterskip=0pt    % Space after the chapter title
+]{chapter}
+
+% Adjust spacing before and after sections
+\RedeclareSectionCommand[
+  beforeskip=0pt,   % Space before the section title
+  afterskip=1pt     % Space after the section title
+]{section}
+
+% Adjust spacing before and after subsections
+\RedeclareSectionCommand[
+  beforeskip=0pt,   % Space before the subsection title
+  afterskip=1pt     % Space after the subsection title
+]{subsection}
+
 \usetikzlibrary{positioning}
 \pgfkeys{/pgf/number format/.cd,fixed,precision=2}
 
@@ -422,5 +441,6 @@ Finally, I would like to thank my parents without whom I would probably never ha
 \printbibliography
 \appendix
 \include{Appendicies/AppendixA}
+\include{Appendicies/AppendixB}
 
 \end{document}
