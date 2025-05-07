@@ -10,7 +10,7 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Histogram of gust factors. By definition, gust factor $\ge 1$; most values lie between 1.2 and 2. The gust factor declines as wind speed increases.\relax }}{17}{figure.caption.18}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces MAPE error distribution of stations shown on a map of Iceland.}}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces MAPE distribution by station}}{22}{figure.caption.23}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Summary feature importance of a neural network.}}{26}{figure.caption.27}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Summary feature importance of a neural network using a larger distribution of data.}}{27}{figure.caption.28}%
 \addvspace {10\p@ }

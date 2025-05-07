@@ -22,8 +22,9 @@
 \contentsline {chapter}{\numberline {3}Model Architecture}{18}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Results}{20}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Baseline models}{20}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Modeling for CARRA wind speed above 10 m/s}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Results for specific locations}{22}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Comparison for models with variable parameters}{25}{section.4.4}%
+\contentsline {section}{\numberline {4.2}Modeling for ws$_{15}$ above 10 m/s}{20}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Modeling for various ws$_\textbf {15}$ lower bounds}{21}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Results for specific locations}{22}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Comparison for models with variable parameters}{25}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Discussion and conclusions}{28}{chapter.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

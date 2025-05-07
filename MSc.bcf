@@ -2376,8 +2376,8 @@
     <bcf:citekey order="28">shapley_information</bcf:citekey>
     <bcf:citekey order="29">hyperparameters_definition</bcf:citekey>
     <bcf:citekey order="30">mean_gust_HA_HO</bcf:citekey>
-    <bcf:citekey order="31">wind_power</bcf:citekey>
-    <bcf:citekey order="32">Salih_2024</bcf:citekey>
+    <bcf:citekey order="31">Salih_2024</bcf:citekey>
+    <bcf:citekey order="32">wind_power</bcf:citekey>
     <bcf:citekey order="33">why_wind_gusts</bcf:citekey>
     <bcf:citekey order="34">uncertainties_in_numerical_weather_predictions</bcf:citekey>
     <bcf:citekey order="35">medium_range_3d_weather_forecasting_NN</bcf:citekey>
@@ -2400,8 +2400,8 @@
     <bcf:citekey order="52">richardson_number_skybrary</bcf:citekey>
     <bcf:citekey order="53">brunt_vaisala_freq_eumtrain</bcf:citekey>
     <bcf:citekey order="54">hyperparameters_definition</bcf:citekey>
-    <bcf:citekey order="55">wind_power</bcf:citekey>
-    <bcf:citekey order="56">Salih_2024</bcf:citekey>
+    <bcf:citekey order="55">Salih_2024</bcf:citekey>
+    <bcf:citekey order="56">wind_power</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
