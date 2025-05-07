@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.15)  7 MAY 2025 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.15)  7 MAY 2025 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1861,22 +1861,6 @@ ine 155.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Package caption Warning: \label without proper reference on input line 170.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:ShapleySummary' on page 26 undefined on input lin
-e 162.
-
-
-Package caption Warning: \label without proper reference on input line 170.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:ShapleySummary' on page 26 undefined on input lin
-e 164.
-
 [26
 
 ]
@@ -1888,13 +1872,13 @@ line 166.
 File: Figures/shap_plots/summary_plot.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot.png  used on input lin
-e 172.
+e 171.
 (pdftex.def)             Requested size: 384.10965pt x 225.66454pt.
 <Figures/shap_plots/summary_plot_190924_.png, id=485, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot_190924_.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_190924_.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_.png  used on i
-nput line 176.
+nput line 175.
 (pdftex.def)             Requested size: 384.10965pt x 225.66454pt.
 
 LaTeX Warning: Float too large for page by 1.5055pt on input line 179.
@@ -1919,17 +1903,8 @@ File: Figures/shap_plots/summary_plot_31572.png Graphic file (type png)
 Package pdftex.def Info: Figures/shap_plots/summary_plot_31572.png  used on inp
 ut line 202.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-
-
-Package caption Warning: \label without proper reference on input line 170.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:ShapleySummary' on page 29 undefined on input lin
-e 211.
-
-[29 <./Figures/shap_plots/summary_plot_1350.png>] [30 <./Figures/shap_plots/sum
-mary_plot_35553.png> <./Figures/shap_plots/summary_plot_31572.png>]) [31]
+ [29 <./Figures/shap_plots/summary_plot_1350.png>] [30 <./Figures/shap_plots/su
+mmary_plot_35553.png> <./Figures/shap_plots/summary_plot_31572.png>]) [31]
 \openout2 = `Chapters/Chapter5.aux'.
 
 
@@ -2037,7 +2012,7 @@ Package logreq Info: Writing requests to 'MSc.run.xml'.
 Here is how much of TeX's memory you used:
  38686 strings out of 478268
  742671 string characters out of 5846346
- 1563487 words of memory out of 5000000
+ 1563348 words of memory out of 5000000
  56027 multiletter control sequences out of 15000+600000
  594590 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2067,7 +2042,7 @@ r/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2022/
 texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2022/texmf-dist
 /fonts/type1/public/lm/lmtt12.pfb>
-Output written on MSc.pdf (49 pages, 3249193 bytes).
+Output written on MSc.pdf (49 pages, 3249090 bytes).
 PDF statistics:
  896 PDF objects out of 1000 (max. 8388607)
  733 compressed objects within 8 object streams

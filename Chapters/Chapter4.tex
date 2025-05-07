@@ -167,7 +167,6 @@ The coloring of the points in the displayed distributions show the corresponding
 
 \begin{figure}
   \centering
-  \label{fig:ShapleySummary}
   \begin{subfigure}{0.9\textwidth}
     \includegraphics[width=\textwidth]{Figures/shap_plots/summary_plot.png}
   \end{subfigure}
@@ -176,6 +175,7 @@ The coloring of the points in the displayed distributions show the corresponding
     \includegraphics[width=\textwidth]{Figures/shap_plots/summary_plot_190924_.png}
   \end{subfigure}
   \caption[Shapley summary plots]{Shapley summary plots showing feature importance for the secondary model described in Table \ref{table:setsOfParams}, with randomly chosen subsets of the data. SHAP values with high absolute value indicate high contribution of the corresponding feature. Coloring shows the respective feature value, blue for low and red for high. For example high station altitude/elevation corresponds to negative contribution and vice versa, and for ws$_{15}$ the relationship is opposite, with high feature values corresponding to positive contribution. It can be seen that generally multiple factors influence the prediction, with the station elevation being highly influential. There is one outlier in the upper panel, for the Richardson number, which otherwise has very little influence. The upper panel is based on $\sim$1000 data rows. The lower panel is based on more data rows ($\sim$10000), and furthermore, outliers have been removed there to make the plot more legible.}
+  \label{fig:ShapleySummary}
 \end{figure}
 
 Figure \ref{fig:ShapleySummary3} in Appendix A shows a Shapley summary plot for all the data rows. However this plot is detrimentally affected outliers.
