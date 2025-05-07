@@ -56,7 +56,8 @@ In 2023, Remi Lam and the GraphCast team at Google released GraphCast, which out
 \subsection{Conclusion}
 Substantial progress has been made since 2018 and especially since 2022 \cite{SecondRevolution}. The evolution from proof-of-concept ML methods to models competitive with—or surpassing—standard NWP has been remarkably rapid. It is important to note that training data for these large models are drawn from traditional NWP outputs, underscoring how ML and physics-based approaches can complement each other. The coming years promise further exciting developments in machine learning based weather prediction.
 
-\section{Methodology and related work}
+\section{Methodology and related work}\label{sec:methodology}
+
 In this study, data from three sources are used:
 
 \begin{enumerate}[label=\textbf{\arabic*}.,rightmargin=1.5em]
@@ -104,3 +105,5 @@ Neural networks are often considered mysterious black boxes \cite{nn_black_box}.
     \phi_j(\hat{f}) = \beta_j x_j - \beta_j E[X_j]
 \end{equation}
 For any combination of parameters, Shapley values explain the individual prediction by attributing a contribution to each feature. Other methods, like ELI5 (Explain Like I’m 5), randomly shuffle a feature and measure the effect on model performance \cite{eli5_information}.
+
+Apart from aiding in understanding final constructed models and the role of individual features, such explainability measures can also be used to select features to use in the modelling. For example, if the computed Shapley distribution of a feature is clustered at 0, then the corresponding feature has little or no influence, and can be safely removed from the model.

@@ -19,12 +19,15 @@
 \contentsline {section}{\numberline {2.5}Comparison of observed and reanalysis wind speed}{12}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Layout of combined data}{14}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Distributions of observed and reanalysis data}{16}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Model Architecture}{18}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Results}{20}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Baseline models}{20}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Modeling for ws$_{15}$ above 10 m/s}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Modeling for various ws$_\textbf {15}$ lower bounds}{21}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Results for specific locations}{22}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Comparison for models with variable parameters}{25}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Discussion and conclusions}{28}{chapter.5}%
+\contentsline {chapter}{\numberline {3}Model Architecture}{19}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Baseline models}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Modeling for ws$_{\textbf {15}}$ above 10 m/s}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Modeling for various ws$_\textbf {15}$ lower bounds}{22}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Results for specific locations}{23}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Results for wind speed intervals}{26}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Feature importance with Shapley values}{26}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Shapley summary plots for all stations}{26}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Shapley summary plots for individual stations}{29}{subsection.4.6.2}%
+\contentsline {chapter}{\numberline {5}Discussion and conclusions}{32}{chapter.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

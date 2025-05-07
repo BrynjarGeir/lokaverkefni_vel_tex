@@ -6,7 +6,7 @@ Data were sourced from several streams. The Icelandic Meteorological Office (IMO
 
 \section{Automatic Weather Station Data}
 
-Automatic weather stations (AWS) have been set up all around the world, including Iceland. AWSs might include a variety of sensors, such as barometers, thermometers, and anemometer along with solar panels (or other power source) and some kind of data logger. IMO provided measurements from AWSs across Iceland. One of the stations used in this study can be seen in Figure (\ref{fig:storhofdi}). Not every station had consistently available data. Data from \nStationsMin AWSs were included looking at a period from \startDateVedur and ended in 2023. Of these \nStationsMin stations provided by IMO, \nVedurMin were IMO stations, with the anemometer at 10~m above ground, while the remaining \nVGMin stations were from \href{https://www.vegagerdin.is/}{the Icelandic Road and Coastal Administration (IRCA)}, with the anemometer at 6–7~m above ground \cite{vegagerdin_postur}. The locations of these weather stations are shown in Figure \ref{fig:aws_map}.
+Automatic weather stations (AWS) have been set up all around the world, including Iceland. AWSs might include a variety of sensors, such as barometers, thermometers, and anemometer along with solar panels (or other power source) and some kind of data logger. IMO provided measurements from AWSs across Iceland. One of the stations used in this study can be seen in Figure \ref{fig:storhofdi}. Not every station had consistently available data. Data from \nStationsMin AWSs were included looking at a period from \startDateVedur and ended in 2023. Of these \nStationsMin stations provided by IMO, \nVedurMin were IMO stations, with the anemometer at 10~m above ground, while the remaining \nVGMin stations were from \href{https://www.vegagerdin.is/}{the Icelandic Road and Coastal Administration (IRCA)}, with the anemometer at 6–7~m above ground \cite{vegagerdin_postur}. The locations of these weather stations are shown in Figure \ref{fig:aws_map}.
 
 \begin{figure}
   \centering
@@ -110,7 +110,7 @@ Next, the distribution of MAE by station is examined, considering station locati
   \end{tabular}
 \end{table}
 
-\section{Layout of combined data}
+\section{Layout of combined data}\label{sec:layout}
 
 Once data from all three sources have been retrieved and processed—including interpolation—they must be combined and formatted for modeling (training, validation, and testing). The starting point is a DataFrame containing AWS observations: average wind speed, wind gust, wind direction, station number, and coordinates. CARRA data are provided at selected height levels, each as a separate row in the CARRA DataFrame. Thus a single observation will span multiple rows, one per level. These rows are merged by time and station location, enabling AWS and CARRA data to be joined on station and time fields.
 
@@ -150,19 +150,26 @@ The resulting DataFrame includes AWS measurements (our target), CARRA weather va
 
 The transformed wind direction is a proxy showing whether the wind is coming from land or sea. It is computed as the angle between the wind direction and a vector from the center of Iceland to the station.
 
-The Richardson number and the Brunt–Väisälä frequency describe atmospheric stability, see equations (\ref{eqn:Ri}) and (\ref{eqn:N})  \cite{richardson_number_skybrary,brunt_vaisala_freq_eumtrain,mean_gust_HA_HO}. These values are calculated using reanalysis data at two different height levels. Thus Ri refers to the Richardson number calculated between height levels 15m and 500m. Exactly the same notation is used with the Brunt–Väisälä frequency, except the square is used.
+The Richardson number and the Brunt–Väisälä frequency describe atmospheric stability, see Equations (\ref{eqn:Ri}) and (\ref{eqn:N}) \cite{richardson_number_skybrary,brunt_vaisala_freq_eumtrain,mean_gust_HA_HO}. These values are calculated using reanalysis data at two different height levels. Thus Ri refers to the Richardson number calculated between height levels 15m and 500m. Exactly the same notation is used with the Brunt–Väisälä frequency, except the square is used.
 %
 \begin{equation}
   \label{eqn:Ri}
-  Ri = \frac{g \cdot dT \cdot dz}{T_{\textrm ave} \cdot dU^2} \unit{[]}
+  Ri = \frac{g \cdot d\theta \cdot dz}{\theta_{\textrm ave} \cdot dU^2} \unit{[]}
 \end{equation}
 %
 \begin{equation}
   \label{eqn:N}
-  N = \sqrt{\frac{g \cdot dT }{T_{\textrm ave} \cdot dz}} \unit{[Hz]}
+  N = \sqrt{\frac{g \cdot d\theta }{\theta_{\textrm ave} \cdot dz}} \unit{[Hz]}
 \end{equation}
 %
-Here, $g$ is gravitational acceleration; $dT$ the temperature difference between levels; $dz$ the height difference; $T_{\mathrm{ave}}$ the average temperature; and $dU$ the wind-speed difference. Lower Ri indicates greater turbulence, with typical values between 0.1 and 10, and values below 1 signifying significant turbulence \cite{richardson_number_skybrary}. Negative $N^2$ denotes instability, as an air parcel will accelerate away from its original position \cite{brunt_vaisala_freq_eumtrain}.
+Here, $g$ is gravitational acceleration; $d\theta$ the potential temperature difference between levels; $dz$ the height difference; $\theta_{\mathrm{ave}}$ the average potential temperature; and $dU$ the wind-speed difference. Lower Ri indicates greater turbulence, with typical values between 0.1 and 10, and values below 1 signifying significant turbulence \cite{richardson_number_skybrary}. Negative $N^2$ denotes instability, as an air parcel will accelerate away from its original position \cite{brunt_vaisala_freq_eumtrain}. The potential temperature is computed as:
+%
+\begin{equation}
+  \label{eqn:potential_temp}
+  \theta = T\left(\dfrac{P0}{P}\right)^{R/c_p}
+\end{equation}
+%
+where $P$ is the pressure and $R = 287$ and $c_p = 1004$ are the specifc gas constant and the specific heat capacity of air.
 
 Since Ri and $N^2$ are derived from reanalysis variables, they add limited new information compared to the raw data, but they can reduce input dimensionality and improve model explainability via Shapley-value analysis \cite{shapley_information}. Shapley values assess feature importance by evaluating all possible feature subsets—an operation of computational complexity $2^n$. In practice, approximations are used but can still be costly for large models. Because $dU$ appears squared in the denominator of Ri, if the wind-speed difference between levels is very small, Ri can become arbitrarily large, potentially distorting predictions.
 

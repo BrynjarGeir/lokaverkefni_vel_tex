@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.15)  7 MAY 2025 09:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.15)  7 MAY 2025 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1690,17 +1690,17 @@ Overfull \hbox (5.28587pt too wide) in paragraph at lines 54--55
 ore-casts' (ECMWF)
  []
 
-[4] [5]) [6] [7]
+[4] [5] [6]) [7]
 \openout2 = `Chapters/Chapter2.aux'.
 
  (./Chapters/Chapter2.tex
 chapter 2.
-<Figures/storhofdi.jpeg, id=326, 745.5855pt x 995.6397pt>
+<Figures/storhofdi.jpeg, id=324, 745.5855pt x 995.6397pt>
 File: Figures/storhofdi.jpeg Graphic file (type jpg)
 <use Figures/storhofdi.jpeg>
 Package pdftex.def Info: Figures/storhofdi.jpeg  used on input line 13.
 (pdftex.def)             Requested size: 223.67737pt x 298.69421pt.
-<Figures/station_elevations.png, id=327, 661.2705pt x 410.4936pt>
+<Figures/station_elevations.png, id=325, 661.2705pt x 410.4936pt>
 File: Figures/station_elevations.png Graphic file (type png)
 <use Figures/station_elevations.png>
 Package pdftex.def Info: Figures/station_elevations.png  used on input line 24.
@@ -1718,7 +1718,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<Figures/data_combination.drawio.png, id=346, 342.27875pt x 548.0475pt>
+<Figures/data_combination.drawio.png, id=344, 342.27875pt x 548.0475pt>
 File: Figures/data_combination.drawio.png Graphic file (type png)
 <use Figures/data_combination.drawio.png>
 Package pdftex.def Info: Figures/data_combination.drawio.png  used on input lin
@@ -1732,7 +1732,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/MAEoverIceland.png, id=357, 704.6325pt x 468.3096pt>
+<Figures/MAEoverIceland.png, id=355, 704.6325pt x 468.3096pt>
 File: Figures/MAEoverIceland.png Graphic file (type png)
 <use Figures/MAEoverIceland.png>
 Package pdftex.def Info: Figures/MAEoverIceland.png  used on input line 85.
@@ -1766,37 +1766,37 @@ r-get), CARRA weather
 <Figures/obs_wind_speeds.png, id=399, 443.0151pt x 222.1098pt>
 File: Figures/obs_wind_speeds.png Graphic file (type png)
 <use Figures/obs_wind_speeds.png>
-Package pdftex.def Info: Figures/obs_wind_speeds.png  used on input line 177.
+Package pdftex.def Info: Figures/obs_wind_speeds.png  used on input line 184.
 (pdftex.def)             Requested size: 341.43442pt x 171.18436pt.
 <Figures/carra_wind_speeds.png, id=400, 443.0151pt x 222.1098pt>
 File: Figures/carra_wind_speeds.png Graphic file (type png)
 <use Figures/carra_wind_speeds.png>
-Package pdftex.def Info: Figures/carra_wind_speeds.png  used on input line 186.
+Package pdftex.def Info: Figures/carra_wind_speeds.png  used on input line 193.
 
 (pdftex.def)             Requested size: 341.43442pt x 171.18436pt.
 <Figures/station_heights.png, id=401, 390.258pt x 267.1581pt>
 File: Figures/station_heights.png Graphic file (type png)
 <use Figures/station_heights.png>
-Package pdftex.def Info: Figures/station_heights.png  used on input line 197.
+Package pdftex.def Info: Figures/station_heights.png  used on input line 204.
 (pdftex.def)             Requested size: 341.43442pt x 233.7383pt.
 <Figures/gust_factor_2025.png, id=402, 387.1263pt x 277.7577pt>
 File: Figures/gust_factor_2025.png Graphic file (type png)
 <use Figures/gust_factor_2025.png>
-Package pdftex.def Info: Figures/gust_factor_2025.png  used on input line 204.
+Package pdftex.def Info: Figures/gust_factor_2025.png  used on input line 211.
 (pdftex.def)             Requested size: 341.43442pt x 244.97426pt.
-) [16 <./Figures/obs_wind_speeds.png> <./Figures/carra_wind_speeds.png>]
-[17 <./Figures/station_heights.png> <./Figures/gust_factor_2025.png>]
+) [16] [17 <./Figures/obs_wind_speeds.png> <./Figures/carra_wind_speeds.png>] [
+18 <./Figures/station_heights.png> <./Figures/gust_factor_2025.png>]
 \openout2 = `Chapters/Chapter3.aux'.
 
 
 (./Chapters/Chapter3.tex
 chapter 3.
-[18
+[19
 
 
 
 
-]) [19]
+]) [20]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (./Chapters/Chapter4.tex
@@ -1813,7 +1813,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 27.
 
-[20
+[21
 
 
 
@@ -1821,21 +1821,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
+(hyperref)                removing `math shift' on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 50.
+(hyperref)                removing `subscript' on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
+(hyperref)                removing `math shift' on input line 53.
 
-[21]
-<Figures/errorMap.png, id=450, 850.377pt x 513.117pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22]
+<Figures/errorMap.png, id=453, 850.377pt x 513.117pt>
 File: Figures/errorMap.png Graphic file (type png)
 <use Figures/errorMap.png>
-Package pdftex.def Info: Figures/errorMap.png  used on input line 77.
+Package pdftex.def Info: Figures/errorMap.png  used on input line 82.
 (pdftex.def)             Requested size: 425.18745pt x 256.55788pt.
 
 
@@ -1844,32 +1847,95 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22 <./Figures/errorMap.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23] [24]
-<Figures/shap_plots/summary_plot.png, id=477, 578.16pt x 339.669pt>
+[23] [24 <./Figures/errorMap.png>] [25]
+<Figures/shap_plots/waterfall_plot.png, id=477, 646.0938pt x 372.9132pt>
+File: Figures/shap_plots/waterfall_plot.png Graphic file (type png)
+<use Figures/shap_plots/waterfall_plot.png>
+Package pdftex.def Info: Figures/shap_plots/waterfall_plot.png  used on input l
+ine 155.
+(pdftex.def)             Requested size: 387.65927pt x 223.74963pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package caption Warning: \label without proper reference on input line 170.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:ShapleySummary' on page 26 undefined on input lin
+e 162.
+
+
+Package caption Warning: \label without proper reference on input line 170.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:ShapleySummary' on page 26 undefined on input lin
+e 164.
+
+[26
+
+]
+
+LaTeX Warning: Reference `figure:ShapleySummary' on page 27 undefined on input 
+line 166.
+
+<Figures/shap_plots/summary_plot.png, id=484, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot.png  used on input lin
-e 152.
-(pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
-<Figures/shap_plots/summary_plot_190924_.png, id=484, 578.16pt x 339.669pt>
+e 172.
+(pdftex.def)             Requested size: 384.10965pt x 225.66454pt.
+<Figures/shap_plots/summary_plot_190924_.png, id=485, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot_190924_.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_190924_.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_.png  used on i
-nput line 159.
-(pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
- [25
+nput line 176.
+(pdftex.def)             Requested size: 384.10965pt x 225.66454pt.
 
-]) [26 <./Figures/shap_plots/summary_plot.png>] [27 <./Figures/shap_plots/summa
-ry_plot_190924_.png>]
+LaTeX Warning: Float too large for page by 1.5055pt on input line 179.
+
+[27 <./Figures/shap_plots/waterfall_plot.png>] [28 <./Figures/shap_plots/summar
+y_plot.png> <./Figures/shap_plots/summary_plot_190924_.png>]
+<Figures/shap_plots/summary_plot_1350.png, id=500, 550.6974pt x 331.7193pt>
+File: Figures/shap_plots/summary_plot_1350.png Graphic file (type png)
+<use Figures/shap_plots/summary_plot_1350.png>
+Package pdftex.def Info: Figures/shap_plots/summary_plot_1350.png  used on inpu
+t line 188.
+(pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
+<Figures/shap_plots/summary_plot_35553.png, id=505, 550.6974pt x 331.7193pt>
+File: Figures/shap_plots/summary_plot_35553.png Graphic file (type png)
+<use Figures/shap_plots/summary_plot_35553.png>
+Package pdftex.def Info: Figures/shap_plots/summary_plot_35553.png  used on inp
+ut line 195.
+(pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
+<Figures/shap_plots/summary_plot_31572.png, id=510, 550.6974pt x 331.7193pt>
+File: Figures/shap_plots/summary_plot_31572.png Graphic file (type png)
+<use Figures/shap_plots/summary_plot_31572.png>
+Package pdftex.def Info: Figures/shap_plots/summary_plot_31572.png  used on inp
+ut line 202.
+(pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
+
+
+Package caption Warning: \label without proper reference on input line 170.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:ShapleySummary' on page 29 undefined on input lin
+e 211.
+
+[29 <./Figures/shap_plots/summary_plot_1350.png>] [30 <./Figures/shap_plots/sum
+mary_plot_35553.png> <./Figures/shap_plots/summary_plot_31572.png>]) [31]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex
+
+(./Chapters/Chapter5.tex
 chapter 5.
-) [28
+) [32
 
 
 
@@ -1899,7 +1965,7 @@ Package biblatex Warning: No driver for entry type 'website'.
 Package biblatex Warning: No driver for entry type 'website'.
 (biblatex)                Using fallback driver on input line 441.
 
-[29
+[33
 
 
 
@@ -1923,72 +1989,35 @@ Overfull \hbox (8.89462pt too wide) in paragraph at lines 442--442
 ry . aero / articles /
  []
 
-[30]
+[34]
 \openout2 = `Appendicies/AppendixA.aux'.
 
  (./Appendicies/AppendixA.tex
-<Figures/shap_plots/waterfall_plot.png, id=589, 646.0938pt x 372.9132pt>
-File: Figures/shap_plots/waterfall_plot.png Graphic file (type png)
-<use Figures/shap_plots/waterfall_plot.png>
-Package pdftex.def Info: Figures/shap_plots/waterfall_plot.png  used on input l
-ine 9.
-(pdftex.def)             Requested size: 387.65927pt x 223.74963pt.
-File: Figures/shap_plots/summary_plot.png Graphic file (type png)
-<use Figures/shap_plots/summary_plot.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot.png  used on input lin
-e 16.
-(pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
-File: Figures/shap_plots/summary_plot_190924_.png Graphic file (type png)
-<use Figures/shap_plots/summary_plot_190924_.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_.png  used on i
-nput line 23.
-(pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
-<Figures/shap_plots/summary_plot_190924_full_10ms.png, id=608, 578.16pt x 339.6
+<Figures/shap_plots/summary_plot_190924_full_10ms.png, id=612, 578.16pt x 339.6
 69pt>
 File: Figures/shap_plots/summary_plot_190924_full_10ms.png Graphic file (type p
 ng)
 <use Figures/shap_plots/summary_plot_190924_full_10ms.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_full_10ms.png  
-used on input line 30.
+used on input line 9.
 (pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
-<Figures/shap_plots/summary_plot_31572.png, id=613, 550.6974pt x 331.7193pt>
-File: Figures/shap_plots/summary_plot_31572.png Graphic file (type png)
-<use Figures/shap_plots/summary_plot_31572.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot_31572.png  used on inp
-ut line 37.
-(pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_35553.png, id=618, 550.6974pt x 331.7193pt>
-File: Figures/shap_plots/summary_plot_35553.png Graphic file (type png)
-<use Figures/shap_plots/summary_plot_35553.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot_35553.png  used on inp
-ut line 44.
-(pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_6745.png, id=623, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_6745.png, id=617, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_6745.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_6745.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_6745.png  used on inpu
-t line 51.
+t line 16.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_1470.png, id=628, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_1470.png, id=622, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_1470.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_1470.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_1470.png  used on inpu
-t line 58.
+t line 23.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_1350.png, id=633, 550.6974pt x 331.7193pt>
-File: Figures/shap_plots/summary_plot_1350.png Graphic file (type png)
-<use Figures/shap_plots/summary_plot_1350.png>
-Package pdftex.def Info: Figures/shap_plots/summary_plot_1350.png  used on inpu
-t line 65.
-(pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-) [31
+) [35
 
 
- <./Figures/shap_plots/waterfall_plot.png>] [32] [33 <./Figures/shap_plots/summ
-ary_plot_190924_full_10ms.png>] [34 <./Figures/shap_plots/summary_plot_31572.pn
-g> <./Figures/shap_plots/summary_plot_35553.png>] [35 <./Figures/shap_plots/sum
-mary_plot_6745.png> <./Figures/shap_plots/summary_plot_1470.png>] [36 <./Figure
-s/shap_plots/summary_plot_1350.png>]
+] [36 <./Figures/shap_plots/summary_plot_190924_full_10ms.png> <./Figures/shap_
+plots/summary_plot_6745.png>] [37 <./Figures/shap_plots/summary_plot_1470.png>]
 \openout2 = `Appendicies/AppendixB.aux'.
 
 
@@ -2001,21 +2030,16 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `MSc.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                MSc
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'MSc.run.xml'.
 \openout1 = `MSc.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38685 strings out of 478268
- 742676 string characters out of 5846346
- 1563433 words of memory out of 5000000
- 56026 multiletter control sequences out of 15000+600000
- 609738 words of font info for 109 fonts, out of 8000000 for 9000
+ 38686 strings out of 478268
+ 742671 string characters out of 5846346
+ 1563487 words of memory out of 5000000
+ 56027 multiletter control sequences out of 15000+600000
+ 594590 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,14n,106p,10598b,1979s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -2026,27 +2050,27 @@ ps/lm/lm-mathsy.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lm
 bx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><
 /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/
-texlive/2022/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb></usr/local/texlive/2
-022/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2022/texmf
--dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2022/texmf-dist/font
-s/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pu
-blic/lm/lmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr
-10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></us
-r/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2022/texmf-dist/
-fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type
-1/public/lm/lmss17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/l
-m/lmssbo10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx
-10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></
-usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/
-texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/202
-2/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/public/lm/lmtt12.pfb>
-Output written on MSc.pdf (48 pages, 3263349 bytes).
+texlive/2022/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2
+022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2022/texmf-
+dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts
+/type1/public/lm/lmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publ
+ic/lm/lmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10
+.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/
+local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/tex
+mf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
+public/lm/lmss17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/
+lmssbo10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10
+.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></us
+r/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2022/
+texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2022/texmf-dist
+/fonts/type1/public/lm/lmtt12.pfb>
+Output written on MSc.pdf (49 pages, 3249193 bytes).
 PDF statistics:
- 914 PDF objects out of 1000 (max. 8388607)
- 738 compressed objects within 8 object streams
- 177 named destinations out of 1000 (max. 500000)
- 340 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 896 PDF objects out of 1000 (max. 8388607)
+ 733 compressed objects within 8 object streams
+ 179 named destinations out of 1000 (max. 500000)
+ 364 words of extra memory for PDF output out of 10000 (max. 10000000)
 
