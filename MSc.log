@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.4)  8 MAY 2025 00:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.4)  8 MAY 2025 23:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1430,7 +1430,7 @@ Overfull \hbox (5.28587pt too wide) in paragraph at lines 54--55
 [4]
 
 [5]
-<figures/neural_network.drawio.png, id=292, 673.51625pt x 672.5125pt>
+<figures/neural_network.drawio.png, id=300, 673.51625pt x 672.5125pt>
 File: figures/neural_network.drawio.png Graphic file (type png)
 <use figures/neural_network.drawio.png>
 Package pdftex.def Info: figures/neural_network.drawio.png  used on input line 81.
@@ -1446,12 +1446,12 @@ Package pdftex.def Info: figures/neural_network.drawio.png  used on input line 8
 
  (Chapters/Chapter2.tex
 chapter 2.
-<Figures/storhofdi.jpeg, id=334, 745.5855pt x 995.6397pt>
+<Figures/storhofdi.jpeg, id=342, 745.5855pt x 995.6397pt>
 File: Figures/storhofdi.jpeg Graphic file (type jpg)
 <use Figures/storhofdi.jpeg>
 Package pdftex.def Info: Figures/storhofdi.jpeg  used on input line 13.
 (pdftex.def)             Requested size: 223.67737pt x 298.69421pt.
-<Figures/station_elevations.png, id=335, 661.2705pt x 410.4936pt>
+<Figures/station_elevations.png, id=343, 661.2705pt x 410.4936pt>
 File: Figures/station_elevations.png Graphic file (type png)
 <use Figures/station_elevations.png>
 Package pdftex.def Info: Figures/station_elevations.png  used on input line 24.
@@ -1472,7 +1472,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 39
  (C:\Users\brynj\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<Figures/data_combination.drawio.png, id=352, 342.27875pt x 548.0475pt>
+<Figures/data_combination.drawio.png, id=360, 342.27875pt x 548.0475pt>
 File: Figures/data_combination.drawio.png Graphic file (type png)
 <use Figures/data_combination.drawio.png>
 Package pdftex.def Info: Figures/data_combination.drawio.png  used on input line 49.
@@ -1487,7 +1487,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/MAEoverIceland.png, id=363, 704.6325pt x 468.3096pt>
+<Figures/MAEoverIceland.png, id=371, 704.6325pt x 468.3096pt>
 File: Figures/MAEoverIceland.png Graphic file (type png)
 <use Figures/MAEoverIceland.png>
 Package pdftex.def Info: Figures/MAEoverIceland.png  used on input line 85.
@@ -1522,22 +1522,22 @@ Overfull \hbox (2.24902pt too wide) in paragraph at lines 132--133
 
 
 [16]
-<Figures/obs_wind_speeds.png, id=408, 443.0151pt x 222.1098pt>
+<Figures/obs_wind_speeds.png, id=416, 443.0151pt x 222.1098pt>
 File: Figures/obs_wind_speeds.png Graphic file (type png)
 <use Figures/obs_wind_speeds.png>
 Package pdftex.def Info: Figures/obs_wind_speeds.png  used on input line 184.
 (pdftex.def)             Requested size: 341.43442pt x 171.18436pt.
-<Figures/carra_wind_speeds.png, id=409, 443.0151pt x 222.1098pt>
+<Figures/carra_wind_speeds.png, id=417, 443.0151pt x 222.1098pt>
 File: Figures/carra_wind_speeds.png Graphic file (type png)
 <use Figures/carra_wind_speeds.png>
 Package pdftex.def Info: Figures/carra_wind_speeds.png  used on input line 193.
 (pdftex.def)             Requested size: 341.43442pt x 171.18436pt.
-<Figures/station_heights.png, id=410, 390.258pt x 267.1581pt>
+<Figures/station_heights.png, id=418, 390.258pt x 267.1581pt>
 File: Figures/station_heights.png Graphic file (type png)
 <use Figures/station_heights.png>
 Package pdftex.def Info: Figures/station_heights.png  used on input line 204.
 (pdftex.def)             Requested size: 341.43442pt x 233.7383pt.
-<Figures/gust_factor_2025.png, id=411, 387.1263pt x 277.7577pt>
+<Figures/gust_factor_2025.png, id=419, 387.1263pt x 277.7577pt>
 File: Figures/gust_factor_2025.png Graphic file (type png)
 <use Figures/gust_factor_2025.png>
 Package pdftex.def Info: Figures/gust_factor_2025.png  used on input line 211.
@@ -1597,7 +1597,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [23]
-<Figures/errorMap.png, id=462, 850.377pt x 513.117pt>
+<Figures/errorMap.png, id=470, 850.377pt x 513.117pt>
 File: Figures/errorMap.png Graphic file (type png)
 <use Figures/errorMap.png>
 Package pdftex.def Info: Figures/errorMap.png  used on input line 82.
@@ -1619,7 +1619,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [25 <./Figures/errorMap.png>]
 
 [26]
-<Figures/shap_plots/waterfall_plot.png, id=486, 646.0938pt x 372.9132pt>
+<Figures/shap_plots/waterfall_plot.png, id=494, 646.0938pt x 372.9132pt>
 File: Figures/shap_plots/waterfall_plot.png Graphic file (type png)
 <use Figures/shap_plots/waterfall_plot.png>
 Package pdftex.def Info: Figures/shap_plots/waterfall_plot.png  used on input line 155.
@@ -1636,12 +1636,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: Reference `figure:ShapleySummary' on page 28 undefined on input line 166.
 
-<Figures/shap_plots/summary_plot.png, id=493, 578.16pt x 339.669pt>
+<Figures/shap_plots/summary_plot.png, id=501, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot.png  used on input line 171.
 (pdftex.def)             Requested size: 384.10965pt x 225.66454pt.
-<Figures/shap_plots/summary_plot_190924_.png, id=494, 578.16pt x 339.669pt>
+<Figures/shap_plots/summary_plot_190924_.png, id=502, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot_190924_.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_190924_.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_.png  used on input line 175.
@@ -1654,17 +1654,17 @@ LaTeX Warning: Float too large for page by 1.5055pt on input line 179.
 [28 <./Figures/shap_plots/waterfall_plot.png>]
 
 [29 <./Figures/shap_plots/summary_plot.png> <./Figures/shap_plots/summary_plot_190924_.png>]
-<Figures/shap_plots/summary_plot_1350.png, id=509, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_1350.png, id=517, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_1350.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_1350.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_1350.png  used on input line 188.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_35553.png, id=514, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_35553.png, id=522, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_35553.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_35553.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_35553.png  used on input line 195.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_31572.png, id=519, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_31572.png, id=527, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_31572.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_31572.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_31572.png  used on input line 202.
@@ -1680,14 +1680,16 @@ Package pdftex.def Info: Figures/shap_plots/summary_plot_31572.png  used on inpu
 
  (Chapters/Chapter4.tex
 chapter 4.
-)
+
 
 [33
 
 
 
 
-]
+])
+
+[34]
 
 Package biblatex Warning: No driver for 'website'.
 (biblatex)                Using fallback driver on input line 440.
@@ -1710,7 +1712,7 @@ Package biblatex Warning: No driver for 'website'.
 
 
 
-[34
+[35
 
 
 
@@ -1734,42 +1736,42 @@ Overfull \hbox (8.89462pt too wide) in paragraph at lines 441--441
 
 
 
-[35]
-
 [36]
+
+[37]
 \openout2 = `Appendicies/AppendixA.aux'.
 
  (Appendicies/AppendixA.tex
-<Figures/shap_plots/summary_plot_190924_full_10ms.png, id=624, 578.16pt x 339.669pt>
+<Figures/shap_plots/summary_plot_190924_full_10ms.png, id=640, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot_190924_full_10ms.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_190924_full_10ms.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_full_10ms.png  used on input line 9.
 (pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
-<Figures/shap_plots/summary_plot_6745.png, id=629, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_6745.png, id=645, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_6745.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_6745.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_6745.png  used on input line 16.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_1470.png, id=634, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_1470.png, id=650, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_1470.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_1470.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_1470.png  used on input line 23.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
 )
 
-[37
+[38
 
 
 ]
 
-[38 <./Figures/shap_plots/summary_plot_190924_full_10ms.png> <./Figures/shap_plots/summary_plot_6745.png>]
+[39 <./Figures/shap_plots/summary_plot_190924_full_10ms.png> <./Figures/shap_plots/summary_plot_6745.png>]
 
-[39 <./Figures/shap_plots/summary_plot_1470.png>]
+[40 <./Figures/shap_plots/summary_plot_1470.png>]
 \openout2 = `Appendicies/AppendixB.aux'.
 
  (Appendicies/AppendixB.tex)
 
-[40
+[41
 
 
 
@@ -1795,17 +1797,17 @@ Package logreq Info: Writing requests to 'MSc.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39154 strings out of 469959
- 759097 string characters out of 5469835
- 1692261 words of memory out of 5000000
- 65084 multiletter control sequences out of 15000+600000
+ 39163 strings out of 469959
+ 759172 string characters out of 5469835
+ 1692238 words of memory out of 5000000
+ 65088 multiletter control sequences out of 15000+600000
  767304 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,14n,107p,11006b,1995s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxo10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/brynj/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on MSc.pdf (52 pages, 3405319 bytes).
+Output written on MSc.pdf (53 pages, 3410968 bytes).
 PDF statistics:
- 925 PDF objects out of 1000 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
- 369 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 953 PDF objects out of 1000 (max. 8388607)
+ 193 named destinations out of 1000 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 

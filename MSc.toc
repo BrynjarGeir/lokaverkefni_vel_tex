@@ -31,4 +31,8 @@
 \contentsline {subsection}{\numberline {3.6.1}Shapley summary plots for all stations}{27}{subsection.3.6.1}%
 \contentsline {subsection}{\numberline {3.6.2}Shapley summary plots for individual stations}{30}{subsection.3.6.2}%
 \contentsline {chapter}{\numberline {4}Discussion and conclusions}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Main findings}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Limitations and future work}{33}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Possible applications}{34}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Conclusions}{34}{section.4.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
