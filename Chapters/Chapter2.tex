@@ -212,3 +212,37 @@ CARRA reanalysis data may exhibit bias or systematic differences when compared t
   \caption{Histogram of gust factors. By definition, gust factor $\ge1$; most values lie between 1.2 and 2. The gust factor declines as wind speed increases.}
   \label{fig:gust_factors}
 \end{figure}
+
+\section{Model architecture}
+\label{sec:model_architecture}
+
+The network consists of $n$ fully connected layers, with $n$ around 10. Each hidden layer has the same number of units and is followed by batch normalization. A dropout layer with rate 50\% is applied after the final hidden layer. A dense output layer with one unit produces the predicted gust factor. A grid search was used to find the hyperparameters that minimize the loss. Hyperparameters are settings defined before training begins \cite{hyperparameters_definition}. They include the number of units per layer, the number of layers, the number of training epochs, batch size, optimizer choice, and regularization penalty. The ranges tested are listed in Table \ref{table:gridSearchHyperparameters}.
+
+
+\begin{table}[h]
+    \centering
+    \caption[Hyperparameter search with Hyperband]{Hyperparameter search was performed using the Hyperband algorithm, which begins by sampling configurations at random and then focuses on the most promising ones. The table shows the ranges tested and the best-performing combination. Unlike random search, Hyperband does not impose a fixed limit on the number of trials.}
+    \label{table:gridSearchHyperparameters}
+    \begin{tabular}{lll}
+        \toprule
+        Parameter & Range of values & Selected\\
+        \midrule
+        Layers &  min\_value = 4, max\_value = 15, step = 1 & \textbf{10}\\
+        Units &  min\_value = 32, max\_value = 512, step = 32 & \textbf{64}\\
+        Penalties & min\_value = 1e-5, max\_value = 1, sampling = log & \textbf{1e-4}\\
+        Epochs & min\_value = 10, max\_value = 1000, step = 10 & \textbf{250}\\
+        Optimizers & Adam, RMSprop, Adamax & \textbf{Adamax}\\
+        Activation & ReLU, ELU, tanh & \textbf{ReLU}\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+As mentioned, Hyperband doesn't set a hard upper limit to the number of epochs it will train in total. When using the \href{https://keras.io/api/keras_tuner/tuners/hyperband/}{Hyperband class} several factors can be set. One of interest here is the Hyperband iterations argument. This determines how often the Hyperband algorithm is run and defaults to 1. For each iteration the epochs are distributed between tries (that is each set of hyperparameters) with the total amount of epochs approximately $n_{epochs} = max_{epochs} * log^2(max_{epochs})\approx 10^4$, where $max_{epochs} = 1000$ gives the maximum number of epochs that one set of hyperparameters can be trained for. Searching a space generally takes a lot of time but this drastically improves on grid search. If each epoch takes around 10 seconds to run then the total search would take around 28 hours on a shared resource. This is resource-intensive and cannot be repeated often. Another question that remains is whether the ranges given are optimal.
+
+As noted, Hyperband does not impose a fixed limit on the total number of training epochs. When using the \href{https://keras.io/api/keras_tuner/tuners/hyperband/}{Hyperband tuner}, the Hyperband iterations parameter controls how many times Hyperband is run and defaults to 1. On each run, the total number of epochs is distributed across the hyperparameter trials. The total number of epochs is approximately
+%
+\begin{equation*}
+n_{\mathrm{epochs}} = \text{max\_epochs} \times \bigl(\log(\text{max\_epochs})\bigr)^2 \approx 10^4
+\end{equation*}
+%
+for $ \text{max\_epochs} = 1000$. Although this method is more efficient than grid search, if each epoch takes about 10 seconds, a complete Hyperband search can still require about 28 hours on shared resources, making repeated searches impractical. It remains unclear whether the current hyperparameter ranges are optimal.
