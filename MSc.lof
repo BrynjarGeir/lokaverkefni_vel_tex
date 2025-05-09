@@ -4,11 +4,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces AWS at Stórhöfði in Vestmannaeyjar, south of Iceland.}}{10}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Locations of automatic weather stations in Iceland}}{11}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Flow chart illustrating the data-combination workflow}}{13}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Flow chart illustrating the data-combination workflow\relax }}{13}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces MAE distribution by station}}{15}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Comparison of observed and reanalysis wind-speed distributions. CARRA values are spatially interpolated by linear weighting of surrounding grid points.}}{18}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Distribution of weather station altitudes above sea level. One outlier near 2000~m was excluded due to limited and inconsistent data.}}{19}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Histogram of gust factors. By definition, gust factor $\ge 1$; most values lie between 1.2 and 2. The gust factor declines as wind speed increases.}}{19}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Comparison of observed and reanalysis wind-speed distributions. CARRA values are spatially interpolated by linear weighting of surrounding grid points.\relax }}{18}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Distribution of weather station altitudes above sea level. One outlier near 2000~m was excluded due to limited and inconsistent data.\relax }}{19}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Histogram of gust factors. By definition, gust factor $\ge 1$; most values lie between 1.2 and 2. The gust factor declines as wind speed increases.\relax }}{19}{figure.caption.21}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces MAPE distribution by station}}{25}{figure.caption.26}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Shapley contributions for a single observation}}{28}{figure.caption.30}%
@@ -17,7 +17,7 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Almannaskarð.}}{31}{figure.caption.33}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Akrafjall.}}{31}{figure.caption.34}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Summary feature importance of a neural network using entire dataset.}}{39}{figure.caption.37}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Ásgarðsfjall.}}{39}{figure.caption.38}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Háahlíð.}}{40}{figure.caption.39}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Summary feature importance of a neural network using entire dataset.}}{37}{figure.caption.38}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Ásgarðsfjall.}}{37}{figure.caption.39}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Háahlíð.}}{38}{figure.caption.40}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

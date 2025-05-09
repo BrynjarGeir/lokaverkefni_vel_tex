@@ -1,5 +1,5 @@
 \chapter{Results}
-\label{Chapter4}
+\label{Chapter3}
 \section{Baseline models}
 The simplest model for the gust factor is to guess the average gust factor for all available observations, i.e. use no variables from the training data. A slightly better model is obtained by using the wind speed as a training feature, either through regression or NN training. The MAPEs for the constructed base models are shown in Table \ref{table:baseline_models}. The ws$_{15}$ model was obtained with NN training but regression produces an almost identical result.
 
@@ -51,10 +51,10 @@ The second last model in the Table \ref{table:setsOfParams} will be referred to 
 \end{table}
 
 \section{Modeling for various ws$_\textbf{15}$ lower bounds}
-To assess how model performance depends on ws$_{15}$ lower bound several models were trained using the primary variable set with and without DEM. The results can be seen in Table \ref{table:results}. For this investigation comparison was only made with the constant baseline model. In all cases adding the DEM information is seen to increase the model performance. The reason for the difference between the 10 m/s lower bound results seen in Tables \ref{table:setsOfParams} and \ref{table:results} is they were obtained with different training setups. 
+To assess how model performance depends on ws$_{15}$ lower bound, several models were trained using the primary variable set, with and without DEM. The results can be seen in Table \ref{table:results}. For this investigation comparison was only made with the constant baseline model. In all cases adding the DEM information is seen to increase the model performance. The reason for the difference between the 10 m/s lower bound results seen in Tables \ref{table:setsOfParams} and \ref{table:results} is that they were obtained with different training setups. 
 
 \begin{table}[h]
-  \caption[Model results for different wind speed limits]{MAPE for each ws$_{15}$ lower bound without and with landscape elevation data (DEM) in a 30° sector into the direction of the reanalysis wind. Adding DEM data reduces the error noticably. Note that the MAPE is higher for both the lower lower bounds and for the higher ones.}
+  \caption[Model results for different wind speed limits]{MAPE for each ws$_{15}$ lower bound without and with landscape elevation data (DEM) in a 30° sector into the direction of the reanalysis wind. Adding DEM data reduces the error noticably. Note that the MAPE is worse for both the lower lower bounds and the higher ones, but better for the intermediate ones.}
     \label{table:results}
     \centering
     \begin{tabular}{lccc}
@@ -211,3 +211,57 @@ It is important to note that Shapley summary plot analysis assumes feature indep
 Another point to note is that the features are ordered by their impact. The station altitude is the most impactful for all the plots except Keflavíkurflugvöllur (Figure \ref{fig:ShapleySummaryKeflavikurflugvollur}), but the ordering of other variables changes. Looking at the lower panel of Figure \ref{fig:ShapleySummary}, the wind speed is the second most important feature. This is reversed in Figure \ref{fig:ShapleySummaryAlmannaskarð}. This is not unexpected as the Almannaskarð station was specifically selected as a station with high MAE between observed and reanalysis wind speed (Table \ref{table:station_mae_distribution}. Another station with high MAE is Akrafjall, with a Shapley summary plot in Figure \ref{fig:ShapleySummaryAkrafjall}).
 
 What is interesting is that the reanalysis wind speed is also of low impact at stations like Keflavíkurflugvöllur, as shown in Figure \ref{fig:ShapleySummaryKeflavikurflugvollur} which had the second lowest MAE difference between measured wind speed and reanalysis wind speed (see Table \ref{table:station_mae_distribution}). Another such station, in fact the one with the lowest MAE, is Háahlíð in Reykjavík. The Shapley summary plot for this station is shown in Appendix A (\ref{fig:ShapleySummaryHaahlid}).
+
+\section{CARRA wind gust}
+% In 4.3, add commas in first sentence
+% Later in 4.3, add "that" before "they"
+% Table 4.3, change higher to worse, add: but better for the intermediate ones
+
+The CARRA dataset provides no gust values in its analysis component but does include 10 m wind gust in the forecast. With a shortest lead time of one hour and given that a model of the gust factor is to be constructed, it stands to reason to incorporate the one-hour forecast CARRA gust factor, computed as:
+\begin{equation*}
+\text{CARRA gust factor} = \dfrac
+{\text{1 hr forecast 10 m wind gust}}
+{\text{1 hr forecast 10 m wind speed}}
+\end{equation*}
+into the modelling, as a proxy for a reanalysis wind gust.
+
+One issue with the CARRA gust factor is that it is not available for several time points including the period after the middle of 2022, whereas the CARRA reanalysis data used in this study extends through 2023, making it somewhat involved to assess its predictive power. Two investigations were carried out. First, the reduction in MAPE resulting from the addition of the CARRA gust factor to the baseline ws$_{15}$, secondary, and primary NN models of Section 4.2 was assessed, using only data with CARRA gust available. The results of this comparison are shown in Table \ref{table:carra_gust}
+
+\begin{table}[h]
+  \centering
+  \caption[Results adding CARRA gust factor]{Results of adding the CARRA gust factor as a variable in selected models from Sections 4.2 and 4.3.}
+  \label{table:carra_gust}
+  \begin{tabular}{lcc}
+    \toprule
+    & \multicolumn{2}{c}{MAPE\qquad\qquad} \\
+    Model & Unaltered & With CARRA gust factor \\
+    \midrule
+    Baseline ws$_{15}$ model & 17.0\% & 16.7\% \\
+    Secondary model           & 13.3\% & 13.2\% \\
+    Primary model             & 12.5\% & 12.4\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The causes of the differences between the numbers in Table \ref{table:carra_gust} and those of Tables 4.2 and 4.3 could be different time period and/or unlike training setup.
+
+Second, three simple linear regression models were constructed involving ws$_{15}$ and the CARRA gust factor, using available data with ws$_{15} \geq 10$ m/s. The results are shown in Table \ref{table:carra_gust_regression}.
+
+\begin{table}[h]
+  \centering
+  \caption[Regression MAPE with and without CARRA gust factor]{Mean absolute percentage error (MAPE) for regression models using the CARRA gust factor, ws$_{15}$, and both combined.}
+  \label{table:carra_gust_regression}
+  \begin{tabular}{lc}
+    \toprule
+    Model                         & MAPE   \\
+    \midrule
+    ws$_{15}$                     & 17.03\% \\
+    CARRA–gf                      & 16.81\% \\
+    CARRA–gf + ws$_{15}$          & 16.80\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Finally, using the raw CARRA gust factor without any modelling gave MAPE = 18.14\%.
+
+The conclusion that can be drawn from this investigation is that there is a modest information in the CARRA wind gust forecast, potentiially reducing model MAPE by 0.1 to 0.3 percentage points. This reduction is however quite small compared with the overall MAPE reduction of $\sim$5 percentage points seen in Table 4.2 when all available variables are added.

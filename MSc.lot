@@ -12,5 +12,7 @@
 \contentsline {table}{\numberline {3.4}{\ignorespaces Primary model MAPE by selected stations}}{25}{table.caption.27}%
 \contentsline {table}{\numberline {3.5}{\ignorespaces Model result by station}}{26}{table.caption.28}%
 \contentsline {table}{\numberline {3.6}{\ignorespaces Model result looking at closed wind speed intervals}}{27}{table.caption.29}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Results adding CARRA gust factor}}{32}{table.caption.35}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Regression MAPE with and without CARRA gust factor}}{33}{table.caption.36}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
