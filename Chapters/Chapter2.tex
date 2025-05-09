@@ -5,15 +5,7 @@
 Data were sourced from several streams. The Icelandic Meteorological Office (IMO) provided measurements from weather stations across Iceland, NWP data were downloaded from the Copernicus Arctic Regional Reanalysis dataset (CARRA), and finally a land-elevation model was also provided by the IMO.
 
 \section{Automatic Weather Station Data}
-
 Automatic weather stations (AWS) have been set up all around the world, including Iceland. AWSs might include a variety of sensors, such as barometers, thermometers, and anemometer along with solar panels (or other power source) and some kind of data logger. IMO provided measurements from AWSs across Iceland. One of the stations used in this study can be seen in Figure \ref{fig:storhofdi}. Not every station had consistently available data. Data from \nStationsMin AWSs were included looking at a period from \startDateVedur and ended in 2023. Of these \nStationsMin stations provided by IMO, \nVedurMin were IMO stations, with the anemometer at 10~m above ground, while the remaining \nVGMin stations were from \href{https://www.vegagerdin.is/}{the Icelandic Road and Coastal Administration (IRCA)}, with the anemometer at 6–7~m above ground \cite{vegagerdin_postur}. The locations of these weather stations are shown in Figure \ref{fig:aws_map}.
-
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.3]{Figures/storhofdi.jpeg}
-  \caption[AWS at Stórhöfði in Vestmannaeyjar, south of Iceland.]{AWS at Stórhöfði in Vestmannaeyjar, south of Iceland. The anemometer can be seen as three pins in the upper-central area of the figure just slightly to the left.}
-  \label{fig:storhofdi}
-\end{figure}
 
 Data from these AWSs were stored in hourly files, which aggregate the original 10-minute files; measurement errors—unrealistic spikes known as “nails”—have been removed in most cases. Each record contains the following information: date and time; station number (convertible to coordinates using another dataset of Icelandic meteorological stations); average wind speed ($f$); wind gust ($f_g$); standard deviation of the wind gust; wind direction ($d$); and standard deviation of the wind direction.
 
@@ -24,6 +16,13 @@ These measurements began at the end of the 20th century with the installation of
     \includegraphics[scale = 0.6]{Figures/station_elevations.png}
     \caption[Locations of automatic weather stations in Iceland]{Locations of all 412 stations that were looked at in this study. Most of these were from IMO but over a hundred were from IRCA. IMO anemometers are placed at 10 meters above ground, while IRCA ones are placed at 6--7 meters above ground.}
     \label{fig:aws_map}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.3]{Figures/storhofdi.jpeg}
+  \caption[AWS at Stórhöfði in Vestmannaeyjar, south of Iceland.]{AWS at Stórhöfði in Vestmannaeyjar, south of Iceland. The anemometer can be seen as three pins in the upper-central area of the figure just slightly to the left.}
+  \label{fig:storhofdi}
 \end{figure}
 
 \section{CARRA Data}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.15)  9 MAY 2025 09:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.15)  9 MAY 2025 09:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1348,9 +1348,9 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `MSc.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'MSc.bbl' not found.
+Package biblatex Info: ... file 'MSc.bbl' found.
 
-No file MSc.bbl.
+(./MSc.bbl)
 Package biblatex Info: Reference section=0 on input line 195.
 Package biblatex Info: Reference segment=0 on input line 195.
 Package hyperref Info: Option `pageanchor' set `false' on input line 196.
@@ -1361,7 +1361,7 @@ Package pdftex.def Info: banner.png  used on input line 219.
 (pdftex.def)             Requested size: 597.50793pt x 204.2827pt.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
 25.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmss.fd
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 \currentparskip=\skip92
@@ -1677,164 +1677,57 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface.
 
-
-LaTeX Warning: Citation 'why_wind_gusts' on page 2 undefined on input line 17.
-
-
-LaTeX Warning: Citation 'uncertainties_in_numerical_weather_predictions' on pag
-e 2 undefined on input line 19.
-
-
-Overfull \hbox (17.08711pt too wide) in paragraph at lines 19--20
-\T1/lmr/m/n/12 force), and fric-tional forces [[]]. 
- []
-
-
-LaTeX Warning: Citation 'medium_range_3d_weather_forecasting_NN' on page 2 unde
-fined on input line 25.
-
-
-LaTeX Warning: Citation 'GNP_vidtal' on page 2 undefined on input line 25.
-
-
-LaTeX Warning: Citation 'canNNBeatNWP' on page 2 undefined on input line 25.
-
-
-Overfull \hbox (22.97588pt too wide) in paragraph at lines 25--26
-\T1/lmr/m/n/12 an-a-lyze weather pat-terns [[]]. These
- []
-
-
-LaTeX Warning: Citation 'nasa_extreme_weather' on page 2 undefined on input lin
-e 27.
-
-
-LaTeX Warning: Citation 'TheENIACForecastsARecreation' on page 2 undefined on i
-nput line 32.
-
 [2
 
 
-]
-
-LaTeX Warning: Citation 'historyNWP' on page 3 undefined on input line 34.
-
-
-LaTeX Warning: Citation 'canNNBeatNWP' on page 3 undefined on input line 37.
-
-
-LaTeX Warning: Citation 'dueben2018' on page 3 undefined on input line 41.
-
-
-LaTeX Warning: Citation 'scher2018' on page 3 undefined on input line 41.
-
-
-LaTeX Warning: Citation 'SecondRevolution' on page 3 undefined on input line 44
-.
-
-
-Overfull \hbox (6.36272pt too wide) in paragraph at lines 44--45
-\T1/lmr/m/n/12 Large AI Weather fore-cast Mod-els (LWMs). In 2024, Ling et al. 
-[[]]
- []
-
-[3]
-
-LaTeX Warning: Citation 'SecondRevolution' on page 4 undefined on input line 49
-.
-
-
-LaTeX Warning: Citation 'FourCastNet' on page 4 undefined on input line 52.
-
-
-LaTeX Warning: Citation 'FourCastNet' on page 4 undefined on input line 52.
-
+] [3]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
 4.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-
-LaTeX Warning: Citation 'GraphCast' on page 4 undefined on input line 54.
-
-
 Overfull \hbox (5.28587pt too wide) in paragraph at lines 54--55
 \T1/lmr/m/n/12 out-per-formed the Eu-ro-pean Cen-tre for Medium-Range Weather F
 ore-casts' (ECMWF)
  []
 
-
-LaTeX Warning: Citation 'SecondRevolution' on page 4 undefined on input line 57
-.
-
-
-Overfull \hbox (50.08359pt too wide) in paragraph at lines 57--58
-[]\T1/lmr/m/n/12 Substantial progress has been made since 2018 and es-pe-cially
- since 2022 [[]].
- []
-
-[4]
-
-LaTeX Warning: Citation 'mean_gust_HA_HO' on page 5 undefined on input line 71.
-
-
-[5]
-<figures/neural_network.drawio.png, id=277, 673.51625pt x 672.5125pt>
+[4] [5]
+<figures/neural_network.drawio.png, id=309, 673.51625pt x 672.5125pt>
 File: figures/neural_network.drawio.png Graphic file (type png)
 <use figures/neural_network.drawio.png>
 Package pdftex.def Info: figures/neural_network.drawio.png  used on input line 
-81.
+80.
 (pdftex.def)             Requested size: 341.43442pt x 340.92448pt.
- [6 <./figures/neural_network.drawio.png>]
-
-LaTeX Warning: Citation 'nn_black_box' on page 7 undefined on input line 114.
-
-
-LaTeX Warning: Citation 'shapley_information' on page 7 undefined on input line
- 114.
-
-
-LaTeX Warning: Citation 'eli5_information' on page 7 undefined on input line 11
-9.
-
-[7]) [8]
+ [6 <./figures/neural_network.drawio.png>] [7]) [8]
 \openout2 = `Chapters/Chapter2.aux'.
 
- (./Chapters/Chapter2.tex
+
+(./Chapters/Chapter2.tex
 chapter 2.
-
-LaTeX Warning: Citation 'vegagerdin_postur' on page 9 undefined on input line 9
-.
-
-<Figures/storhofdi.jpeg, id=312, 745.5855pt x 995.6397pt>
+<Figures/storhofdi.jpeg, id=347, 745.5855pt x 995.6397pt>
 File: Figures/storhofdi.jpeg Graphic file (type jpg)
 <use Figures/storhofdi.jpeg>
-Package pdftex.def Info: Figures/storhofdi.jpeg  used on input line 13.
+Package pdftex.def Info: Figures/storhofdi.jpeg  used on input line 9.
 (pdftex.def)             Requested size: 223.67737pt x 298.69421pt.
-<Figures/station_elevations.png, id=313, 661.2705pt x 410.4936pt>
-File: Figures/station_elevations.png Graphic file (type png)
-<use Figures/station_elevations.png>
-Package pdftex.def Info: Figures/station_elevations.png  used on input line 24.
-
-(pdftex.def)             Requested size: 396.76535pt x 246.29805pt.
 [9
 
 
 
 
 ] [10 <./Figures/storhofdi.jpeg>]
+<Figures/station_elevations.png, id=361, 661.2705pt x 410.4936pt>
+File: Figures/station_elevations.png Graphic file (type png)
+<use Figures/station_elevations.png>
+Package pdftex.def Info: Figures/station_elevations.png  used on input line 24.
 
-LaTeX Warning: Citation 'carra_information' on page 11 undefined on input line 
-30.
-
-[11 <./Figures/station_elevations.png>]
+(pdftex.def)             Requested size: 396.76535pt x 246.29805pt.
+ [11] [12 <./Figures/station_elevations.png>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
 9.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<Figures/data_combination.drawio.png, id=328, 342.27875pt x 548.0475pt>
+<Figures/data_combination.drawio.png, id=374, 342.27875pt x 548.0475pt>
 File: Figures/data_combination.drawio.png Graphic file (type png)
 <use Figures/data_combination.drawio.png>
 Package pdftex.def Info: Figures/data_combination.drawio.png  used on input lin
@@ -1844,23 +1737,20 @@ e 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12]
-
-LaTeX Warning: Citation 'GNP_vidtal' on page 13 undefined on input line 56.
-
+[13]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/MAEoverIceland.png, id=338, 704.6325pt x 468.3096pt>
+<Figures/MAEoverIceland.png, id=386, 704.6325pt x 468.3096pt>
 File: Figures/MAEoverIceland.png Graphic file (type png)
 <use Figures/MAEoverIceland.png>
 Package pdftex.def Info: Figures/MAEoverIceland.png  used on input line 85.
 (pdftex.def)             Requested size: 422.78278pt x 280.98793pt.
-[13 <./Figures/data_combination.drawio.png>]
+[14 <./Figures/data_combination.drawio.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+[15] (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
@@ -1875,86 +1765,43 @@ Overfull \hbox (0.9193pt too wide) in paragraph at lines 129--130
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[15 <./Figures/MAEoverIceland.png>]
+[16 <./Figures/MAEoverIceland.png>]
 Overfull \hbox (2.24902pt too wide) in paragraph at lines 132--133
 []\T1/lmr/m/n/12 The re-sult-ing DataFrame in-cludes AWS mea-sure-ments (our ta
 r-get), CARRA weather
  []
 
-
-LaTeX Warning: Citation 'richardson_number_skybrary' on page 16 undefined on in
-put line 153.
-
-
-LaTeX Warning: Citation 'brunt_vaisala_freq_eumtrain' on page 16 undefined on i
-nput line 153.
-
-
-LaTeX Warning: Citation 'mean_gust_HA_HO' on page 16 undefined on input line 15
-3.
-
-
-Overfull \hbox (121.79611pt too wide) in paragraph at lines 153--155
-\T1/lmr/m/n/12 bil-ity, see Equa-tions ([]2.1[]) and ([]2.2[]) [[], [],
- []
-
-
-LaTeX Warning: Citation 'richardson_number_skybrary' on page 16 undefined on in
-put line 165.
-
-
-LaTeX Warning: Citation 'brunt_vaisala_freq_eumtrain' on page 16 undefined on i
-nput line 165.
-
-
-Overfull \hbox (5.66289pt too wide) in paragraph at lines 163--167
-\T1/lmr/m/n/12 cel will ac-cel-er-ate away from its orig-i-nal po-si-tion [[]].
-
- []
-
-
-LaTeX Warning: Citation 'shapley_information' on page 16 undefined on input lin
-e 174.
-
-[16]
-<Figures/obs_wind_speeds.png, id=374, 443.0151pt x 222.1098pt>
+[17]
+<Figures/obs_wind_speeds.png, id=431, 443.0151pt x 222.1098pt>
 File: Figures/obs_wind_speeds.png Graphic file (type png)
 <use Figures/obs_wind_speeds.png>
 Package pdftex.def Info: Figures/obs_wind_speeds.png  used on input line 184.
 (pdftex.def)             Requested size: 341.43442pt x 171.18436pt.
-<Figures/carra_wind_speeds.png, id=375, 443.0151pt x 222.1098pt>
+<Figures/carra_wind_speeds.png, id=432, 443.0151pt x 222.1098pt>
 File: Figures/carra_wind_speeds.png Graphic file (type png)
 <use Figures/carra_wind_speeds.png>
 Package pdftex.def Info: Figures/carra_wind_speeds.png  used on input line 193.
 
 (pdftex.def)             Requested size: 341.43442pt x 171.18436pt.
-<Figures/station_heights.png, id=376, 390.258pt x 267.1581pt>
+<Figures/station_heights.png, id=433, 390.258pt x 267.1581pt>
 File: Figures/station_heights.png Graphic file (type png)
 <use Figures/station_heights.png>
 Package pdftex.def Info: Figures/station_heights.png  used on input line 204.
 (pdftex.def)             Requested size: 341.43442pt x 233.7383pt.
-<Figures/gust_factor_2025.png, id=377, 387.1263pt x 277.7577pt>
+<Figures/gust_factor_2025.png, id=434, 387.1263pt x 277.7577pt>
 File: Figures/gust_factor_2025.png Graphic file (type png)
 <use Figures/gust_factor_2025.png>
 Package pdftex.def Info: Figures/gust_factor_2025.png  used on input line 211.
 (pdftex.def)             Requested size: 341.43442pt x 244.97426pt.
- [17] [18 <./Figures/obs_wind_speeds.png> <./Figures/carra_wind_speeds.png>] [1
-9 <./Figures/station_heights.png> <./Figures/gust_factor_2025.png>]
+ [18] [19 <./Figures/obs_wind_speeds.png> <./Figures/carra_wind_speeds.png>] [2
+0 <./Figures/station_heights.png> <./Figures/gust_factor_2025.png>])
+[21
 
-LaTeX Warning: Citation 'hyperparameters_definition' on page 20 undefined on in
-put line 219.
-
-[20
-
-]) [21]
+] [22]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (./Chapters/Chapter3.tex
 chapter 3.
-
-LaTeX Warning: Citation 'mean_gust_HA_HO' on page 22 undefined on input line 25
-.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 27.
@@ -1967,7 +1814,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 27.
 
-[22
+[23
 
 
 
@@ -1988,8 +1835,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23]
-<Figures/errorMap.png, id=426, 850.377pt x 513.117pt>
+[24]
+<Figures/errorMap.png, id=489, 850.377pt x 513.117pt>
 File: Figures/errorMap.png Graphic file (type png)
 <use Figures/errorMap.png>
 Package pdftex.def Info: Figures/errorMap.png  used on input line 82.
@@ -2004,8 +1851,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24] [25 <./Figures/errorMap.png>] [26]
-<Figures/shap_plots/waterfall_plot.png, id=450, 646.0938pt x 372.9132pt>
+[25] [26 <./Figures/errorMap.png>] [27]
+<Figures/shap_plots/waterfall_plot.png, id=515, 646.0938pt x 372.9132pt>
 File: Figures/shap_plots/waterfall_plot.png Graphic file (type png)
 <use Figures/shap_plots/waterfall_plot.png>
 Package pdftex.def Info: Figures/shap_plots/waterfall_plot.png  used on input l
@@ -2015,20 +1862,20 @@ ine 155.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27
+[28
 
 ]
 
-LaTeX Warning: Reference `figure:ShapleySummary' on page 28 undefined on input 
+LaTeX Warning: Reference `figure:ShapleySummary' on page 29 undefined on input 
 line 166.
 
-<Figures/shap_plots/summary_plot.png, id=457, 578.16pt x 339.669pt>
+<Figures/shap_plots/summary_plot.png, id=522, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot.png  used on input lin
 e 171.
 (pdftex.def)             Requested size: 384.10965pt x 225.66454pt.
-<Figures/shap_plots/summary_plot_190924_.png, id=458, 578.16pt x 339.669pt>
+<Figures/shap_plots/summary_plot_190924_.png, id=523, 578.16pt x 339.669pt>
 File: Figures/shap_plots/summary_plot_190924_.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_190924_.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_.png  used on i
@@ -2037,54 +1884,88 @@ nput line 175.
 
 LaTeX Warning: Float too large for page by 1.5055pt on input line 179.
 
-[28 <./Figures/shap_plots/waterfall_plot.png>] [29 <./Figures/shap_plots/summar
+[29 <./Figures/shap_plots/waterfall_plot.png>] [30 <./Figures/shap_plots/summar
 y_plot.png> <./Figures/shap_plots/summary_plot_190924_.png>]
-<Figures/shap_plots/summary_plot_1350.png, id=473, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_1350.png, id=540, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_1350.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_1350.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_1350.png  used on inpu
 t line 188.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_35553.png, id=478, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_35553.png, id=545, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_35553.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_35553.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_35553.png  used on inp
 ut line 195.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_31572.png, id=483, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_31572.png, id=550, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_31572.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_31572.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_31572.png  used on inp
 ut line 202.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-
-
-LaTeX Warning: Citation 'Salih_2024' on page 30 undefined on input line 209.
-
-[30 <./Figures/shap_plots/summary_plot_1350.png>] [31 <./Figures/shap_plots/sum
-mary_plot_35553.png> <./Figures/shap_plots/summary_plot_31572.png>] [32])
-[33]
+ [31 <./Figures/shap_plots/summary_plot_1350.png>] [32 <./Figures/shap_plots/su
+mmary_plot_35553.png> <./Figures/shap_plots/summary_plot_31572.png>] [33]) [34]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex
-chapter 4.
-[34
 
+(./Chapters/Chapter4.tex
+chapter 4.
+[35
+
+
+
+
+]) [36]
+
+Package biblatex Warning: No driver for entry type 'website'.
+(biblatex)                Using fallback driver on input line 440.
+
+
+Package biblatex Warning: No driver for entry type 'website'.
+(biblatex)                Using fallback driver on input line 440.
+
+
+Package biblatex Warning: No driver for entry type 'webiste'.
+(biblatex)                Using fallback driver on input line 440.
+
+
+Package biblatex Warning: No driver for entry type 'website'.
+(biblatex)                Using fallback driver on input line 440.
+
+
+Package biblatex Warning: No driver for entry type 'website'.
+(biblatex)                Using fallback driver on input line 440.
+
+[37
 
 
 
 ]
 
-LaTeX Warning: Citation 'wind_power' on page 35 undefined on input line 20.
+Package biblatex Warning: No driver for entry type 'website'.
+(biblatex)                Using fallback driver on input line 440.
 
-) [35]
 
-LaTeX Warning: Empty bibliography on input line 440.
+Package biblatex Warning: No driver for entry type 'website'.
+(biblatex)                Using fallback driver on input line 440.
 
+
+Package biblatex Warning: No driver for entry type 'website'.
+(biblatex)                Using fallback driver on input line 440.
+
+
+Overfull \hbox (8.89462pt too wide) in paragraph at lines 441--441
+[]\T1/lmr/m/n/12 Skybrary. \T1/lmr/m/it/12 Richard-son Num-ber\T1/lmr/m/n/12 . 
+2022. \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : []$\T1/lmtt/m/n/12 https : / / skybra
+ry . aero / articles /
+ []
+
+[38] [39]
 \openout2 = `Appendicies/AppendixA.aux'.
 
-(./Appendicies/AppendixA.tex
-<Figures/shap_plots/summary_plot_190924_full_10ms.png, id=542, 578.16pt x 339.6
+ (./Appendicies/AppendixA.tex
+<Figures/shap_plots/summary_plot_190924_full_10ms.png, id=674, 578.16pt x 339.6
 69pt>
 File: Figures/shap_plots/summary_plot_190924_full_10ms.png Graphic file (type p
 ng)
@@ -2092,25 +1973,24 @@ ng)
 Package pdftex.def Info: Figures/shap_plots/summary_plot_190924_full_10ms.png  
 used on input line 9.
 (pdftex.def)             Requested size: 346.89867pt x 203.80296pt.
-<Figures/shap_plots/summary_plot_6745.png, id=547, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_6745.png, id=679, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_6745.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_6745.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_6745.png  used on inpu
 t line 16.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-<Figures/shap_plots/summary_plot_1470.png, id=552, 550.6974pt x 331.7193pt>
+<Figures/shap_plots/summary_plot_1470.png, id=684, 550.6974pt x 331.7193pt>
 File: Figures/shap_plots/summary_plot_1470.png Graphic file (type png)
 <use Figures/shap_plots/summary_plot_1470.png>
 Package pdftex.def Info: Figures/shap_plots/summary_plot_1470.png  used on inpu
 t line 23.
 (pdftex.def)             Requested size: 330.42099pt x 199.0331pt.
-) [36
+) [40
 
 
-
-
-] [37 <./Figures/shap_plots/summary_plot_190924_full_10ms.png> <./Figures/shap_
-plots/summary_plot_6745.png>] [38 <./Figures/shap_plots/summary_plot_1470.png>]
+] [41 <./Figures/shap_plots/summary_plot_190924_full_10ms.png> <./Figures/shap_
+plots/summary_plot_6745.png>]
+[42 <./Figures/shap_plots/summary_plot_1470.png>]
 \openout2 = `Appendicies/AppendixB.aux'.
 
 
@@ -2121,54 +2001,120 @@ No file Appendicies/AppendixB.tex.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `MSc.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                MSc
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'MSc.run.xml'.
 \openout1 = `MSc.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38570 strings out of 478268
- 737801 string characters out of 5846346
- 1560382 words of memory out of 5000000
- 55930 multiletter control sequences out of 15000+600000
- 606943 words of font info for 108 fonts, out of 8000000 for 9000
+ 38706 strings out of 478268
+ 742500 string characters out of 5846346
+ 1561059 words of memory out of 5000000
+ 56021 multiletter control sequences out of 15000+600000
+ 594590 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,14n,106p,10598b,1979s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
-/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/
-texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2022/texmf-dist/fon
-ts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvi
-ps/lm/lm-mathsy.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lm
-bx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/
-texlive/2022/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb></usr/local/texlive/2
-022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts
-/type1/public/lm/lmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publ
-ic/lm/lmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10
-.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/
-local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/tex
-mf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2022/texmf-dist/fo
-nts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
-public/lm/lmss17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/
-lmssbo10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10
-.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></us
-r/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2022/
-texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/public/lm/lmtt12.pfb>
-Output written on MSc.pdf (50 pages, 3251002 bytes).
+
+pdfTeX warning (dest): name{chapter*.38} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.36} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.35} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.29} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.28} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.24} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.18} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.17} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.41} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.40} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.34} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.33} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.26} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.21} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.16} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
+ exist, replaced by a fixed one
+
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/te
+xlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/te
+xmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2022/texmf-dist/fonts
+/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips
+/lm/lm-mathsy.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx
+10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/202
+2/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2022/texmf-di
+st/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
+ype1/public/lm/lmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public
+/lm/lmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.p
+fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/
+2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf
+-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2022/texmf-dist/font
+s/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pu
+blic/lm/lmss17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lm
+ssbo10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.p
+fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/
+local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2022/te
+xmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2022/texmf-dist/f
+onts/type1/public/lm/lmtt12.pfb>
+Output written on MSc.pdf (54 pages, 3282259 bytes).
 PDF statistics:
- 838 PDF objects out of 1000 (max. 8388607)
- 673 compressed objects within 7 object streams
- 166 named destinations out of 1000 (max. 500000)
+ 981 PDF objects out of 1000 (max. 8388607)
+ 810 compressed objects within 9 object streams
+ 210 named destinations out of 1000 (max. 500000)
  409 words of extra memory for PDF output out of 10000 (max. 10000000)
 

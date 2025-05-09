@@ -73,7 +73,6 @@ In 2004, Hálfdán Ágústsson and Haraldur Ólafsson \cite{mean_gust_HA_HO} inv
 \subsection{Neural networks}
 To capture patterns in the data, a neural network was constructed. An NN architecture was chosen because NNs handle complex data well and can manage large numbers of parameters. This flexibility is useful when training on different types of data and allows testing various network designs. An NN uses many matrix calculations to weight input parameters and predict an output. A deep neural network (DNN) has an input layer, an output layer, and one or more hidden layers. Hidden layers transform data from the input layer until it reaches the output layer. The input layer width equals the number of input parameters, and the output layer width equals the number of predictands.
 
-\subsubsection{Structure of neural networks}
 The general structure of a neural network is shown in Figure \ref{fig:nn_structure}. The input layer consists of $n$ neurons, each representing an input parameter. The output layer has $m$ neurons, each representing a predictand. Between these layers are one or more hidden layers, each with $h_i$ neurons, where $i$ is the layer index. Each neuron in a layer is connected to every neuron in the previous and next layers. The connections between neurons have weights that are adjusted during training to minimize prediction error.
 
 \begin{figure}[H]
