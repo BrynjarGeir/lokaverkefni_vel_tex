@@ -75,16 +75,7 @@ To assess how model performance depends on ws$_{15}$ lower bound, several models
 \section{Results for specific locations}
 In this section, the distribution of MAPE by station will be considered. For each station the primary model MAPE was computed using just the ws$_{15} \geq 10$ data for that station was calculated and the results are shown in Figure \ref{fig:errorMap}. The stations with low performance are all near mountains and often in fjords. The worst cases are in Vestfirðir and Austfirðir, and several bad stations are e.g. in Tröllaskagi and Snæfellsnes, and near Öræfajökull, Esja, Eyjafjallajökull. Table \ref{table:more_specific_sites} shows the primary model MAPE together with the constant baseline reference for a few selected stations.
 
-Inland stations seem to have lower error. The worst performing station is Seljalandsdalur in Vestfirðir while the best performing station is Garðskagaviti at the tip of the Reykjanes peninsula. Evidently rugged landscape makes it difficult to estimate the gust factor accurately.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale = 0.5]{Figures/errorMap.png}
-\caption[MAPE distribution by station]{Mean absolute percentage error (MAPE) at each station, shown as colored circles (dark blue = low error; yellow = high error). The lowest station error is about 7\% at Garðskagaviti and the highest about 35\% at Seljalandsdalur. The model uses a 10 m/s lower bound based on ws$_{15}$.}
-\label{fig:errorMap}
-\end{figure}
-
-\begin{table}[h]
+\begin{table}[H]
     \caption[Primary model MAPE by selected stations]{Constant baseline and primary model MAPE for a few selected stations. High MAPE values is seen in fjords near tall mountains in Austfirðir (Fáskrúðsfjörður and Seyðisfjörður), intermediate values at the foothills of mountains (Ingólfsfjall and Kjalarnes), and low values in flatter places (Sandskeið, Þrengsli).}
     \label{table:more_specific_sites}
     \centering
@@ -104,9 +95,20 @@ Inland stations seem to have lower error. The worst performing station is Seljal
     \end{tabular}
 \end{table}
 
+Inland stations seem to have lower error. The worst performing station is Seljalandsdalur in Vestfirðir while the best performing station is Garðskagaviti at the tip of the Reykjanes peninsula. Evidently rugged landscape makes it difficult to estimate the gust factor accurately.
+
 After examining the MAPE at each station individually, it is logical to try accounting for the station (or its location) in the model’s design. There are two ways to do this: To include the station location in the training data, and to train on subsets of the data, e.g. by station or groups of stations. Here the latter approach is considered. Results of an investigation for a few stations can be seen in Table \ref{table:specific_sites}. For many of the stations, the results are worse than expected, sometimes much worse, calling for further investigation.
 
-\begin{table}[h]
+\begin{figure}[H]
+  \centering
+  \makebox[\textwidth[c]{
+    \includegraphics[width=1.1\textwidth]{Figures/errorMap.png}
+  }
+\caption[MAPE distribution by station]{Mean absolute percentage error (MAPE) at each station, shown as colored circles (dark blue = low error; yellow = high error). The lowest station error is about 7\% at Garðskagaviti and the highest about 35\% at Seljalandsdalur. The model uses a 10 m/s lower bound based on ws$_{15}$.}
+\label{fig:errorMap}
+\end{figure}
+
+\begin{table}[H]
   \caption[Model result by station]{MAPE for a few selected stations, for a model trained with the whole data set (general training), and for a model trained only with the data of the station itself (site training), with a lower bound of 10 m/s. This investigation was done in an earlier phase of the study, when $f$ instead of ws$_{15}$ was being used as the lower bound cut off, and that leads to some data leakage and a somewhat lower MAPE.}
     \label{table:specific_sites}
     \centering
@@ -129,7 +131,10 @@ After examining the MAPE at each station individually, it is logical to try acco
 \section{Results for wind speed intervals}
 In addition to training for individual stations one can also try to train for individual wind speed intervals. Table \ref{table:closed_intervals} shows the results of training with the primary parameter set, with and without DEM. The table does not show noticeable improvement over the values in the last column in Table \ref{table:results}, in fact the two tables show quite similar results.
 
-\begin{table}[h]
+\section{Feature importance with Shapley values}\label{sec:shapley}
+In this section Shapley values (see section \ref{sec:methodology} and \ref{sec:layout}) for the features of the secondary parameter set will be considered. Each feature value in each data row will contribute some share in the final prediction of an NN model, that can be computed by shifting the respective value and observe the change in the model output. This procedure is illustrated in Figure \ref{fig:ShapleyWaterfall}.
+
+\begin{table}
     \caption[Model result looking at closed wind speed intervals]{The MAPE results for different wind speed limit intervals. Here instead of training for all data above a certain threshold of wind speed, training is done only on data between two wind speeds. The percentage variance in gust factor as a function of wind speed increases with decreasing wind speed. Measured wind speed is used for the cutoff and thus have data leakage. These results should thus be somewhat comparable to the last column in Table \ref{table:results}}
     \label{table:closed_intervals}
     \centering
@@ -147,10 +152,7 @@ In addition to training for individual stations one can also try to train for in
     \end{tabular}
 \end{table}
 
-\section{Feature importance with Shapley values}
-In this section Shapley values (see section \ref{sec:methodology} and \ref{sec:layout}) for the features of the secondary parameter set will be considered. Each feature value in each data row will contribute some share in the final prediction of an NN model, that can be computed by shifting the respective value and observe the change in the model output. This procedure is illustrated in Figure \ref{fig:ShapleyWaterfall}.
-
-\begin{figure}[h]
+\begin{figure}
   \centering
   \includegraphics[scale = 0.6]{Figures/shap_plots/waterfall_plot.png}
   \caption[Shapley contributions for a single observation]{Shapley contributions for a single data row. The figure shows an example of the individual values contributing to a Shapley summary plot. Each point in a summary plot corresponds to one such instance. Several values with the same SHAP value will result in a thicker bulge in the summary. In this specific instance the wind direction ($wd_{15}$) has the highest negative contribution and the temperature has the highest positive contribution. The last three features contribute nothing.}
@@ -158,7 +160,6 @@ In this section Shapley values (see section \ref{sec:methodology} and \ref{sec:l
 \end{figure}
 
 \subsection{Shapley summary plots for all stations}
-
 Figure \ref{fig:ShapleySummary} provides a Shapley summary plot showing the contribution of each feature in the set. Computation of these values is expensive so subset of data is used ($\sim$1000 randomly selected data rows). There is an obvious outlier in the figure, making it difficult to assess the distribution. A second Shapley summary was computed with more data rows ($\sim$10000) and outliers excluded, see the lower panel of the figure. Note that it is not feasible to include the DEM data in this analysis, as they contain far too many variables.
 
 Looking specifically at the lower panel in Figure \ref{fig:ShapleySummary}, the station elevation (altitude) is the most influential and the Richardson number's influence is very low, with the other features falling in between. For most features the Shapley values are bunch up around 0, while the station elevation, and to some extent ws$_{15}$ have a wider distribution. Station altitude/elevation seems to have a wide flat part between –0.1 and 0.1. Overall, the values seem to have a longer right tail. This is expected as gust factors are positive ($\sim$1.2 to 2). Notice also that Ri has virtually no contribution and could safely be removed from the model.
