@@ -163,16 +163,18 @@ Figure \ref{fig:ShapleySummary} provides a Shapley summary plot showing the cont
 
 Looking specifically at the lower panel in Figure \ref{fig:ShapleySummary}, the station elevation (altitude) is the most influential and the Richardson number's influence is very low, with the other features falling in between. For most features the Shapley values are bunch up around 0, while the station elevation, and to some extent ws$_{15}$ have a wider distribution. Station altitude/elevation seems to have a wide flat part between –0.1 and 0.1. Overall, the values seem to have a longer right tail. This is expected as gust factors are positive ($\sim$1.2 to 2). Notice also that Ri has virtually no contribution and could safely be removed from the model.
 
-The coloring of the points in the displayed distributions show the corresponding feature values. For example, in the lower panel of Figure \ref{figure:ShapleySummary}, high station altitude/elevation corresponds to negative contribution and vice versa, and same for $p_{15}$. For ws$_{15}$ and $t_{15}$ the relationship is opposite, with high feature values corresponding to positive contribution. When the coloring is more mixed the contribution of the feature is more mixed. For example, high twd might have a positve contribution at some locations but negative elsewhere.
+The coloring of the points in the displayed distributions show the corresponding feature values. For example, in the lower panel of Figure \ref{fig:ShapleySummary}, high station altitude/elevation corresponds to negative contribution and vice versa, and same for $p_{15}$. For ws$_{15}$ and $t_{15}$ the relationship is opposite, with high feature values corresponding to positive contribution. When the coloring is more mixed the contribution of the feature is more mixed. For example, high twd might have a positve contribution at some locations but negative elsewhere.
 
 \begin{figure}
   \centering
-  \begin{subfigure}{0.9\textwidth}
+  \begin{subfigure}{0.85\textwidth}
     \includegraphics[width=\textwidth]{Figures/shap_plots/summary_plot.png}
+    \label{fig:ShapleySummarySmallerSet}
   \end{subfigure}
   \vspace{0.5cm}
-  \begin{subfigure}{0.9\textwidth}
+  \begin{subfigure}{0.85\textwidth}
     \includegraphics[width=\textwidth]{Figures/shap_plots/summary_plot_190924_.png}
+    \label{fig:ShapleySummaryLargerSet}
   \end{subfigure}
   \caption[Shapley summary plots]{Shapley summary plots showing feature importance for the secondary model described in Table \ref{table:setsOfParams}, with randomly chosen subsets of the data. SHAP values with high absolute value indicate high contribution of the corresponding feature. Coloring shows the respective feature value, blue for low and red for high. For example high station altitude/elevation corresponds to negative contribution and vice versa, and for ws$_{15}$ the relationship is opposite, with high feature values corresponding to positive contribution. It can be seen that generally multiple factors influence the prediction, with the station elevation being highly influential. There is one outlier in the upper panel, for the Richardson number, which otherwise has very little influence. The upper panel is based on $\sim$1000 data rows. The lower panel is based on more data rows ($\sim$10000), and furthermore, outliers have been removed there to make the plot more legible.}
   \label{fig:ShapleySummary}

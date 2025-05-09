@@ -2,22 +2,22 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces General structure of a fully connected neural network}}{6}{figure.caption.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces AWS at Stórhöfði in Vestmannaeyjar, south of Iceland.}}{10}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Locations of automatic weather stations in Iceland}}{12}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Flow chart illustrating the data-combination workflow\relax }}{14}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces MAE distribution by station}}{16}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Comparison of observed and reanalysis wind-speed distributions. CARRA values are spatially interpolated by linear weighting of surrounding grid points.\relax }}{19}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Distribution of weather station altitudes above sea level. One outlier near 2000~m was excluded due to limited and inconsistent data.\relax }}{20}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Histogram of gust factors. By definition, gust factor $\ge 1$; most values lie between 1.2 and 2. The gust factor declines as wind speed increases.\relax }}{20}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces AWS at Stórhöfði in Vestmannaeyjar, south of Iceland.}}{9}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Locations of automatic weather stations in Iceland}}{10}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Flow chart illustrating the data-combination workflow}}{12}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces MAE distribution by station}}{14}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Comparison of observed and reanalysis wind-speed distributions. CARRA values are spatially interpolated by linear weighting of surrounding grid points.}}{17}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Distribution of weather station altitudes above sea level. One outlier near 2000~m was excluded due to limited and inconsistent data.}}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Histogram of gust factors. By definition, gust factor $\ge 1$; most values lie between 1.2 and 2. The gust factor declines as wind speed increases.}}{18}{figure.caption.19}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces MAPE distribution by station}}{26}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Shapley contributions for a single observation}}{29}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Shapley summary plots}}{30}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Keflavíkurflugvöllur.}}{31}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Almannaskarð.}}{32}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Akrafjall.}}{32}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces MAPE distribution by station}}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Shapley contributions for a single observation}}{27}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Shapley summary plots}}{28}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Keflavíkurflugvöllur.}}{29}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Almannaskarð.}}{30}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Akrafjall.}}{30}{figure.caption.32}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Summary feature importance of a neural network using entire dataset.}}{41}{figure.caption.37}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Ásgarðsfjall.}}{41}{figure.caption.38}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Háahlíð.}}{42}{figure.caption.39}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Summary feature importance of a neural network using entire dataset.}}{38}{figure.caption.37}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Ásgarðsfjall.}}{38}{figure.caption.38}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Summary feature importance of a neural network only looking at AWS at Háahlíð.}}{39}{figure.caption.39}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
