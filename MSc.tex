@@ -129,7 +129,7 @@
 
 % \usepackage[sort&compress,authoryear]{natbib} % Uncoment if you want to used NatBib instead of BibLaTeX (and comment the bitlatex line below)
 
-\usepackage{biblatex}  % BibLaTeX used for references. 
+\usepackage[style=apa, backend=biber]{biblatex}  % BibLaTeX used for references. 
 \usepackage{csquotes} % BibLaTex wants to have context sensitive quotes
 \addbibresource{references.bib} %  Name of *.bib file containing references
 
@@ -376,11 +376,11 @@
 \setkomafont{section}{\huge} % The title "Abstract" and "Útdráttur" should look like the chapters, i.e. use \huge (\chapter cannot be used as this would create a new page)
 
 \section*{Abstract}
-Whether it is wind farms, traffic accidents, high-voltage towers, or other things affected by wind, accurately predicting wind loads is crucial for reducing damage, improving operational safety, and boosting productivity. Wind gusts are multi-second spikes in speed, and wind gust factor is defined as the ratio of the highest three-second gust to the ten-minute mean wind speed. It is important to be able to predict both wind and gust factor accurately. Historically, numerical weather prediction models based on physical equations have been used to predict such variables. In recent years, artificial intelligence has advanced rapidly, and AI-based models have begun to rival conventional model performance. This project combines both approaches by using atmospheric model reanalysis output and digital elevation data as inputs to a deep neural network. Selected features from the reanalysis fields, terrain elevation, and derived variables are fed into several network architectures, whose performance is then compared against a simple linear regression baseline. The results are very promising: this hybrid methodology can substantially improve both instantaneous estimation and short-term forecasting of gust factors, particularly in areas of complex terrain.
+Whether it is wind farms, traffic accidents, high-voltage towers, or other things affected by wind, accurately predicting wind loads is crucial for reducing damage, improving operational safety, and boosting productivity. Wind gusts are spikes in wind speed, and wind gust factor is defined as the ratio of the highest gust to the mean wind speed over a given time period. It is important to be able to predict both wind and gust factor accurately. Historically, numerical weather prediction models based on physical equations have been used to predict such variables. In recent years, artificial intelligence (AI) has advanced rapidly, and AI-based models have begun to rival conventional model performance. This project combines both approaches by using atmospheric model reanalysis output and digital elevation data as inputs to a deep neural network. Selected features from the reanalysis fields, terrain elevation, and derived variables are fed into several network architectures, whose performance is then compared against a simple linear regression baseline. The results are very promising: this hybrid methodology can substantially improve both instantaneous estimation and short-term forecasting of gust factors, particularly in areas of complex terrain.
 \vfill \vspace*{1cm}
 
 \section*{Útdráttur}
-Hvort sem um er að ræða vindmyllugarða, umferðarslys, háspennumöstur, eða aðra hluti sem vindur getur haft áhrif á er spágeta um álag vegna vindsins mikilvæg, til að minnka eða koma í veg fyrir tjón, auka rekstraröryggi, eða bæta framleiðni. Vindhviður eru nokkurra sekúndna aukning á vindi og hviðustuðull mælir hæsta hlutfall milli þriggja sekúndna hviðu og 10 mínútna meðalvinds. Góðar hviðuspár eru mikilvægar. Sögulega hefur verið notast við hefðbundin spálíkön sem reiða sig á töluleg eðlisfræðileg líkön til að spá fyrir um veður, þar með talið hviðustuðul. Á síðustu árum hefur gervigreind þróast mikið og líkön verið þjálfuð til þess að spá fyrir um veður. Svo miklar framfarir hafa orðið að sum líkön geta keppt við hefðbundin veðurlíkön. Markmið þessa verkefnis er reyna að nýta bæði hefðbundin veðurlíkön og gervigreind til þess að meta hviðustuðla. Þetta er gert með því að nota endurgreiningargögn úr hefðbundnu veðurlíkani sem grunngögn í gervigreindarlíkan. Einnig eru notað hæðarlíkan sem lýsir landslagi. Djúpt tauganet er búið til með því að velja breytur úr endurgreiningargögnunum og hæðarlíkaninu og afleiddum breytum. Nokkur líkön af þessu tagi eru svo þjálfuð og niðurstöður bornar saman við einfalt grunnlíkan sem fengið er með línulega aðhvarfi. Niðurstöðurnar lofa mjög góðu um að þessi aðferðafræði geti bætt bæði samtímamat á hviðustuðli og spár um hann umtalsvert. Þetta á ekki síst við í flóknu landslagi.
+Hvort sem um er að ræða vindmyllugarða, umferðarslys, háspennumöstur, eða annað sem vindur getur haft áhrif á er spágeta um álag vegna vinds mikilvæg, til að minnka eða koma í veg fyrir tjón, auka rekstraröryggi, eða bæta framleiðni. Vindhviður eru toppar í vindhraða og hviðustuðull er hlutfall milli hæstu vindhviðu og meðalvinds yfir gefið tímabil. Góðar hviðuspár eru mikilvægar. Sögulega hefur verið notast við hefðbundin spálíkön sem reiða sig á töluleg eðlisfræðileg líkön til að spá fyrir um veður, þar með talið hviðustuðul. Á síðustu árum hefur gervigreind þróast mikið og líkön verið þjálfuð til þess að spá fyrir um veður. Svo miklar framfarir hafa orðið að sum líkön geta keppt við hefðbundin veðurlíkön. Markmið þessa verkefnis er reyna að nýta bæði hefðbundin veðurlíkön og gervigreind til þess að meta hviðustuðla. Þetta er gert með því að nota endurgreiningargögn úr hefðbundnu veðurlíkani sem grunngögn í gervigreindarlíkan. Einnig eru notað hæðarlíkan sem lýsir landslagi. Djúpt tauganet er búið til með því að velja breytur úr endurgreiningargögnunum og hæðarlíkaninu og afleiddum breytum. Nokkur líkön af þessu tagi eru svo þjálfuð og niðurstöður bornar saman við einfalt grunnlíkan sem fengið er með línulegu aðhvarfi. Niðurstöðurnar lofa mjög góðu um að þessi aðferðafræði geti bætt bæði samtímamat á hviðustuðli og spár um hann umtalsvert. Þetta á ekki síst við í flóknu landslagi.
 %\vfill
 
 %\newpage % Empty page
@@ -401,7 +401,7 @@ Hvort sem um er að ræða vindmyllugarða, umferðarslys, háspennumöstur, eð
   \acro{API}{Application Programming Interface}
   \acro{ASL}{Above Sea Level}
   \acro{AWS}{Automatic Weather Stations}
-  \acro{CARRA}{Copernicus Artic Regional ReAnalysis dataset}
+  \acro{CARRA}{Copernicus Artic Regional ReAnalysis}
   \acro{CNN}{Convolutional Neural Networks}
   \acro{DEM}{Digital Elevaiton Model}
   \acro{ELI5}{Explain Like I am 5}
@@ -409,8 +409,9 @@ Hvort sem um er að ræða vindmyllugarða, umferðarslys, háspennumöstur, eð
   \acro{GCM}{General Circulation Model}
   \acro{GeoTIFF}{Georeferenced TIFF}
   \acro{GPU}{Graphical Processing Unit}
-  \acro{HRES}{High Resolution forecas}
-  \acro{IMO}{Icelandic Meteoroligcal Office}
+  \acro{GRIB}{GRIdded Binary}
+  \acro{HRES}{High Resolution forecast}
+  \acro{IMO}{Icelandic Meteorological Office}
   \acro{IRCA}{Icelandic Road and Coastal Administration}
   \acro{JNWPU}{Joint Numerical Weather Prediction Unit}
   \acro{LWM}{Large AI Weather forecast Model}

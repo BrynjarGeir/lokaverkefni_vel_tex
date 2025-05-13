@@ -2,7 +2,7 @@
 
 \chapter{Data gathering and processing}
 \label{Chapter2}
-Data were sourced from several streams. The Icelandic Meteorological Office (IMO) provided measurements from weather stations across Iceland, NWP data were downloaded from the Copernicus Arctic Regional Reanalysis dataset (CARRA), and finally a land-elevation model was also provided by the IMO.
+Data were sourced from several streams. The Icelandic Meteorological Office (IMO) provided measurements from automatic weather stations across Iceland, NWP data were downloaded from the Copernicus Arctic Regional Reanalysis dataset (CARRA), and finally digital elevation model (DEM) was also provided by the IMO.
 
 \begin{figure}[H]
   \centering
@@ -14,26 +14,26 @@ Data were sourced from several streams. The Icelandic Meteorological Office (IMO
 \section{Automatic Weather Station Data}
 Automatic weather stations (AWS) have been set up all around the world, including Iceland. AWSs might include a variety of sensors, such as barometers, thermometers, and anemometer along with solar panels (or other power source) and some kind of data logger. IMO provided measurements from AWSs across Iceland. One of the stations used in this study can be seen in Figure \ref{fig:storhofdi}. Not every station had consistently available data. Data from \nStationsMin AWSs were included looking at a period from \startDateVedur and ended in 2023. Of these \nStationsMin stations provided by IMO, \nVedurMin were IMO stations, with the anemometer at 10~m above ground, while the remaining \nVGMin stations were from \href{https://www.vegagerdin.is/}{the Icelandic Road and Coastal Administration (IRCA)}, with the anemometer at 6–7~m above ground \cite{vegagerdin_postur}. The locations of these weather stations are shown in Figure \ref{fig:aws_map}.
 
-Data from these AWSs were stored in hourly files, which aggregate the original 10-minute files; measurement errors—unrealistic spikes known as “nails”—have been removed in most cases. Each record contains the following information: date and time; station number (convertible to coordinates using another dataset of Icelandic meteorological stations); average wind speed ($f$); wind gust ($f_g$); standard deviation of the wind gust; wind direction ($d$); and standard deviation of the wind direction.
+Data from these AWSs were stored in hourly files, which aggregate the original 10-minute files; measurement errors—unrealistic spikes known as “nails”—have been removed in most cases. Each record contains e.g. the following information: date and time; station number (convertible to coordinates using another dataset of Icelandic meteorological stations); average wind speed ($f$); wind gust ($f_g$); standard deviation of the wind gust; wind direction ($d$); and standard deviation of the wind direction.
 
 These measurements began at the end of the 20th century with the installation of the first AWSs, and more stations have been added in subsequent decades.
 
 \begin{figure}
     \centering
     \includegraphics[width=1.1\textwidth]{Figures/station_elevations.png}
-    \caption[Locations of automatic weather stations in Iceland]{Locations of all 412 stations that were looked at in this study. Most of these were from IMO but over a hundred were from IRCA. IMO anemometers are placed at 10 meters above ground, while IRCA ones are placed at 6--7 meters above ground.}
+    \caption[Locations of automatic weather stations in Iceland]{Locations of all 412 stations that were looked at in this study. After filtering out stations with inconsistent data and stations where there were known malfunctions, \nStationsMin stations were left. IMO anemometers are placed at 10 meters above ground (red points), while IRCA ones are placed at 6--7 meters above ground (blue points).}
     \label{fig:aws_map}
 \end{figure}
 
 \section{CARRA Data}
-CARRA is a high-resolution atmospheric reanalysis produced by the Copernicus Climate Change Service and run by ECMWF. It covers two regions, a west region covering Greenland and Iceland and an east region covering the European Arctic. It has a 2.5 km horizontal resolution and dates from 1991 to the present, with monthly updates. CARRA provides three-hourly analysis fields and short-term forecasts (hourly for lead times under 6 h and three-hourly beyond) of surface and near-surface variables—wind, temperature, pressure, precipitation, etc. It is based on the HARMONIE-AROME limited-area NWP model, forced at its boundaries by ERA5 (ECMWF Re-Analysis v. 5) and enhanced by local observations to better represent complex terrain, land–sea contrasts, and sea-ice processes. It is updated monthly, with a latency of 2-3 months \cite{carra_information}.
+CARRA is a high-resolution atmospheric reanalysis produced by the Copernicus Climate Change Service. It covers two regions, a west region covering Greenland and Iceland and an east region covering the European Arctic. It has a 2.5 km horizontal resolution and dates from 1991 to the present, with monthly updates. CARRA provides three-hourly analysis fields and short-term forecasts (hourly for lead times under 6 h and three-hourly beyond) of surface and near-surface variables—wind, temperature, pressure, precipitation, etc. It is based on the HARMONIE-AROME limited-area NWP model, forced at its boundaries by ERA5 (ECMWF Re-Analysis v. 5) and enhanced by local observations to better represent complex terrain, land–sea contrasts, and sea-ice processes. It is updated monthly, with a latency of 2-3 months \cite{carra_information}.
 
-The CARRA dataset covers all the IMO observations that fulfill criteria of consistent availability – the oldest observation is from \startDateVedur. The CARRA-West region covers a vastly larger area than the area of interest. This leads to having to store a large amount of data. To download CARRA data one has two options, a web interface or using an API client provided by CARRA. Using the API client is the only realistic option here, as there are thousands of requests made for different times. If using the API, it is possible to query a smaller area (such as a rectangular area around Iceland) given a set of coordinates, but this is not possible with the web interface.
+The CARRA dataset covers all the IMO observations. The oldest observation used is from \startDateVedur. The CARRA-West region covers a vastly larger area than the area of interest. This leads to having to store a large amount of data. To download CARRA data one has two options, a web interface or using an API client provided by CARRA. Using the API client is the only realistic option here, as there are thousands of requests made for different times. If using the API, it is possible to query a smaller area (such as a rectangular area around Iceland) given a set of coordinates, but this is not possible with the web interface.
 
-The requests to the API were made at each available CARRA hour ([00, 03, 06, 09, 12, 15, 18, 21]) on a grid covering Iceland, for each available observation time. The downloaded data were interpolated to get values at the weather stations. CARRA contains several types of layers: single levels, model levels, height levels, and pressure levels. The data for this thesis was downloaded from height levels. They were requested at heights of 15, 250 and 500 meters above ground. For each point 4 parameters were requested, wind speed, wind direction, pressure, and temperature.
+The requests to the API were made at each available CARRA analysis hour ([00, 03, 06, 09, 12, 15, 18, 21]) on a grid covering Iceland, for each available observation time. The downloaded data were interpolated to get values at the weather stations. CARRA contains several types of layers: single levels, model levels, height levels, and pressure levels. The data for this thesis was downloaded from height levels. They were requested at heights of 15, 250 and 500 meters above ground. For each point 4 parameters were requested, wind speed, wind direction, pressure, and temperature.
 
 \section{Elevation data}
-A GeoTIFF file containing a digital elevation model (DEM) for Iceland on a 20~m by 20~m grid was provided by the Icelandic Meteorological Office (IMO). The entire country is covered by this file, and its size is approximately 685\,MB.
+A GeoTIFF file containing a DEM for Iceland on a 20~m by 20~m grid was provided by the Icelandic Meteorological Office (IMO). The entire country is covered by this file, and its size is approximately 685\,MB \cite{ragnar_geotiff}.
 
 The Python package \texttt{rasterio} is used, enabling rapid elevation lookup via its spatial indexing and affine‐transform capabilities. Elevation at specified geographic coordinates can be retrieved directly, and grid indices may be used for efficient access. Elevation for any exact location can be interpolated by fetching neighboring grid points.
 
@@ -41,18 +41,18 @@ The Python package \texttt{rasterio} is used, enabling rapid elevation lookup vi
 
 Three main data sources were used, each requiring querying, filtering, and merging to prepare the combined dataset. When handling hundreds of thousands of rows, code efficiency is essential: row-by-row iteration can increase execution time dramatically compared to vectorized operations.
 
-The sources were provided in different formats: IMO measurement data in text files, elevation data in GeoTIFF, and CARRA reanalysis data in GRIB. To train the models, these datasets were combined into a single file using the IMO measurements as a reference. CARRA data are supplied on a rectangular grid with approximately 2.5~km spacing, while IMO observations are tied to specific station locations. Elevation data are on a 20~m by 20~m grid covering Iceland. Linear interpolation was applied to merge the sources.
+The sources were provided in different formats: IMO measurement data in text files, elevation data in GeoTIFF, and CARRA reanalysis data in GRIB. To train the models, these datasets were combined into a single file using the IMO measurements as a reference. CARRA data are supplied on a rectangular grid with 2.5~km spacing, while IMO observations are tied to specific station locations. Elevation data are on a 20~m by 20~m grid covering Iceland. Linear interpolation was applied to merge the sources.
 
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.6]{Figures/data_combination.drawio.png}
-  \caption{Flow chart illustrating the data-combination workflow}
+  \caption[Flow chart illustrating the data-combination workflow.]{Flow chart illustrating the data-combination workflow. Data provided by IMO was used to query the CARRA API. The CARRA data were then interpolated to each station location as well as the elevation data. The data were then combined into a single file.}
   \label{fig:data_preprocessing_flow_chart}
 \end{figure}
 
 The merging procedure, shown in Figure \ref{fig:data_preprocessing_flow_chart}, was as follows: for each AWS observation, a query was constructed for the CARRA API by specifying year, month, day, hour, and spatial extent. Because the API returns all specified days when queried by hour, and all specified months when queried by day, monthly queries were issued for only the required days, retrieving all eight three-hourly time points (00, 03, 06, 09, 12, 15, 18, and 21~UTC). After downloading the requested variables at the desired pressure levels, point values were interpolated and appended to a pandas dataframe. The monthly GRIB files were then discarded before proceeding to the next month. This strategy reduced storage needs from several terabytes to under one gigabyte.
 
-Elevation values from the GeoTIFF were interpolated in the same manner: the four surrounding grid points were used in a linear interpolation to estimate the elevation at each station location. These interpolated values were included in the dataframe, since topography influences both average wind speed and gustiness \cite{GNP_vidtal}.
+Elevation values from the GeoTIFF were interpolated in the same manner: the four surrounding grid points were used in a linear interpolation to estimate the elevation at each station location. These interpolated values were included in the dataframe, since topography influences both average wind speed and gustiness \parencite{GNP_vidtal}.
 
 \section{Comparison of observed and reanalysis wind speed}
 
@@ -64,7 +64,7 @@ Differences between reanalysis and measured wind speeds can be substantial. Abso
   \label{table:measuredVSReanalysis_wind_speed}
   \begin{tabular}{cccc}
     \toprule
-    $f$ & $n$ & MAE & MAPE \\
+    $f[m/s]$ & $n$ & MAE $[m/s]$ & MAPE \\
     \midrule
     $[1; 5[$     & 5,260,814  & 2.0 & 83.9\% \\
     $[5; 10[$    & 4,150,923  & 2.2 & 31.3\% \\
@@ -77,12 +77,12 @@ Differences between reanalysis and measured wind speeds can be substantial. Abso
   \end{tabular}
 \end{table}
 
-Next, the distribution of MAE by station is examined, considering station location and number of observations. Figure \ref{fig:station_mae_distribution} shows this distribution, and Table \ref{table:station_mae_distribution} lists the five stations with the lowest MAE and the five with the highest MAE.
+Next, the distribution of MAE by station is examined, considering station location and number of observations. Figure \ref{fig:station_mae_distribution} shows this distribution, and Table \ref{table:station_mae_distribution} lists the five stations with the lowest MAE and the five with the highest MAE. The five stations with the lowest MAE are all located in relatively simple landscapes (flat terrain, wide space), while the five with the highest MAE are in complex landscapes (mountains, valleys, and fjords). This is mostly echoed in Figure \ref{fig:station_mae_distribution}.
 
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.6]{Figures/MAEoverIceland.png}
-  \caption[MAE distribution by station]{Distribution of mean absolute error (MAE) by station for all observed wind speeds.}
+  \caption[MAE distribution by station]{Distribution of mean absolute error (MAE) by station for all observed wind speeds. Image is missing units for MAE, which is in m/s.}
   \label{fig:station_mae_distribution}
 \end{figure}
 
@@ -92,7 +92,7 @@ Next, the distribution of MAE by station is examined, considering station locati
   \label{table:station_mae_distribution}
   \begin{tabular}{lcc}
     \toprule
-    Station               & $n$     & MAE  \\
+    Station               & $n$     & MAE $[m/s]$ \\
     \midrule
     Reykjavík Háahlíð     & 6,800   & 1.17 \\
     Keflavíkurflugvöllur  & 52,000  & 1.18 \\
@@ -111,9 +111,9 @@ Next, the distribution of MAE by station is examined, considering station locati
 
 \section{Layout of combined data}\label{sec:layout}
 
-Once data from all three sources have been retrieved and processed—including interpolation—they must be combined and formatted for modeling (training, validation, and testing). The starting point is a DataFrame containing AWS observations: average wind speed, wind gust, wind direction, station number, and coordinates. CARRA data are provided at selected height levels, each as a separate row in the CARRA DataFrame. Thus a single observation will span multiple rows, one per level. These rows are merged by time and station location, enabling AWS and CARRA data to be joined on station and time fields.
+Once data from all three sources have been retrieved and processed, including interpolation, they must be combined and formatted for modeling. This includes splitting data in training, validation, and testing datasets, where the training dataset is used to teach the model, the validation dataset helps tune the model's parameters, and the testing dataset evaluates its performance on unseen data. The starting point is a DataFrame containing AWS observations: average wind speed, wind gust, wind direction, station number, and coordinates. CARRA data are provided at selected height levels, each as a separate row in the CARRA DataFrame. Thus a single observation will span multiple rows, one per level. These rows are merged by time and station location, enabling AWS and CARRA data to be joined on station and time fields.
 
-The DEM elevation data are handled by defining an upwind sector: a range of angles relative to the wind direction $d$ and radial distances from each station. Points within this sector are generated as shown in Code Listing \ref{code:sectorElevation}.
+The DEM elevation data are handled by defining an upwind sector: a range of angles relative to the wind direction $d$ and radial distances from each station. Points within this sector are generated as shown in Code Listing \ref{code:sectorElevation}:
 
 \begin{lstlisting}[
     style=Python,
@@ -132,24 +132,25 @@ The resulting DataFrame includes AWS measurements (our target), CARRA weather va
 
 \begin{table}[h]
     \centering
-    \caption[Example of combined data structure]{Example of the combined data structure of features used for modeling. Data include derived variables Richardson number (Ri) and squared Brunt–Väisälä frequency ($N^2$), station altitude (meters above sea level), transformed wind direction (twd), wind speed (ws$_{15}$), wind direction (wd$_{15}$), temperature ($t_{15}$), pressure ($p_{15}$) (CARRA values at 15 m height), and elevation points (from DEM) in a sector pointing upwind.}
+    \caption[Example of combined data structure]{Example of the combined data structure of features used for modeling. Data include derived variables Richardson number (Ri) and squared Brunt–Väisälä frequency ($N^2$), station elevation (meters above sea level), transformed wind direction (twd), wind speed (ws$_{15}$), wind direction (wd$_{15}$), temperature ($t_{15}$), pressure ($p_{15}$) (CARRA values at 15 m height), and elevation points (from DEM) in a sector pointing upwind.}
     \label{table:trainDataExample}
     \resizebox{\textwidth}{!}{
     \begin{tabular}{ccccccccccc}
         \toprule
-        Ri & $N^2$ & \shortstack{station\\altitude} & twd & ws$_{15}$ & wd$_{15}$
+        Ri & $N^2$ & \shortstack{station\\elevation} & twd & ws$_{15}$ & wd$_{15}$
         & $t_{15}$ & $p_{15}$ & $\text{elevation}_0$ & elevation$_1$ & \dots\\
+        $[]$ & $[Hz^2]$ & $[m]$ & $[^{\circ}]$ & $[m/s]$ & $[^{\circ}]$ & $[K]$ & $[hPa]$ & $[m]$ & $[m]$ \\
         \midrule 
-        -1.18 &  26700 & 100 & 1.5 & 10 & 5 & 0 & 100 & 2 & 4 & \dots\\
+        -1.18 &  26700 & 100 & 1.5 & 10 & 5 & 270 & 100 & 2 & 4 & \dots\\
         \dots\\
         \bottomrule
     \end{tabular}
     }
 \end{table}
 
-The transformed wind direction is a proxy showing whether the wind is coming from land or sea. It is computed as the angle between the wind direction and a vector from the center of Iceland to the station.
+The transformed wind direction is a proxy showing if the wind is coming from land or sea. It is computed as the angle between the wind direction and a vector from the center of Iceland to the station.
 
-The Richardson number and the Brunt–Väisälä frequency describe atmospheric stability, see Equations (\ref{eqn:Ri}) and (\ref{eqn:N}) \cite{richardson_number_skybrary,brunt_vaisala_freq_eumtrain,mean_gust_HA_HO}. These values are calculated using reanalysis data at two different height levels. Thus Ri refers to the Richardson number calculated between height levels 15m and 500m. Exactly the same notation is used with the Brunt–Väisälä frequency, except the square is used.
+The Richardson number and the Brunt–Väisälä frequency describe atmospheric stability, see Equations (\ref{eqn:Ri}) and (\ref{eqn:N}) \parencite{richardson_number_skybrary,brunt_vaisala_freq_eumtrain,mean_gust_HA_HO}. These values are calculated using reanalysis data at two different height levels. Thus Ri refers to the Richardson number calculated between height levels 15 m and 500 m. Exactly the same notation is used with the Brunt–Väisälä frequency, except the square is used.
 %
 \begin{equation}
   \label{eqn:Ri}
@@ -161,16 +162,16 @@ The Richardson number and the Brunt–Väisälä frequency describe atmospheric 
   N = \sqrt{\frac{g \cdot d\theta }{\theta_{\textrm ave} \cdot dz}} \unit{[Hz]}
 \end{equation}
 %
-Here, $g$ is gravitational acceleration; $d\theta$ the potential temperature difference between levels; $dz$ the height difference; $\theta_{\mathrm{ave}}$ the average potential temperature; and $dU$ the wind-speed difference. Lower Ri indicates greater turbulence, with typical values between 0.1 and 10, and values below 1 signifying significant turbulence \cite{richardson_number_skybrary}. Negative $N^2$ denotes instability, as an air parcel will accelerate away from its original position \cite{brunt_vaisala_freq_eumtrain}. The potential temperature is computed as:
+Here, $g$ is gravitational acceleration; $d\theta$ the potential temperature difference between levels; $dz$ the height difference; $\theta_{\mathrm{ave}}$ the average potential temperature; and $dU$ the wind-speed difference. Lower Ri indicates greater turbulence, with typical values between 0.1 and 10, and values below 1 signifying significant turbulence \parencite{richardson_number_skybrary}. Negative $N^2$ (when potential temperature delta is negative) denotes instability, as an air parcel will accelerate away from its original position \parencite{brunt_vaisala_freq_eumtrain}. The potential temperature is computed as:
 %
 \begin{equation}
   \label{eqn:potential_temp}
-  \theta = T\left(\dfrac{P0}{P}\right)^{R/c_p}
+  \theta = T\left(\dfrac{P_0}{P}\right)^{R/c_p}
 \end{equation}
 %
-where $P$ is the pressure and $R = 287$ and $c_p = 1004$ are the specifc gas constant and the specific heat capacity of air.
+where $P, P_0$ is pressure and $R = 287 J/kg\cdot K$ and $c_p = 1004 J/kg\cdot K$ are the specific gas constant and the specific heat capacity of air.
 
-Since Ri and $N^2$ are derived from reanalysis variables, they add limited new information compared to the raw data, but they can reduce input dimensionality and improve model explainability via Shapley-value analysis \cite{shapley_information}. Shapley values assess feature importance by evaluating all possible feature subsets—an operation of computational complexity $2^n$. In practice, approximations are used but can still be costly for large models. Because $dU$ appears squared in the denominator of Ri, if the wind-speed difference between levels is very small, Ri can become arbitrarily large, potentially distorting predictions.
+Since Ri and $N^2$ are derived from reanalysis variables, they add limited new information compared to the raw data, but they can reduce input dimensionality and improve model explainability via Shapley-value analysis \parencite{shapley_information}. Shapley values assess feature importance by evaluating all possible feature subsets, an operation of computational complexity $2^n$. In practice, approximations are used but can still be costly for large models. Because $dU$ appears squared in the denominator of Ri, if the wind-speed difference between levels is very small, Ri can become arbitrarily large, potentially distorting predictions.
 
 \section{Distributions of observed and reanalysis data}
 
@@ -194,32 +195,40 @@ CARRA reanalysis data may exhibit bias or systematic differences when compared t
     \label{fig:carra_wind_speeds}
   \end{subfigure}
   
-  \caption{Comparison of observed and reanalysis wind-speed distributions. CARRA values are spatially interpolated by linear weighting of surrounding grid points.}
+  \caption[Comparison of observed and reanalysis wind-speed distributions.]{Comparison of observed and reanalysis wind-speed distributions. CARRA values are spatially interpolated by linear weighting of surrounding grid points.}
   \label{fig:obs_carra_wind_speeds}
 \end{figure}
+
+Figure \ref{fig:obs_carra_wind_speeds} shows the distributions of observed and reanalysis wind speeds. The observed wind speeds are from the IMO and IRCA stations, while the CARRA wind speeds are interpolated to the station locations. The distributions are similar, but the CARRA values tend to be higher.
 
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\textwidth]{Figures/station_heights.png}
-  \caption{Distribution of weather station altitudes above sea level. One outlier near 2000~m was excluded due to limited and inconsistent data.}
+  \caption[Distribution of weather station elevations above sea level.]{Distribution of weather station elevations above sea level. One outlier near 2000~m was excluded due to limited and inconsistent data.}
   \label{fig:station_heights}
 \end{figure}
+
+Well over half of the stations are located at elevations below 100~m, with a few at elevations above 1000~m. The distribution of station elevations is shown in Figure \ref{fig:station_heights}. The outlier at 2000~m was excluded due to limited and inconsistent data.
 
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.8\textwidth]{Figures/gust_factor_2025.png}
-  \caption{Histogram of gust factors. By definition, gust factor $\ge1$; most values lie between 1.2 and 2. The gust factor declines as wind speed increases.}
+  \caption[Histogram of gust factors.]{Histogram of gust factors.}
   \label{fig:gust_factors}
 \end{figure}
+
+Figure \ref{fig:gust_factors} shows the distribution of gust factors. By definition, gust factors are always greater than or equal to 1. The histogram reveals that most gust factors lie between 1.2 and 2.0, with a long tail extending to higher values. This distribution highlights the variability in gustiness across different locations and conditions. Higher gust factors are typically associated with complex terrain or unstable atmospheric conditions, where turbulence can amplify wind gusts relative to the mean wind speed.
 
 \section{Model architecture}
 \label{sec:model_architecture}
 
-The network consists of $n$ fully connected layers, with $n$ around 10. Each hidden layer has the same number of units and is followed by batch normalization. A dropout layer with rate 50\% is applied after the final hidden layer. A dense output layer with one unit produces the predicted gust factor. A grid search was used to find the hyperparameters that minimize the loss. Hyperparameters are settings defined before training begins \cite{hyperparameters_definition}. They include the number of units per layer, the number of layers, the number of training epochs, batch size, optimizer choice, and regularization penalty. The ranges tested are listed in Table \ref{table:gridSearchHyperparameters}.
+The model architecture is a feedforward neural network, an architecture suitable for regression tasks. It is implemented using the \href{https://keras.io/}{Keras} library, which is a high-level API for building and training deep learning models. The model consists of several layers: input, output, hidden and dropout layers, along with batch normalization. An input layer receives has the same shape as the number of features, while hidden layers have some number of units (defined by the user) and are followed by batch normalization. The dropout layer is used to prevent overfitting, by randomly dropping a given fraction of the input units. The ouput layer in regression tasks has the same number of outputs as predictants, in this case one, the gust factor.
+
+The network consists of $n$ fully connected layers, with $n$ around 10. Each hidden layer has the same number of units and is followed by batch normalization. A dropout layer with rate 50\% is applied after the final hidden layer. A dense output layer with one unit produces the predicted gust factor. A grid search was used to find the hyperparameters that minimize the loss. Hyperparameters are settings defined before training begins \parencite{hyperparameters_definition}. They include the number of units per layer, the number of layers, the number of training epochs (how often all training data is used in training), batch size, optimizer choice, and regularization penalty (imposes cost on optimization function). The ranges tested are listed in Table \ref{table:gridSearchHyperparameters}.
 
 \begin{table}[h]
     \centering
-    \caption[Hyperparameter search with Hyperband]{Hyperparameter search was performed using the Hyperband algorithm, which begins by sampling configurations at random and then focuses on the most promising ones. The table shows the ranges tested and the best-performing combination. Unlike random search, Hyperband does not impose a fixed limit on the number of trials.}
+    \caption[Hyperparameter search with Hyperband]{Results of hyperparameter search using Hyperband. The ranges of values tested are shown, along with the selected values.}
     \label{table:gridSearchHyperparameters}
     \begin{tabular}{lll}
         \toprule
@@ -235,12 +244,12 @@ The network consists of $n$ fully connected layers, with $n$ around 10. Each hid
     \end{tabular}
 \end{table}
 
-As mentioned, Hyperband doesn't set a hard upper limit to the number of epochs it will train in total. When using the \href{https://keras.io/api/keras_tuner/tuners/hyperband/}{Hyperband class} several factors can be set. One of interest here is the Hyperband iterations argument. This determines how often the Hyperband algorithm is run and defaults to 1. For each iteration the epochs are distributed between tries (that is each set of hyperparameters) with the total amount of epochs approximately $n_{epochs} = max_{epochs} * log^2(max_{epochs})\approx 10^4$, where $max_{epochs} = 1000$ gives the maximum number of epochs that one set of hyperparameters can be trained for. Searching a space generally takes a lot of time but this drastically improves on grid search. If each epoch takes around 10 seconds to run then the total search would take around 28 hours on a shared resource. This is resource-intensive and cannot be repeated often. Another question that remains is whether the ranges given are optimal.
-
-As noted, Hyperband does not impose a fixed limit on the total number of training epochs. When using the \href{https://keras.io/api/keras_tuner/tuners/hyperband/}{Hyperband tuner}, the Hyperband iterations parameter controls how many times Hyperband is run and defaults to 1. On each run, the total number of epochs is distributed across the hyperparameter trials. The total number of epochs is approximately
+As mentioned, Hyperband doesn't set a hard upper limit to the number of epochs it will train in total. When using the \href{https://keras.io/api/keras_tuner/tuners/hyperband/}{Hyperband class} several factors can be set. One of interest here is the Hyperband iterations argument. This determines how often the Hyperband algorithm is run and defaults to 1. Hyperband does not impose a fixed limit on the total number of training epochs. When using the \href{https://keras.io/api/keras_tuner/tuners/hyperband/}{Hyperband tuner}, the Hyperband iterations parameter controls how many times Hyperband is run and defaults to 1. On each run, the total number of epochs is distributed across the hyperparameter trials. The total number of epochs is approximately
 %
 \begin{equation*}
 n_{\mathrm{epochs}} = \text{max\_epochs} \times \bigl(\log(\text{max\_epochs})\bigr)^2 \approx 10^4
 \end{equation*}
 %
-for $ \text{max\_epochs} = 1000$. Although this method is more efficient than grid search, if each epoch takes about 10 seconds, a complete Hyperband search can still require about 28 hours on shared resources, making repeated searches impractical. It remains unclear whether the current hyperparameter ranges are optimal.
+for $ \text{max\_epochs} = 1000$. Although this method is more efficient than grid search, if each epoch takes about 10 seconds, a complete Hyperband search can still require about 28 hours on shared resources, making repeated searches impractical. It remains unclear whether the current hyperparameter ranges are optimal. This is resource-intensive and cannot be repeated often. Another question that remains is whether the ranges given are optimal.
+
+Hyperparameter search was performed using the Hyperband algorithm, which begins by sampling configurations at random and then focuses on the most promising ones. Table \ref{table:gridSearchHyperparameters} shows the ranges tested and the best-performing combination.
